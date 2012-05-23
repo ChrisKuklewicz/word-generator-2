@@ -1,0 +1,618 @@
+[Project Header]
+Version = 501
+Platform Code = 4
+Pathname = "/f/WG3 Project/Active Development/wg2dev.prj"
+CVI Dir = "/c/cvi"
+VXIplug&play Framework Dir = "/C/VXIPNP/winnt"
+Number of Files = 29
+Sort Type = "No Sort"
+Target Type = "Executable"
+Flags = 16
+Drag Bar Left = 248
+Window Top = 74
+Window Left = 258
+Window Bottom = 618
+Window Right = 1007
+
+[File 0001]
+File Type = "Library"
+Path = "/c/cvi/sdk/lib/advapi32.lib"
+Res Id = 1
+Exclude = False
+Disk Date = 2986642800
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0002]
+File Type = "Function Panel"
+Path = "/c/cvi/samples/toolbox/menuutil.fp"
+Res Id = 2
+Exclude = False
+Disk Date = 2986642800
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0003]
+File Type = "CSource"
+Path = "/c/cvi/samples/toolbox/menuutil.c"
+Res Id = 3
+Exclude = False
+Disk Date = 2986642800
+Project Flags = 0
+Window Top = 319
+Window Left = 55
+Window Height = 0
+Window Width = 0
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,25,1348,0,1360,17,"
+Header Dependencies Line0001 = "1,2,3,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,24,25,26,27,28,29,30,31,32,"
+Header Dependencies Line0002 = "33,34,35,36,37,38,54,56,57,58,59,60,61,"
+
+[File 0004]
+File Type = "Function Panel"
+Path = "/c/cvi/toolslib/custctrl/scroll.fp"
+Res Id = 4
+Exclude = False
+Disk Date = 2986642800
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0005]
+File Type = "Function Panel"
+Path = "/c/cvi/toolslib/toolbox/asynctmr.fp"
+Res Id = 5
+Exclude = False
+Disk Date = 2986642800
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0006]
+File Type = "Function Panel"
+Path = "/c/cvi/toolslib/toolbox/inifile.fp"
+Res Id = 6
+Exclude = False
+Disk Date = 2986642800
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0007]
+File Type = "Function Panel"
+Path = "/c/cvi/toolslib/toolbox/toolbox.fp"
+Res Id = 7
+Exclude = False
+Disk Date = 2986642800
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0008]
+File Type = "Function Panel"
+Path = "/f/WG3 Project/Active Development/dna.fp"
+Res Id = 8
+Exclude = False
+Disk Date = 3004532328
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0009]
+File Type = "Function Panel"
+Path = "/f/WG3 Project/Active Development/hand.fp"
+Res Id = 9
+Exclude = False
+Disk Date = 3037141154
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0010]
+File Type = "Function Panel"
+Path = "/f/WG3 Project/Active Development/mouth.fp"
+Res Id = 10
+Exclude = False
+Disk Date = 2984132486
+Project Flags = 0
+Window Top = 0
+Window Left = 0
+Window Height = 0
+Window Width = 0
+
+[File 0011]
+File Type = "User Interface Resource"
+Path = "/f/WG3 Project/Active Development/face.uir"
+Res Id = 11
+Exclude = False
+Disk Date = 3037986360
+Project Flags = 0
+Window Top = 151
+Window Left = 17
+Window Height = 841
+Window Width = 1180
+
+[File 0012]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/dna.h"
+Res Id = 12
+Exclude = False
+Disk Date = 3037981089
+Project Flags = 0
+Window Top = 117
+Window Left = 54
+Window Height = 0
+Window Width = 0
+Source Window State = "1,526,526,526,45,49,50,1,0,80,0,0,0,0,0,61,0,0,50,20,"
+Line Tags = "524,"
+
+[File 0013]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/dde.h"
+Res Id = 13
+Exclude = False
+Disk Date = 3010590466
+Project Flags = 0
+Window Top = 334
+Window Left = 265
+Window Height = 0
+Window Width = 0
+Source Window State = "1,0,0,3,0,0,1,0,0,84,0,0,0,0,0,25,0,0,1,0,"
+
+[File 0014]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/hand.h"
+Res Id = 14
+Exclude = False
+Disk Date = 3037141154
+Project Flags = 0
+Window Top = 35
+Window Left = 7
+Window Height = 0
+Window Width = 0
+Source Window State = "1,103,103,103,1,60,61,1,0,84,0,0,0,0,0,57,64,0,97,43,"
+Line Tags = "95,99,104,"
+
+[File 0015]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/mouth.h"
+Res Id = 15
+Exclude = False
+Disk Date = 3010590468
+Project Flags = 0
+Window Top = 612
+Window Left = 111
+Window Height = 0
+Window Width = 0
+Source Window State = "1,12,13,12,49,70,49,0,0,103,0,0,0,0,0,26,0,0,24,33,"
+
+[File 0016]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/face.h"
+Res Id = 16
+Exclude = False
+Disk Date = 3037986360
+Project Flags = 0
+Window Top = 23
+Window Left = 17
+Window Height = 0
+Window Width = 0
+Source Window State = "1,207,207,207,9,31,32,1,0,149,0,0,0,0,0,71,142,0,177,15,"
+
+[File 0017]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/facetwo.h"
+Res Id = 17
+Exclude = False
+Disk Date = 3037992887
+Project Flags = 0
+Window Top = 22
+Window Left = 449
+Window Height = 0
+Window Width = 0
+Source Window State = "1,31,31,31,4,21,22,0,0,78,0,0,0,0,0,58,0,0,40,53,"
+
+[File 0018]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/recent.h"
+Res Id = 18
+Exclude = False
+Disk Date = 3037993357
+Project Flags = 0
+Window Top = 399
+Window Left = 32
+Window Height = 0
+Window Width = 0
+Source Window State = "1,16,19,16,0,2032,0,1,0,80,0,20,0,20,0,25,0,0,23,0,"
+
+[File 0019]
+File Type = "CSource"
+Path = "/f/WG3 Project/Active Development/dde.c"
+Res Id = 19
+Exclude = False
+Disk Date = 3010590466
+Project Flags = 0
+Window Top = 160
+Window Left = 329
+Window Height = 0
+Window Width = 0
+Source Window State = "1,23,23,23,0,2032,0,1,0,84,0,0,0,0,0,58,29,0,84,55,"
+Header Dependencies Line0001 = "1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,3"
+Header Dependencies Line0002 = "1,32,33,34,35,36,37,38,48,49,50,51,"
+
+[File 0020]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/brain.h"
+Res Id = 20
+Exclude = False
+Disk Date = 3010590466
+Project Flags = 0
+Window Top = 26
+Window Left = 385
+Window Height = 0
+Window Width = 0
+Source Window State = "1,93,94,93,9,10,9,0,0,101,0,0,0,0,0,66,0,0,0,0,"
+
+[File 0021]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/memory.h"
+Res Id = 21
+Exclude = False
+Disk Date = 3010590468
+Project Flags = 0
+Window Top = 288
+Window Left = 64
+Window Height = 0
+Window Width = 0
+Source Window State = "1,1,4,1,20,-1,20,0,3,84,0,0,0,0,0,25,0,0,4,22,"
+
+[File 0022]
+File Type = "CSource"
+Path = "/f/WG3 Project/Active Development/dna.c"
+Res Id = 22
+Exclude = False
+Disk Date = 3037119685
+Project Flags = 1048576
+Window Top = 400
+Window Left = 164
+Window Height = 0
+Window Width = 0
+Source Window State = "1,1330,1330,1330,30,36,37,1,0,124,0,0,0,0,0,38,0,0,10,107,"
+Header Dependencies Line0001 = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30"
+Header Dependencies Line0002 = ",31,32,33,34,35,36,37,38,"
+Line Tags = "1612,"
+
+[File 0023]
+File Type = "CSource"
+Path = "/f/WG3 Project/Active Development/hand.c"
+Res Id = 23
+Exclude = False
+Disk Date = 3037981086
+Project Flags = 1048576
+Window Top = 39
+Window Left = 173
+Window Height = 0
+Window Width = 0
+Source Window State = "1,129,129,129,15,21,15,1,0,101,0,17,0,31,25,57,1171,0,1227,0,"
+Header Dependencies Line0001 = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30"
+Header Dependencies Line0002 = ",31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,"
+Line Tags = "453,514,572,589,658,687,"
+
+[File 0024]
+File Type = "CSource"
+Path = "/f/WG3 Project/Active Development/mouth.c"
+Res Id = 24
+Exclude = False
+Disk Date = 3023200848
+Project Flags = 1048576
+Window Top = 23
+Window Left = 174
+Window Height = 0
+Window Width = 0
+Source Window State = "1,186,186,186,45,48,49,0,3,94,0,3,0,3,0,46,183,0,186,45,"
+Header Dependencies Line0001 = "1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,3"
+Header Dependencies Line0002 = "1,32,33,34,35,36,37,38,45,47,"
+Line Tags = "256,"
+
+[File 0025]
+File Type = "CSource"
+Path = "/f/WG3 Project/Active Development/face.c"
+Res Id = 25
+Exclude = False
+Disk Date = 3037994935
+Project Flags = 0
+Window Top = 140
+Window Left = 145
+Window Height = 0
+Window Width = 0
+Source Window State = "1,4843,4843,4843,0,2032,0,1,0,126,11,1,0,9,0,47,4809,0,4843,0,"
+Header Dependencies Line0001 = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30"
+Header Dependencies Line0002 = ",31,32,33,34,35,36,37,38,39,40,41,42,43,44,49,50,51,55,62,"
+Line Tags = "683,1995,"
+
+[File 0026]
+File Type = "CSource"
+Path = "/f/WG3 Project/Active Development/recent.c"
+Res Id = 26
+Exclude = False
+Disk Date = 3037995290
+Project Flags = 0
+Window Top = 229
+Window Left = 123
+Window Height = 0
+Window Width = 0
+Source Window State = "1,83,84,84,13,64,64,0,3,80,0,132,0,132,0,25,77,0,83,32,"
+Header Dependencies Line0001 = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30"
+Header Dependencies Line0002 = ",31,32,33,34,35,36,37,38,50,54,56,62,"
+
+[File 0027]
+File Type = "CSource"
+Path = "/f/WG3 Project/Active Development/brain.c"
+Res Id = 27
+Exclude = False
+Disk Date = 3037977857
+Project Flags = 0
+Window Top = 26
+Window Left = 286
+Window Height = 0
+Window Width = 0
+Source Window State = "1,1166,1166,1166,4,4,5,1,0,114,0,0,0,66,0,58,2082,0,2111,72,"
+Header Dependencies Line0001 = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30"
+Header Dependencies Line0002 = ",31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,50,51,52,53,"
+Line Tags = "3311,3488,3551,"
+
+[File 0028]
+File Type = "CSource"
+Path = "/f/WG3 Project/Active Development/memory.c"
+Res Id = 28
+Exclude = False
+Disk Date = 3037130706
+Project Flags = 0
+Window Top = 163
+Window Left = 78
+Window Height = 0
+Window Width = 0
+Source Window State = "1,218,225,225,0,2032,9,1,0,128,0,0,0,0,0,53,185,0,218,0,"
+Header Dependencies Line0001 = "1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,3"
+Header Dependencies Line0002 = "1,32,33,34,35,36,37,38,51,52,54,"
+Line Tags = "1,"
+
+[File 0029]
+File Type = "Include"
+Path = "/f/WG3 Project/Active Development/wisdom.h"
+Res Id = 29
+Exclude = False
+Disk Date = 3037994642
+Project Flags = 0
+Window Top = 40
+Window Left = 302
+Window Height = 0
+Window Width = 0
+Source Window State = "1,96,96,96,0,2032,0,1,0,113,0,0,0,0,0,61,44,0,96,80,"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Max Number Of Errors = 30
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+
+[Run Options]
+Stack Size = 250000
+Debugging Level = "Standard"
+Save Changes Before Running = "Ask"
+Break On Library Errors = True
+Hide Windows = True
+Unload DLLs After Each Run = True
+Check Disk Dates Before Each Run = True
+Break At First Statement = False
+
+[Build Options]
+DLL Debugging Level = "None"
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Command Line Args]
+Command Line Args = ""
+
+[Include Paths]
+Include Path 1 = "/c/cvi/include"
+Include Path 2 = "/d/HDF/HDF41r2/include"
+
+[Watch Point 1]
+Watch Expression = "dBuf2.Buffer.asU32[0]"
+Update Display Continuously = True
+Break When Value Changes = False
+Scope = "Global To File"
+File = "brain.c"
+DllName = ""
+
+[Watch Point 2]
+Watch Expression = "dBuf2.Buffer.asU32[70000]"
+Update Display Continuously = True
+Break When Value Changes = False
+Scope = "Global To File"
+File = "brain.c"
+DllName = ""
+
+[User-Defined Tokens]
+Token 1 = "brainIFillShort"
+Token 2 = "dnaInitIdle"
+Token 3 = "dnaTime"
+Token 4 = "facePOPUPData"
+Token 5 = "faceClipboard"
+Token 6 = "dnaAuxillaryInfo"
+Token 7 = "dnaBufferRF"
+Token 8 = "dnaRanges"
+Token 9 = "brainISetup"
+Token 10 = "dnaARFGraphPointer"
+Token 11 = "brainInterpData"
+Token 12 = "brainInterp"
+Token 13 = "dnaARFSelectors"
+Token 14 = "Rect"
+Token 15 = "faceARFGraphs"
+Token 16 = "faceClusterArray"
+Token 17 = "faceClusterHandles"
+Token 18 = "handErrRet"
+Token 19 = "dnaBufferAnalog"
+Token 20 = "dnaAnalogValue"
+Token 21 = "dnaBufferDigital"
+Token 22 = "dnaIntPointers"
+Token 23 = "dnaInterpTypes"
+Token 24 = "dnaTimeUnits"
+Token 25 = "dnaARFGraph"
+Token 26 = "dnaARFGroup"
+Token 27 = "dnaARFGroupArray"
+Token 28 = "dnaCluster"
+Token 29 = "dnaClusterArray"
+Token 30 = "dnaAnalogConfigArray"
+Token 31 = "dnaAnalogChannelConfig"
+Token 32 = "dnaByte"
+
+[Included Headers]
+Header 0002 = "/c/cvi/include/cvidef.h"
+Header 0003 = "/c/cvi/include/cvirte.h"
+Header 0024 = "/c/cvi/include/utility.h"
+Header 0005 = "/f/WG3 Project/Active Development/dna.h"
+Header 0049 = "/f/WG3 Project/Active Development/dde.h"
+Header 0039 = "/f/WG3 Project/Active Development/hand.h"
+Header 0045 = "/f/WG3 Project/Active Development/mouth.h"
+Header 0004 = "/f/WG3 Project/Active Development/face.h"
+Header 0050 = "/f/WG3 Project/Active Development/facetwo.h"
+Header 0051 = "/f/WG3 Project/Active Development/brain.h"
+Header 0052 = "/f/WG3 Project/Active Development/memory.h"
+Header 0001 = "/c/cvi/include/userint.h"
+Header 0006 = "/c/cvi/sdk/include/windows.h"
+Header 0007 = "/c/cvi/include/ansi/stdarg.h"
+Header 0008 = "/c/cvi/sdk/include/windef.h"
+Header 0009 = "/c/cvi/sdk/include/winnt.h"
+Header 0010 = "/c/cvi/include/ansi/ctype.h"
+Header 0011 = "/c/cvi/sdk/include/pshpack4.h"
+Header 0012 = "/c/cvi/sdk/include/poppack.h"
+Header 0013 = "/c/cvi/sdk/include/pshpack1.h"
+Header 0014 = "/c/cvi/include/ansi/string.h"
+Header 0015 = "/c/cvi/sdk/include/winbase.h"
+Header 0016 = "/c/cvi/sdk/include/winerror.h"
+Header 0017 = "/c/cvi/sdk/include/wingdi.h"
+Header 0018 = "/c/cvi/sdk/include/pshpack2.h"
+Header 0019 = "/c/cvi/sdk/include/winuser.h"
+Header 0020 = "/c/cvi/sdk/include/winsvc.h"
+Header 0021 = "/c/cvi/sdk/include/mcx.h"
+Header 0022 = "/c/cvi/sdk/include/imm.h"
+Header 0023 = "/c/cvi/include/formatio.h"
+Header 0025 = "/c/cvi/include/ansi_c.h"
+Header 0026 = "/c/cvi/include/ansi/assert.h"
+Header 0027 = "/c/cvi/include/ansi/errno.h"
+Header 0028 = "/c/cvi/include/ansi/float.h"
+Header 0029 = "/c/cvi/include/ansi/limits.h"
+Header 0030 = "/c/cvi/include/ansi/locale.h"
+Header 0031 = "/c/cvi/include/ansi/math.h"
+Header 0032 = "/c/cvi/include/ansi/setjmp.h"
+Header 0033 = "/c/cvi/include/ansi/signal.h"
+Header 0034 = "/c/cvi/include/ansi/stddef.h"
+Header 0035 = "/c/cvi/include/ansi/stdio.h"
+Header 0036 = "/c/cvi/include/ansi/stdlib.h"
+Header 0037 = "/c/cvi/include/ansi/time.h"
+Header 0038 = "/c/cvi/toolslib/toolbox/toolbox.h"
+Header 0040 = "/c/cvi/include/dataacq.h"
+Header 0041 = "/c/cvi/include/nidaqerr.h"
+Header 0042 = "/c/cvi/include/OLDERROR.H"
+Header 0043 = "/c/cvi/include/nidaqcns.h"
+Header 0044 = "/c/cvi/include/regdefs.h"
+Header 0046 = "/c/cvi/toolslib/toolbox/asynctmr.h"
+Header 0047 = "/c/cvi/include/gpib.h"
+Header 0048 = "/c/cvi/include/ddesupp.h"
+Header 0053 = "/c/cvi/include/analysis.h"
+Header 0054 = "/c/cvi/toolslib/toolbox/inifile.h"
+Header 0055 = "/c/cvi/toolslib/custctrl/scroll.h"
+Header 0056 = "/c/cvi/samples/toolbox/menuutil.h"
+Header 0057 = "/c/cvi/sdk/include/winnls.h"
+Header 0058 = "/c/cvi/sdk/include/wincon.h"
+Header 0059 = "/c/cvi/sdk/include/winver.h"
+Header 0060 = "/c/cvi/sdk/include/winreg.h"
+Header 0061 = "/c/cvi/sdk/include/winnetwk.h"
+Header 0062 = "/f/WG3 Project/Active Development/recent.h"
+Max Header Number = 62
+
+[Create Executable]
+Executable File = "/f/WG3 Project/application/WordGen3-2.exe"
+Icon File = "/f/WG3 Project/Active Development/c.ico"
+Application Title = "WordGen2"
+Numeric File Version = "1,0,1,0"
+Numeric Prod Version = "1,0,1,0"
+Comments = ""
+Company Name = "M.I.T."
+File Version = "1.0d"
+Legal Copyright = "Copyright © M.I.T., 1998"
+Legal Trademarks = ""
+Private Build = ""
+Product Version = "1.0"
+Special Build = ""
+DLL Exports = "Include File Symbols"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Instrument Driver Support Only = False
+
+[External Compiler Support]
+Create UIR Callbacks File = False
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File = ""
+Project Symbols H File = ""
+Project Symbols Obj File = ""
+
+[DLL Debugging Support]
+External Process Path = ""
+
+[DLLs Used By Executable]
+DLL 0001 = "/C/WINNT/System32/cviauto.dll"
+
+[Modules Forced Into Executable]
+Module 0001 = "analysis.lib"
+Module 0002 = "EASYIO.LIB"
+Module 0003 = "DATAACQ.LIB"
+Module 0004 = "nivxi.lib"
+Module 0005 = "gpib.lib"
+Module 0006 = "visa.lib"
+Module 0007 = "ivi.lib"
+Module 0008 = "cviauto.lib"
+Module 0009 = "asynctmr.obj"
+Module 0010 = "inifile.obj"
+Module 0011 = "toolbox.obj"
+Module 0012 = "dna.c"
+Module 0013 = "hand.c"
+Module 0014 = "mouth.c"
+Module 0015 = "gdi32.lib"
+Module 0016 = "kernel32.lib"
+Module 0017 = "user32.lib"
+

@@ -1,0 +1,1392 @@
+[AuxillaryInfo_0]
+FileVerson = 2
+FileS = "f:\\WG3 Project\\Active Development\\test2.wg"
+ClassS = ""
+Index = 0
+DateS = "04-07-2000"
+TimeS = "19:20:41"
+CommentS = "User Comment Area"
+AutoCommentS = "Automated Comment"
+GlobalOffset = 0
+OnlyEnabledQ = 0
+RepeatRunQ = 0
+CameraTriggerQ = 0
+UserTicks = 25
+UserTimeUnit = 1
+GTS = 0
+AnalogIndex = 0
+RFIndex = 0
+GraphSelected = -1
+PinRangeQ = 1
+NumberOfAnalogRF = 10
+Range_0 = 2
+Range_1 = 2
+Range_2 = 2
+Range_3 = 2
+Range_4 = 2
+Range_5 = 2
+Range_6 = 2
+Range_7 = 2
+Range_8 = 3
+Range_9 = 4
+UserMin_0 = -10.00244140624
+UserMin_1 = -10.00244140624
+UserMin_2 = -10.00244140624
+UserMin_3 = -10.00244140624
+UserMin_4 = -10.00244140624
+UserMin_5 = -10.00244140624
+UserMin_6 = -10.00244140624
+UserMin_7 = -10.00244140624
+UserMin_8 = 0
+UserMin_9 = 0
+UserMax_0 = 9.997558593740001
+UserMax_1 = 9.997558593740001
+UserMax_2 = 9.997558593740001
+UserMax_3 = 9.997558593740001
+UserMax_4 = 9.997558593740001
+UserMax_5 = 9.997558593740001
+UserMax_6 = 9.997558593740001
+UserMax_7 = 9.997558593740001
+UserMax_8 = 10
+UserMax_9 = 30
+
+[InitIdle_0]
+NumberOfIdleValues = 64
+IdleValues Line0001 = "00000000000000000000000000000000000000000001011101110100000000000000000000000000"
+IdleValues Line0002 = "000000"
+NumberOfInitAnalog = 8
+InitAnalog Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+InitAnalog Line0002 = "000000"
+RFAmplitude = 0
+RFOffset = 0
+RFFrequency = 0
+
+[ClusterArray_0]
+NumberOfClusters = 32
+NumberOfPorts = 8
+NumberOfOutputLabels = 64
+OutputLabels_0 = "(A0) Line #0"
+OutputLabels_1 = "(A1) Line #1"
+OutputLabels_2 = "(A2) Line #2"
+OutputLabels_3 = "(A3) Line #3"
+OutputLabels_4 = "(A4) Line #4"
+OutputLabels_5 = "(A5) Line #5"
+OutputLabels_6 = "(A6) Line #6"
+OutputLabels_7 = "(A7) Line #7"
+OutputLabels_8 = "(B0) Line #8"
+OutputLabels_9 = "(B1) Line #9"
+OutputLabels_10 = "(B2) Line #10"
+OutputLabels_11 = "(B3) Line #11"
+OutputLabels_12 = "(B4) Line #12"
+OutputLabels_13 = "(B5) Line #13"
+OutputLabels_14 = "(B6) Line #14"
+OutputLabels_15 = "(B7) Line #15"
+OutputLabels_16 = "(C0) Line #16"
+OutputLabels_17 = "(C1) Line #17"
+OutputLabels_18 = "(C2) Line #18"
+OutputLabels_19 = "(C3) Line #19"
+OutputLabels_20 = "(C4) Line #20"
+OutputLabels_21 = "(C5) Line #21"
+OutputLabels_22 = "(C6) Line #22"
+OutputLabels_23 = "(C7) Line #23"
+OutputLabels_24 = "(D0) Line #24"
+OutputLabels_25 = "(D1) Line #25"
+OutputLabels_26 = "(D2) Line #26"
+OutputLabels_27 = "(D3) Line #27"
+OutputLabels_28 = "(D4) Line #28"
+OutputLabels_29 = "(D5) Line #29"
+OutputLabels_30 = "(D6) Line #30"
+OutputLabels_31 = "(D7) Line #31"
+OutputLabels_32 = "(E0) Line #32"
+OutputLabels_33 = "(E1) Line #33"
+OutputLabels_34 = "(E2) Line #34"
+OutputLabels_35 = "(E3) Line #35"
+OutputLabels_36 = "(E4) Line #36"
+OutputLabels_37 = "(E5) Line #37"
+OutputLabels_38 = "(E6) Line #38"
+OutputLabels_39 = "(E7) Line #39"
+OutputLabels_40 = "(F0) Line #40"
+OutputLabels_41 = "(F1) Line #41"
+OutputLabels_42 = "(F2) Line #42"
+OutputLabels_43 = "(F3) Line #43"
+OutputLabels_44 = "(F4) Line #44"
+OutputLabels_45 = "(F5) Line #45"
+OutputLabels_46 = "(F6) Line #46"
+OutputLabels_47 = "(F7) Line #47"
+OutputLabels_48 = "(G0) Line #48"
+OutputLabels_49 = "(G1) Line #49"
+OutputLabels_50 = "(G2) Line #50"
+OutputLabels_51 = "(G3) Line #51"
+OutputLabels_52 = "(G4) Line #52"
+OutputLabels_53 = "(G5) Line #53"
+OutputLabels_54 = "(G6) Line #54"
+OutputLabels_55 = "(G7) Line #55"
+OutputLabels_56 = "(H0) Line #56"
+OutputLabels_57 = "(H1) Line #57"
+OutputLabels_58 = "(H2) Line #58"
+OutputLabels_59 = "(H3) Line #59"
+OutputLabels_60 = "(H4) Line #60"
+OutputLabels_61 = "(H5) Line #61"
+OutputLabels_62 = "(H6) Line #62"
+OutputLabels_63 = "(H7) Line #63"
+
+[ClusterArray_0_Cluster_0]
+Label = "#0"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = True
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000001000000000000000000000000000000000000000000011011000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_1]
+Label = "#1"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = True
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000100100000000000000000000000000000000000000000000101110000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_2]
+Label = "#2"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_3]
+Label = "#3"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000001010000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_4]
+Label = "#4"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_5]
+Label = "#5"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_6]
+Label = "#6"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_7]
+Label = "#7"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_8]
+Label = "#8"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_9]
+Label = "#9"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_10]
+Label = "#10"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_11]
+Label = "#11"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_12]
+Label = "#12"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_13]
+Label = "#13"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_14]
+Label = "#14"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_15]
+Label = "#15"
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_16]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_17]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_18]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_19]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_20]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_21]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_22]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_23]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_24]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_25]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_26]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_27]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_28]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_29]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_30]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[ClusterArray_0_Cluster_31]
+Label = ""
+Ticks = 1
+TimeUnit = 1000000
+EnabledQ = False
+AnalogSelector = -1
+AnalogGroup = -1
+RFSelector = -1
+RFGroup = -1
+NumberOfValues = 64
+Digital Line0001 = "00000000000000000000000000000000000000000000000000000000000000000000000000000000"
+Digital Line0002 = "000000"
+
+[AGroupArray_0]
+NumberOfGroups = 4
+NumberOfGraphs = 8
+EnabledQ = "00000000000"
+Labels_0 = ""
+Labels_1 = ""
+Labels_2 = ""
+Labels_3 = ""
+Labels_4 = ""
+Labels_5 = ""
+Labels_6 = ""
+Labels_7 = ""
+
+[AGroupArray_0_Group_0]
+Label = "Analog Group #0"
+Ticks = 1
+TimeUnit = 1000
+TicksD = 1
+TimeUnitD = 1000000
+NumberOfGraphs = 8
+
+[AGroupArray_0_Group_0_Graph_0]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 0
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_0_Graph_1]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 1
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_0_Graph_2]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 2
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_0_Graph_3]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 3
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_0_Graph_4]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 4
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_0_Graph_5]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 5
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_0_Graph_6]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 6
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_0_Graph_7]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 7
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_1]
+Label = ""
+Ticks = 1
+TimeUnit = 1000
+TicksD = 1
+TimeUnitD = 1000000
+NumberOfGraphs = 8
+
+[AGroupArray_0_Group_1_Graph_0]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 0
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_1_Graph_1]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 1
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_1_Graph_2]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 2
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_1_Graph_3]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 3
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_1_Graph_4]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 4
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_1_Graph_5]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 5
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_1_Graph_6]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 6
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_1_Graph_7]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 7
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_2]
+Label = ""
+Ticks = 1
+TimeUnit = 1000
+TicksD = 1
+TimeUnitD = 1000000
+NumberOfGraphs = 8
+
+[AGroupArray_0_Group_2_Graph_0]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 0
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_2_Graph_1]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 1
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_2_Graph_2]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 2
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_2_Graph_3]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 3
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_2_Graph_4]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 4
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_2_Graph_5]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 5
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_2_Graph_6]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 6
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_2_Graph_7]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 7
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_3]
+Label = ""
+Ticks = 1
+TimeUnit = 1000
+TicksD = 1
+TimeUnitD = 1000000
+NumberOfGraphs = 8
+
+[AGroupArray_0_Group_3_Graph_0]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 0
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_3_Graph_1]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 1
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_3_Graph_2]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 2
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_3_Graph_3]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 3
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_3_Graph_4]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 4
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_3_Graph_5]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 5
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_3_Graph_6]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 6
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[AGroupArray_0_Group_3_Graph_7]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 7
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[RFGroupArray_0]
+NumberOfGroups = 4
+NumberOfGraphs = 2
+EnabledQ = "000"
+Labels_0 = ""
+Labels_1 = ""
+
+[RFGroupArray_0_Group_0]
+Label = "RF Group #0"
+Ticks = 60
+TimeUnit = 1000
+TicksD = 1
+TimeUnitD = 1000000
+NumberOfGraphs = 2
+
+[RFGroupArray_0_Group_0_Graph_0]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 8
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[RFGroupArray_0_Group_0_Graph_1]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 9
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[RFGroupArray_0_Group_1]
+Label = ""
+Ticks = 60
+TimeUnit = 1000
+TicksD = 1
+TimeUnitD = 1000000
+NumberOfGraphs = 2
+
+[RFGroupArray_0_Group_1_Graph_0]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 8
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[RFGroupArray_0_Group_1_Graph_1]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 9
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[RFGroupArray_0_Group_2]
+Label = ""
+Ticks = 60
+TimeUnit = 1000
+TicksD = 1
+TimeUnitD = 1000000
+NumberOfGraphs = 2
+
+[RFGroupArray_0_Group_2_Graph_0]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 8
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[RFGroupArray_0_Group_2_Graph_1]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 9
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[RFGroupArray_0_Group_3]
+Label = ""
+Ticks = 60
+TimeUnit = 1000
+TicksD = 1
+TimeUnitD = 1000000
+NumberOfGraphs = 2
+
+[RFGroupArray_0_Group_3_Graph_0]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 8
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+
+[RFGroupArray_0_Group_3_Graph_1]
+NumberOfValues = 0
+NumberOfParameters = 10
+P_0 = 1
+P_1 = 0
+P_2 = 0
+P_3 = 0
+P_4 = 0
+P_5 = 0
+P_6 = 0
+P_7 = 0
+P_8 = 0
+P_9 = 0
+RangeIndex = 9
+InterpType = 0
+ValueMemoryUsed = 0
+XValues = ""
+YValues = ""
+

@@ -1,0 +1,5863 @@
+1	AInterp {}
+2	AO_Configure {}
+3	AO_VScale {}
+4	AO_VWrite {}
+5	AddAnalogGroupToBuffer {brain.c 2033}
+6		PrepInterp {brain.c 1825}
+7			printf {}
+8			dna_TouchARFGraph {dna.c 1258}
+9				free {}
+10			dna_CalcXYValuesMinMax {dna.c 951}
+11				printf {}
+12			SortValues {brain.c 1776}
+13				printf {}
+14			dna_ScaleGraphValues {dna.c 1009}
+15				free {}
+16				calloc {}
+17				printf {}
+18		printf {}
+19		GetYMin {brain.c 3954}
+20			printf {}
+21		GetYMax {brain.c 3970}
+22			printf {}
+23		Interp {}
+24		Pin {}
+25		AO_VScale {}
+26		dna_TouchARFGraph {dna.c 1258}
+27			free {}
+28	AddRFGroupToBuffer {brain.c 2797}
+29		dna_AdvanceStage {dna.c 1432}
+30		printf {}
+31		PrepInterp {brain.c 1825}
+32			printf {}
+33			dna_TouchARFGraph {dna.c 1258}
+34				free {}
+35			dna_CalcXYValuesMinMax {dna.c 951}
+36				printf {}
+37			SortValues {brain.c 1776}
+38				printf {}
+39			dna_ScaleGraphValues {dna.c 1009}
+40				free {}
+41				calloc {}
+42				printf {}
+43		MessagePopup {}
+44		AInterp {}
+45		FInterp {}
+46		Pin {}
+47		mouth_AddBufferCommand {mouth.c 152}
+48			Fmt {}
+49			dna_AdvanceBufferRF {dna.c 1402}
+50				printf {}
+51				dna_LengthBufferRF {dna.c 1393}
+52			printf {}
+53			mouth_AddBufferFreq {mouth.c 200}
+54				Fmt {}
+55				dna_AdvanceBufferRF {dna.c 1402}
+56				printf {}
+57			mouth_AddBufferAmp {mouth.c 216}
+58				Fmt {}
+59				dna_AdvanceBufferRF {dna.c 1402}
+60				printf {}
+61		dna_TouchARFGraph {dna.c 1258}
+62			free {}
+63	AppendString {}
+64	AuxCancel {face.c 4495}
+65		faceAuxWaitOff {face.c 2484}
+66			printf {}
+67			RemovePopup {}
+68		Beep {}
+69	Beep {}
+70	Breakpoint {}
+71	BreakpointCommand {face.c 4159}
+72		Breakpoint {}
+73		Beep {}
+74	BuilMinMaxAnalog {face.c 1516}
+75		GetCtrlAttribute {}
+76		printf {}
+77		DuplicateCtrl {}
+78		SetCtrlAttribute {}
+79	BuildARF {face.c 1613}
+80		BuildInitialAnalog {face.c 1572}
+81			GetCtrlAttribute {}
+82			printf {}
+83			DuplicateCtrl {}
+84			SetCtrlAttribute {}
+85		printf {}
+86		BuilMinMaxAnalog {face.c 1516}
+87			GetCtrlAttribute {}
+88			printf {}
+89			DuplicateCtrl {}
+90			SetCtrlAttribute {}
+91		BuildParams {face.c 1478}
+92			GetCtrlAttribute {}
+93			printf {}
+94			DuplicateCtrl {}
+95			SetCtrlAttribute {}
+96		BuildXYValues {face.c 1433}
+97			SetCtrlVal {}
+98			printf {}
+99			GetCtrlAttribute {}
+100			DuplicateCtrl {}
+101			SetCtrlAttribute {}
+102		BuildGraphs {face.c 1365}
+103			GetCtrlAttribute {}
+104			printf {}
+105			SetCtrlAttribute {}
+106			disableGraph {face.c 259}
+107				SetCtrlAttribute {}
+108				printf {}
+109				DeleteGraphPlot {}
+110				SetCtrlVal {}
+111			DuplicateGraph {face.c 1316}
+112				DuplicateCtrl {}
+113				printf {}
+114				SetCtrlAttribute {}
+115				disableGraph {face.c 259}
+116		setArfInterp {face.c 982}
+117			GetGraph {face.c 172}
+118				GetGroup {face.c 153}
+119			SetCtrlAttribute {}
+120			printf {}
+121			SetCtrlVal {}
+122			dna_TouchARFGraph {dna.c 1258}
+123				free {}
+124		disableXYValues {face.c 1103}
+125			setYValueRange {face.c 1058}
+126				PinValuesQ {face.c 220}
+127				ValidGroup {face.c 114}
+128				GetGraph {face.c 172}
+129				printf {}
+130				GetYMin {brain.c 3954}
+131				GetYMax {brain.c 3970}
+132				fabs {}
+133				RoundRealToNearestInteger {}
+134				SetCtrlAttribute {}
+135			printf {}
+136			SetCtrlVal {}
+137			SetCtrlAttribute {}
+138		SetCtrlAttribute {}
+139		SetCtrlVal {}
+140	BuildAnalogBuffer {brain.c 2179}
+141		dna_SetupBufferAnalog {dna.c 1529}
+142			printf {}
+143			free {}
+144			calloc {}
+145		printf {}
+146		ValidateChannels {brain.c 2152}
+147			printf {}
+148			MessagePopup {}
+149		MessagePopup {}
+150		PrepFinalValues {brain.c 2118}
+151			Pin {}
+152			AO_VScale {}
+153			printf {}
+154		AddAnalogGroupToBuffer {brain.c 2033}
+155			PrepInterp {brain.c 1825}
+156				printf {}
+157				dna_TouchARFGraph {dna.c 1258}
+158				dna_CalcXYValuesMinMax {dna.c 951}
+159				SortValues {brain.c 1776}
+160				dna_ScaleGraphValues {dna.c 1009}
+161			printf {}
+162			GetYMin {brain.c 3954}
+163				printf {}
+164			GetYMax {brain.c 3970}
+165				printf {}
+166			Interp {}
+167			Pin {}
+168			AO_VScale {}
+169			dna_TouchARFGraph {dna.c 1258}
+170				free {}
+171	BuildBuffer {brain.c 3054}
+172		CalcResolution {brain.c 1885}
+173			GCF {brain.c 1869}
+174		GCF {brain.c 1869}
+175		dna_SetupBufferDigital {dna.c 1471}
+176			free {}
+177			calloc {}
+178			printf {}
+179		printf {}
+180		UpdateProgressDialog {}
+181		BuildAnalogBuffer {brain.c 2179}
+182			dna_SetupBufferAnalog {dna.c 1529}
+183				printf {}
+184				free {}
+185				calloc {}
+186			printf {}
+187			ValidateChannels {brain.c 2152}
+188				printf {}
+189				MessagePopup {}
+190			MessagePopup {}
+191			PrepFinalValues {brain.c 2118}
+192				Pin {}
+193				AO_VScale {}
+194				printf {}
+195			AddAnalogGroupToBuffer {brain.c 2033}
+196				PrepInterp {brain.c 1825}
+197				printf {}
+198				GetYMin {brain.c 3954}
+199				GetYMax {brain.c 3970}
+200				Interp {}
+201				Pin {}
+202				AO_VScale {}
+203				dna_TouchARFGraph {dna.c 1258}
+204		dna_SetupBufferAnalog {dna.c 1529}
+205			printf {}
+206			free {}
+207			calloc {}
+208		BuildRFBuffer {brain.c 2918}
+209			dna_SetupBufferRF {dna.c 1373}
+210				free {}
+211				dna_InitBufferRF {dna.c 1348}
+212				calloc {}
+213				printf {}
+214			printf {}
+215			mouth_ResetBuffer {mouth.c 232}
+216			AddRFGroupToBuffer {brain.c 2797}
+217				dna_AdvanceStage {dna.c 1432}
+218				printf {}
+219				PrepInterp {brain.c 1825}
+220				MessagePopup {}
+221				AInterp {}
+222				FInterp {}
+223				Pin {}
+224				mouth_AddBufferCommand {mouth.c 152}
+225				dna_TouchARFGraph {dna.c 1258}
+226		dna_SetupBufferRF {dna.c 1373}
+227			free {}
+228			dna_InitBufferRF {dna.c 1348}
+229			calloc {}
+230			printf {}
+231	BuildControls {face.c 1690}
+232		GetCtrlAttribute {}
+233		printf {}
+234		BuildARF {face.c 1613}
+235			BuildInitialAnalog {face.c 1572}
+236				GetCtrlAttribute {}
+237				printf {}
+238				DuplicateCtrl {}
+239				SetCtrlAttribute {}
+240			printf {}
+241			BuilMinMaxAnalog {face.c 1516}
+242				GetCtrlAttribute {}
+243				printf {}
+244				DuplicateCtrl {}
+245				SetCtrlAttribute {}
+246			BuildParams {face.c 1478}
+247				GetCtrlAttribute {}
+248				printf {}
+249				DuplicateCtrl {}
+250				SetCtrlAttribute {}
+251			BuildXYValues {face.c 1433}
+252				SetCtrlVal {}
+253				printf {}
+254				GetCtrlAttribute {}
+255				DuplicateCtrl {}
+256				SetCtrlAttribute {}
+257			BuildGraphs {face.c 1365}
+258				GetCtrlAttribute {}
+259				printf {}
+260				SetCtrlAttribute {}
+261				disableGraph {face.c 259}
+262				DuplicateGraph {face.c 1316}
+263			setArfInterp {face.c 982}
+264				GetGraph {face.c 172}
+265				SetCtrlAttribute {}
+266				printf {}
+267				SetCtrlVal {}
+268				dna_TouchARFGraph {dna.c 1258}
+269			disableXYValues {face.c 1103}
+270				setYValueRange {face.c 1058}
+271				printf {}
+272				SetCtrlVal {}
+273				SetCtrlAttribute {}
+274			SetCtrlAttribute {}
+275			SetCtrlVal {}
+276		SetCtrlAttribute {}
+277		SetCtrlVal {}
+278		DuplicateCtrl {}
+279		calloc {}
+280		disableCluster {face.c 339}
+281			printf {}
+282			GetCtrlVal {}
+283			SetCtrlAttribute {}
+284			SetCtrlVal {}
+285			setDigitalValue {face.c 307}
+286				SetCtrlAttribute {}
+287				printf {}
+288				CanvasDrawRect {}
+289		RectOffset {}
+290		CanvasDrawRect {}
+291		abort {}
+292	BuildGraphs {face.c 1365}
+293		GetCtrlAttribute {}
+294		printf {}
+295		SetCtrlAttribute {}
+296		disableGraph {face.c 259}
+297			SetCtrlAttribute {}
+298			printf {}
+299			DeleteGraphPlot {}
+300			SetCtrlVal {}
+301		DuplicateGraph {face.c 1316}
+302			DuplicateCtrl {}
+303			printf {}
+304			SetCtrlAttribute {}
+305			disableGraph {face.c 259}
+306				SetCtrlAttribute {}
+307				printf {}
+308				DeleteGraphPlot {}
+309				SetCtrlVal {}
+310	BuildInitialAnalog {face.c 1572}
+311		GetCtrlAttribute {}
+312		printf {}
+313		DuplicateCtrl {}
+314		SetCtrlAttribute {}
+315	BuildParams {face.c 1478}
+316		GetCtrlAttribute {}
+317		printf {}
+318		DuplicateCtrl {}
+319		SetCtrlAttribute {}
+320	BuildRFBuffer {brain.c 2918}
+321		dna_SetupBufferRF {dna.c 1373}
+322			free {}
+323			dna_InitBufferRF {dna.c 1348}
+324			calloc {}
+325			printf {}
+326		printf {}
+327		mouth_ResetBuffer {mouth.c 232}
+328		AddRFGroupToBuffer {brain.c 2797}
+329			dna_AdvanceStage {dna.c 1432}
+330			printf {}
+331			PrepInterp {brain.c 1825}
+332				printf {}
+333				dna_TouchARFGraph {dna.c 1258}
+334				dna_CalcXYValuesMinMax {dna.c 951}
+335				SortValues {brain.c 1776}
+336				dna_ScaleGraphValues {dna.c 1009}
+337			MessagePopup {}
+338			AInterp {}
+339			FInterp {}
+340			Pin {}
+341			mouth_AddBufferCommand {mouth.c 152}
+342				Fmt {}
+343				dna_AdvanceBufferRF {dna.c 1402}
+344				printf {}
+345				mouth_AddBufferFreq {mouth.c 200}
+346				mouth_AddBufferAmp {mouth.c 216}
+347			dna_TouchARFGraph {dna.c 1258}
+348				free {}
+349	BuildXYValues {face.c 1433}
+350		SetCtrlVal {}
+351		printf {}
+352		GetCtrlAttribute {}
+353		DuplicateCtrl {}
+354		SetCtrlAttribute {}
+355	CalcResolution {brain.c 1885}
+356		GCF {brain.c 1869}
+357	CameraTriggerQ {face.c 234}
+358		GetCtrlVal {}
+359	CanvasDrawRect {}
+360	CheckForDuplicateAppInstance {}
+361	CheckRunStatus {brain.c 3201}
+362		hand_CheckProgress {hand.c 884}
+363			DIG_Block_Check {}
+364			hand_Error {hand.c 50}
+365				GetNIDAQErrorString {}
+366				Beep {}
+367				Fmt {}
+368				GenericMessagePopup {}
+369				QuitUserInterface {}
+370				DeleteCriticalSection {}
+371				abort {}
+372		printf {}
+373		faceShowProgress {face.c 2573}
+374			UpdateProgressDialog {}
+375		hand_AbortRun {hand.c 899}
+376			GetCurrentThread {}
+377			SetThreadPriority {}
+378			Config_DAQ_Event_Message {}
+379			hand_Error {hand.c 50}
+380				GetNIDAQErrorString {}
+381				Beep {}
+382				Fmt {}
+383				GenericMessagePopup {}
+384				QuitUserInterface {}
+385				DeleteCriticalSection {}
+386				abort {}
+387			DIG_Block_Clear {}
+388			hand_ResetAll {hand.c 135}
+389				Init_DA_Brds {}
+390				hand_Error {hand.c 50}
+391				AO_Configure {}
+392				printf {}
+393		faceEndRunningMode {face.c 2590}
+394			SetCtrlAttribute {}
+395			printf {}
+396			DiscardProgressDialog {}
+397			faceRunDim {face.c 2502}
+398				SetCtrlAttribute {}
+399				printf {}
+400				GetPanelMenuBar {}
+401				SetMenuBarAttribute {}
+402		SetIdleOutput {brain.c 1651}
+403			printf {}
+404			hand_ConfigDIO {hand.c 412}
+405				DIG_Grp_Config {}
+406				hand_Error {hand.c 50}
+407			hand_OutWord {hand.c 773}
+408				hand_ConfigDIO {hand.c 412}
+409				hand_Error {hand.c 50}
+410				DIG_Block_PG_Config {}
+411				DIG_Block_Out {}
+412				DIG_Block_Check {}
+413		RepeatRunQ {face.c 227}
+414			GetCtrlVal {}
+415		DiscardProgressDialog {}
+416		CreateProgressDialog {}
+417		SetPanelAttribute {}
+418		ExecuteRun {brain.c 3397}
+419			printf {}
+420			MessagePopup {}
+421			FirstTime {brain.c 3362}
+422				CreateProgressDialog {}
+423				printf {}
+424				UpdateProgressDialog {}
+425				BuildBuffer {brain.c 3054}
+426			mouth_ResetBuffer {mouth.c 232}
+427			mouth_ZeroDS345 {mouth.c 113}
+428				mouth_MakeIdleCommand {mouth.c 131}
+429				strlen {}
+430				ibwait {}
+431				mouth_Error {mouth.c 42}
+432				printf {}
+433				ibwrta {}
+434			CameraTriggerQ {face.c 234}
+435				GetCtrlVal {}
+436			SetIdleOutput {brain.c 1651}
+437				printf {}
+438				hand_ConfigDIO {hand.c 412}
+439				hand_OutWord {hand.c 773}
+440			WaitForAux {brain.c 3328}
+441				hand_ConfigAuxPorts {hand.c 369}
+442				printf {}
+443				hand_ReadAuxPort {hand.c 394}
+444				faceAuxWaitOn {face.c 2461}
+445				hand_WriteAuxPort {hand.c 383}
+446				ProcessSystemEvents {}
+447				faceAuxWaitStatus {face.c 2477}
+448				faceAuxWaitOff {face.c 2484}
+449			hand_ConfigDigital {hand.c 533}
+450				hand_ConfigDIO {hand.c 412}
+451				hand_Error {hand.c 50}
+452				hand_ConfigPattern {hand.c 484}
+453			UpdateProgressDialog {}
+454			hand_ConfigAnalog {hand.c 568}
+455				hand_ResetAnalog {hand.c 189}
+456				hand_Error {hand.c 50}
+457				WFM_Group_Setup {}
+458				RTSI_Clear {}
+459				RTSI_Conn {}
+460				WFM_ClockRate {}
+461				WFM_Load {}
+462				WFM_Group_Control {}
+463			DiscardProgressDialog {}
+464			faceBeginRunningMode {face.c 2524}
+465				faceRunDim {face.c 2502}
+466				printf {}
+467				CreateProgressDialog {}
+468				SetPanelAttribute {}
+469				SetCtrlAttribute {}
+470				SetCtrlVal {}
+471				DiscardProgressDialog {}
+472			hand_OutBuffer {hand.c 694}
+473				GetTickCount {}
+474				DIG_Block_Out {}
+475				hand_Error {hand.c 50}
+476			GetTickCount {}
+477			SetSleepPolicy {}
+478			GetCurrentProcess {}
+479			SetPriorityClass {}
+480			ProcessSystemEvents {}
+481			faceShowProgress {face.c 2573}
+482				UpdateProgressDialog {}
+483			hand_AbortRun {hand.c 899}
+484				GetCurrentThread {}
+485				SetThreadPriority {}
+486				Config_DAQ_Event_Message {}
+487				hand_Error {hand.c 50}
+488				DIG_Block_Clear {}
+489				hand_ResetAll {hand.c 135}
+490			mouth_OutBufferCommand {mouth.c 247}
+491				printf {}
+492				dna_LengthBufferRF {dna.c 1393}
+493				ibwait {}
+494				ThreadIbsta {}
+495				ibwrta {}
+496				dna_AdvanceRunBufferRF {dna.c 1416}
+497			dna_AdvanceRunStage {dna.c 1441}
+498				printf {}
+499			faceEndRunningMode {face.c 2590}
+500				SetCtrlAttribute {}
+501				printf {}
+502				DiscardProgressDialog {}
+503				faceRunDim {face.c 2502}
+504			Beep {}
+505			mouth_InitRF {mouth.c 28}
+506				ibdev {}
+507				mouth_Error {mouth.c 42}
+508				printf {}
+509		hand_RunOver {hand.c 937}
+510			Config_DAQ_Event_Message {}
+511			hand_Error {hand.c 50}
+512				GetNIDAQErrorString {}
+513				Beep {}
+514				Fmt {}
+515				GenericMessagePopup {}
+516				QuitUserInterface {}
+517				DeleteCriticalSection {}
+518				abort {}
+519			DIG_Block_PG_Config {}
+520	ClearListCtrl {}
+521	CommentText {face.c 4404}
+522		GetCtrlAttribute {}
+523		SetCtrlAttribute {}
+524		printf {}
+525		Beep {}
+526	Config_DAQ_Event_Message {}
+527	ConfirmPopup {}
+528	CreateProgressDialog {}
+529	CurrThreadId {}
+530	DDE_Serve {dde.c 29}
+531		strlen {}
+532		printf {}
+533		strncmp {}
+534		free {}
+535		StrDup {}
+536		PostDeferredCall {}
+537	DIG_Block_Check {}
+538	DIG_Block_Clear {}
+539	DIG_Block_Out {}
+540	DIG_Block_PG_Config {}
+541	DIG_Grp_Config {}
+542	DIG_In_Line {}
+543	DIG_Out_Line {}
+544	DIG_Prt_Config {}
+545	DateStr {}
+546	DeleteCriticalSection {}
+547	DeleteGraphPlot {}
+548	DiscardProgressDialog {}
+549	DisplayPanel {}
+550	DuplicateCtrl {}
+551	DuplicateGraph {face.c 1316}
+552		DuplicateCtrl {}
+553		printf {}
+554		SetCtrlAttribute {}
+555		disableGraph {face.c 259}
+556			SetCtrlAttribute {}
+557			printf {}
+558			DeleteGraphPlot {}
+559			SetCtrlVal {}
+560	EditLabelMsg {face.c 1949}
+561		GetCtrlAttribute {}
+562		printf {}
+563		calloc {}
+564		GenericMessagePopup {}
+565		SetCtrlAttribute {}
+566		free {}
+567	EditTextMsg {face.c 1915}
+568		GetCtrlAttribute {}
+569		printf {}
+570		calloc {}
+571		GetCtrlVal {}
+572		GenericMessagePopup {}
+573		SetCtrlVal {}
+574		free {}
+575	ExecuteRun {brain.c 3397}
+576		printf {}
+577		MessagePopup {}
+578		FirstTime {brain.c 3362}
+579			CreateProgressDialog {}
+580			printf {}
+581			UpdateProgressDialog {}
+582			BuildBuffer {brain.c 3054}
+583				CalcResolution {brain.c 1885}
+584				GCF {brain.c 1869}
+585				dna_SetupBufferDigital {dna.c 1471}
+586				printf {}
+587				UpdateProgressDialog {}
+588				BuildAnalogBuffer {brain.c 2179}
+589				dna_SetupBufferAnalog {dna.c 1529}
+590				BuildRFBuffer {brain.c 2918}
+591				dna_SetupBufferRF {dna.c 1373}
+592		mouth_ResetBuffer {mouth.c 232}
+593		mouth_ZeroDS345 {mouth.c 113}
+594			mouth_MakeIdleCommand {mouth.c 131}
+595				FillBytes {}
+596				Fmt {}
+597				StrDup {}
+598			strlen {}
+599			ibwait {}
+600			mouth_Error {mouth.c 42}
+601				Beep {}
+602				MessagePopup {}
+603				Breakpoint {}
+604				abort {}
+605				ThreadIbsta {}
+606				ThreadIberr {}
+607				ThreadIbcntl {}
+608				Fmt {}
+609			printf {}
+610			ibwrta {}
+611		CameraTriggerQ {face.c 234}
+612			GetCtrlVal {}
+613		SetIdleOutput {brain.c 1651}
+614			printf {}
+615			hand_ConfigDIO {hand.c 412}
+616				DIG_Grp_Config {}
+617				hand_Error {hand.c 50}
+618			hand_OutWord {hand.c 773}
+619				hand_ConfigDIO {hand.c 412}
+620				hand_Error {hand.c 50}
+621				DIG_Block_PG_Config {}
+622				DIG_Block_Out {}
+623				DIG_Block_Check {}
+624		WaitForAux {brain.c 3328}
+625			hand_ConfigAuxPorts {hand.c 369}
+626				DIG_Prt_Config {}
+627				hand_Error {hand.c 50}
+628			printf {}
+629			hand_ReadAuxPort {hand.c 394}
+630				printf {}
+631				DIG_In_Line {}
+632				hand_Error {hand.c 50}
+633			faceAuxWaitOn {face.c 2461}
+634				Fmt {}
+635				printf {}
+636				SetCtrlVal {}
+637				InstallPopup {}
+638			hand_WriteAuxPort {hand.c 383}
+639				printf {}
+640				DIG_Out_Line {}
+641				hand_Error {hand.c 50}
+642			ProcessSystemEvents {}
+643			faceAuxWaitStatus {face.c 2477}
+644			faceAuxWaitOff {face.c 2484}
+645				printf {}
+646				RemovePopup {}
+647		hand_ConfigDigital {hand.c 533}
+648			hand_ConfigDIO {hand.c 412}
+649				DIG_Grp_Config {}
+650				hand_Error {hand.c 50}
+651			hand_Error {hand.c 50}
+652				GetNIDAQErrorString {}
+653				Beep {}
+654				Fmt {}
+655				GenericMessagePopup {}
+656				QuitUserInterface {}
+657				DeleteCriticalSection {}
+658				abort {}
+659			hand_ConfigPattern {hand.c 484}
+660				hand_Error {hand.c 50}
+661				DIG_Block_PG_Config {}
+662		UpdateProgressDialog {}
+663		hand_ConfigAnalog {hand.c 568}
+664			hand_ResetAnalog {hand.c 189}
+665				Init_DA_Brds {}
+666				hand_Error {hand.c 50}
+667				AO_Configure {}
+668				printf {}
+669			hand_Error {hand.c 50}
+670				GetNIDAQErrorString {}
+671				Beep {}
+672				Fmt {}
+673				GenericMessagePopup {}
+674				QuitUserInterface {}
+675				DeleteCriticalSection {}
+676				abort {}
+677			WFM_Group_Setup {}
+678			RTSI_Clear {}
+679			RTSI_Conn {}
+680			WFM_ClockRate {}
+681			WFM_Load {}
+682			WFM_Group_Control {}
+683		DiscardProgressDialog {}
+684		faceBeginRunningMode {face.c 2524}
+685			faceRunDim {face.c 2502}
+686				SetCtrlAttribute {}
+687				printf {}
+688				GetPanelMenuBar {}
+689				SetMenuBarAttribute {}
+690			printf {}
+691			CreateProgressDialog {}
+692			SetPanelAttribute {}
+693			SetCtrlAttribute {}
+694			SetCtrlVal {}
+695			DiscardProgressDialog {}
+696		hand_OutBuffer {hand.c 694}
+697			GetTickCount {}
+698			DIG_Block_Out {}
+699			hand_Error {hand.c 50}
+700				GetNIDAQErrorString {}
+701				Beep {}
+702				Fmt {}
+703				GenericMessagePopup {}
+704				QuitUserInterface {}
+705				DeleteCriticalSection {}
+706				abort {}
+707		GetTickCount {}
+708		SetSleepPolicy {}
+709		GetCurrentProcess {}
+710		SetPriorityClass {}
+711		ProcessSystemEvents {}
+712		faceShowProgress {face.c 2573}
+713			UpdateProgressDialog {}
+714		hand_AbortRun {hand.c 899}
+715			GetCurrentThread {}
+716			SetThreadPriority {}
+717			Config_DAQ_Event_Message {}
+718			hand_Error {hand.c 50}
+719				GetNIDAQErrorString {}
+720				Beep {}
+721				Fmt {}
+722				GenericMessagePopup {}
+723				QuitUserInterface {}
+724				DeleteCriticalSection {}
+725				abort {}
+726			DIG_Block_Clear {}
+727			hand_ResetAll {hand.c 135}
+728				Init_DA_Brds {}
+729				hand_Error {hand.c 50}
+730				AO_Configure {}
+731				printf {}
+732		mouth_OutBufferCommand {mouth.c 247}
+733			printf {}
+734			dna_LengthBufferRF {dna.c 1393}
+735				StringLength {}
+736			ibwait {}
+737			ThreadIbsta {}
+738			ibwrta {}
+739			dna_AdvanceRunBufferRF {dna.c 1416}
+740				printf {}
+741				dna_LengthBufferRF {dna.c 1393}
+742		dna_AdvanceRunStage {dna.c 1441}
+743			printf {}
+744		faceEndRunningMode {face.c 2590}
+745			SetCtrlAttribute {}
+746			printf {}
+747			DiscardProgressDialog {}
+748			faceRunDim {face.c 2502}
+749				SetCtrlAttribute {}
+750				printf {}
+751				GetPanelMenuBar {}
+752				SetMenuBarAttribute {}
+753		Beep {}
+754		mouth_InitRF {mouth.c 28}
+755			ibdev {}
+756			mouth_Error {mouth.c 42}
+757				Beep {}
+758				MessagePopup {}
+759				Breakpoint {}
+760				abort {}
+761				ThreadIbsta {}
+762				ThreadIberr {}
+763				ThreadIbcntl {}
+764				Fmt {}
+765			printf {}
+766	FInterp {}
+767	FileSelectPopup {}
+768	FillBytes {}
+769	FilterIndex {memory.c 518}
+770		Scan {}
+771	FirstTime {brain.c 3362}
+772		CreateProgressDialog {}
+773		printf {}
+774		UpdateProgressDialog {}
+775		BuildBuffer {brain.c 3054}
+776			CalcResolution {brain.c 1885}
+777				GCF {brain.c 1869}
+778			GCF {brain.c 1869}
+779			dna_SetupBufferDigital {dna.c 1471}
+780				free {}
+781				calloc {}
+782				printf {}
+783			printf {}
+784			UpdateProgressDialog {}
+785			BuildAnalogBuffer {brain.c 2179}
+786				dna_SetupBufferAnalog {dna.c 1529}
+787				printf {}
+788				ValidateChannels {brain.c 2152}
+789				MessagePopup {}
+790				PrepFinalValues {brain.c 2118}
+791				AddAnalogGroupToBuffer {brain.c 2033}
+792			dna_SetupBufferAnalog {dna.c 1529}
+793				printf {}
+794				free {}
+795				calloc {}
+796			BuildRFBuffer {brain.c 2918}
+797				dna_SetupBufferRF {dna.c 1373}
+798				printf {}
+799				mouth_ResetBuffer {mouth.c 232}
+800				AddRFGroupToBuffer {brain.c 2797}
+801			dna_SetupBufferRF {dna.c 1373}
+802				free {}
+803				dna_InitBufferRF {dna.c 1348}
+804				calloc {}
+805				printf {}
+806	Fmt {}
+807	GCF {brain.c 1869}
+808	GenericMessagePopup {}
+809	GetCluster {face.c 101}
+810	GetClusterIndex {face.c 202}
+811		printf {}
+812		GetCtrlVal {}
+813	GetCtrlAttribute {}
+814	GetCtrlVal {}
+815	GetCurrentProcess {}
+816	GetCurrentThread {}
+817	GetDoubleFillNumber {brain.c 159}
+818		TruncateRealNumber {}
+819	GetEnabledQ {face.c 186}
+820		GetGroupArray {face.c 136}
+821	GetGraph {face.c 172}
+822		GetGroup {face.c 153}
+823			ValidGroup {face.c 114}
+824	GetGroup {face.c 153}
+825		ValidGroup {face.c 114}
+826	GetGroupArray {face.c 136}
+827	GetIntFillNumber {brain.c 147}
+828		TruncateRealNumber {}
+829	GetNIDAQErrorString {}
+830	GetPanelMenuBar {}
+831	GetRangeMax {brain.c 3943}
+832		printf {}
+833	GetRangeMin {brain.c 3932}
+834		printf {}
+835	GetThreadPriority {}
+836	GetTickCount {}
+837	GetYMax {brain.c 3970}
+838		printf {}
+839	GetYMin {brain.c 3954}
+840		printf {}
+841	Get_Aux {memory.c 80}
+842		dna_ResetAuxInfo {dna.c 1665}
+843			free {}
+844			StrDup {}
+845			printf {}
+846		printf {}
+847		Fmt {}
+848		Ini_GetInt {}
+849		free {}
+850		Ini_GetStringCopy {}
+851		Ini_ItemExists {}
+852		Ini_GetDouble {}
+853	Get_Cluster {memory.c 175}
+854		Fmt {}
+855		printf {}
+856		Ini_GetStringCopy {}
+857		strlen {}
+858		Ini_GetInt {}
+859		Ini_GetBoolean {}
+860		Ini_GetData {}
+861	Get_ClusterArray {memory.c 223}
+862		Fmt {}
+863		printf {}
+864		Ini_GetInt {}
+865		dna_ReInitClusterArray {dna.c 65}
+866			printf {}
+867			free {}
+868			dna_ReInitCluster {dna.c 282}
+869				free {}
+870				calloc {}
+871				printf {}
+872				realloc {}
+873			dna_InitClusterArray {dna.c 37}
+874				calloc {}
+875				printf {}
+876				dna_InitCluster {dna.c 252}
+877			realloc {}
+878			dna_InitCluster {dna.c 252}
+879				calloc {}
+880				printf {}
+881			calloc {}
+882		Ini_GetStringCopy {}
+883		strlen {}
+884		Get_Cluster {memory.c 175}
+885			Fmt {}
+886			printf {}
+887			Ini_GetStringCopy {}
+888			strlen {}
+889			Ini_GetInt {}
+890			Ini_GetBoolean {}
+891			Ini_GetData {}
+892	Get_Graph {memory.c 276}
+893		Fmt {}
+894		printf {}
+895		Ini_GetInt {}
+896		Ini_GetDouble {}
+897		Ini_ItemExists {}
+898		Ini_GetData {}
+899	Get_Group {memory.c 352}
+900		Fmt {}
+901		printf {}
+902		Ini_GetStringCopy {}
+903		strlen {}
+904		Ini_GetInt {}
+905		Get_Graph {memory.c 276}
+906			Fmt {}
+907			printf {}
+908			Ini_GetInt {}
+909			Ini_GetDouble {}
+910			Ini_ItemExists {}
+911			Ini_GetData {}
+912	Get_GroupArray {memory.c 408}
+913		Fmt {}
+914		printf {}
+915		Ini_GetInt {}
+916		dna_ReInitARFGroupArray {dna.c 456}
+917			free {}
+918			dna_ReInitGroup {dna.c 703}
+919				free {}
+920				strlen {}
+921				StrDup {}
+922				dna_ReInitARFGraph {dna.c 1131}
+923				printf {}
+924				calloc {}
+925				dna_InitARFGraph {dna.c 1092}
+926				realloc {}
+927			calloc {}
+928			printf {}
+929			dna_InitGroup {dna.c 662}
+930				strlen {}
+931				calloc {}
+932				printf {}
+933				dna_InitARFGraph {dna.c 1092}
+934			realloc {}
+935		free {}
+936		Ini_GetData {}
+937		Ini_GetStringCopy {}
+938		strlen {}
+939		Get_Group {memory.c 352}
+940			Fmt {}
+941			printf {}
+942			Ini_GetStringCopy {}
+943			strlen {}
+944			Ini_GetInt {}
+945			Get_Graph {memory.c 276}
+946				Fmt {}
+947				printf {}
+948				Ini_GetInt {}
+949				Ini_GetDouble {}
+950				Ini_ItemExists {}
+951				Ini_GetData {}
+952	Get_InitIdle {memory.c 468}
+953		Fmt {}
+954		printf {}
+955		Ini_GetInt {}
+956		Ini_GetData {}
+957		Ini_GetDouble {}
+958	IdleWordCommand {face.c 5548}
+959		SetIdleOutput {brain.c 1651}
+960			printf {}
+961			hand_ConfigDIO {hand.c 412}
+962				DIG_Grp_Config {}
+963				hand_Error {hand.c 50}
+964			hand_OutWord {hand.c 773}
+965				hand_ConfigDIO {hand.c 412}
+966				hand_Error {hand.c 50}
+967				DIG_Block_PG_Config {}
+968				DIG_Block_Out {}
+969				DIG_Block_Check {}
+970		printf {}
+971		Beep {}
+972	IdleZeroCommand {face.c 5528}
+973		SetIdleOutput {brain.c 1651}
+974			printf {}
+975			hand_ConfigDIO {hand.c 412}
+976				DIG_Grp_Config {}
+977				hand_Error {hand.c 50}
+978			hand_OutWord {hand.c 773}
+979				hand_ConfigDIO {hand.c 412}
+980				hand_Error {hand.c 50}
+981				DIG_Block_PG_Config {}
+982				DIG_Block_Out {}
+983				DIG_Block_Check {}
+984		printf {}
+985		Beep {}
+986	Ini_Dispose {}
+987	Ini_GetBoolean {}
+988	Ini_GetData {}
+989	Ini_GetDouble {}
+990	Ini_GetInt {}
+991	Ini_GetStringCopy {}
+992	Ini_ItemExists {}
+993	Ini_New {}
+994	Ini_PutBoolean {}
+995	Ini_PutData {}
+996	Ini_PutDouble {}
+997	Ini_PutInt {}
+998	Ini_PutString {}
+999	Ini_ReadFromFile {}
+1000	Ini_Sort {}
+1001	Ini_WriteToFile {}
+1002	InitCVIRTE {}
+1003	Init_DA_Brds {}
+1004	InsertListItem {}
+1005	InstallPopup {}
+1006	Interp {}
+1007	Load {memory.c 551}
+1008		Ini_New {}
+1009		printf {}
+1010		Ini_ReadFromFile {}
+1011		Ini_Sort {}
+1012		Get_Aux {memory.c 80}
+1013			dna_ResetAuxInfo {dna.c 1665}
+1014				free {}
+1015				StrDup {}
+1016				printf {}
+1017			printf {}
+1018			Fmt {}
+1019			Ini_GetInt {}
+1020			free {}
+1021			Ini_GetStringCopy {}
+1022			Ini_ItemExists {}
+1023			Ini_GetDouble {}
+1024		Get_InitIdle {memory.c 468}
+1025			Fmt {}
+1026			printf {}
+1027			Ini_GetInt {}
+1028			Ini_GetData {}
+1029			Ini_GetDouble {}
+1030		Get_ClusterArray {memory.c 223}
+1031			Fmt {}
+1032			printf {}
+1033			Ini_GetInt {}
+1034			dna_ReInitClusterArray {dna.c 65}
+1035				printf {}
+1036				free {}
+1037				dna_ReInitCluster {dna.c 282}
+1038				dna_InitClusterArray {dna.c 37}
+1039				realloc {}
+1040				dna_InitCluster {dna.c 252}
+1041				calloc {}
+1042			Ini_GetStringCopy {}
+1043			strlen {}
+1044			Get_Cluster {memory.c 175}
+1045				Fmt {}
+1046				printf {}
+1047				Ini_GetStringCopy {}
+1048				strlen {}
+1049				Ini_GetInt {}
+1050				Ini_GetBoolean {}
+1051				Ini_GetData {}
+1052		Get_GroupArray {memory.c 408}
+1053			Fmt {}
+1054			printf {}
+1055			Ini_GetInt {}
+1056			dna_ReInitARFGroupArray {dna.c 456}
+1057				free {}
+1058				dna_ReInitGroup {dna.c 703}
+1059				calloc {}
+1060				printf {}
+1061				dna_InitGroup {dna.c 662}
+1062				realloc {}
+1063			free {}
+1064			Ini_GetData {}
+1065			Ini_GetStringCopy {}
+1066			strlen {}
+1067			Get_Group {memory.c 352}
+1068				Fmt {}
+1069				printf {}
+1070				Ini_GetStringCopy {}
+1071				strlen {}
+1072				Ini_GetInt {}
+1073				Get_Graph {memory.c 276}
+1074		SetARFRanges {memory.c 532}
+1075		Ini_Dispose {}
+1076	LoadIni {brain.c 4002}
+1077		Load {memory.c 551}
+1078			Ini_New {}
+1079			printf {}
+1080			Ini_ReadFromFile {}
+1081			Ini_Sort {}
+1082			Get_Aux {memory.c 80}
+1083				dna_ResetAuxInfo {dna.c 1665}
+1084				printf {}
+1085				Fmt {}
+1086				Ini_GetInt {}
+1087				free {}
+1088				Ini_GetStringCopy {}
+1089				Ini_ItemExists {}
+1090				Ini_GetDouble {}
+1091			Get_InitIdle {memory.c 468}
+1092				Fmt {}
+1093				printf {}
+1094				Ini_GetInt {}
+1095				Ini_GetData {}
+1096				Ini_GetDouble {}
+1097			Get_ClusterArray {memory.c 223}
+1098				Fmt {}
+1099				printf {}
+1100				Ini_GetInt {}
+1101				dna_ReInitClusterArray {dna.c 65}
+1102				Ini_GetStringCopy {}
+1103				strlen {}
+1104				Get_Cluster {memory.c 175}
+1105			Get_GroupArray {memory.c 408}
+1106				Fmt {}
+1107				printf {}
+1108				Ini_GetInt {}
+1109				dna_ReInitARFGroupArray {dna.c 456}
+1110				free {}
+1111				Ini_GetData {}
+1112				Ini_GetStringCopy {}
+1113				strlen {}
+1114				Get_Group {memory.c 352}
+1115			SetARFRanges {memory.c 532}
+1116			Ini_Dispose {}
+1117		printf {}
+1118	LoadMenuBar {}
+1119	LoadPanel {}
+1120	MakeInterp {brain.c 1084}
+1121		printf {}
+1122		dna_TouchARFGraph {dna.c 1258}
+1123			free {}
+1124		dna_CalcXYValuesMinMax {dna.c 951}
+1125			printf {}
+1126		SortValues {brain.c 1776}
+1127			printf {}
+1128		dna_ScaleGraphValues {dna.c 1009}
+1129			free {}
+1130			calloc {}
+1131			printf {}
+1132		free {}
+1133		calloc {}
+1134	MessagePopup {}
+1135	MsgOpenIt {face.c 4789}
+1136		OpenIt {face.c 4748}
+1137			LoadIni {brain.c 4002}
+1138				Load {memory.c 551}
+1139				printf {}
+1140			printf {}
+1141			SetCtrlVal {}
+1142			ResetTextBox {}
+1143			faceInvalidatePointers {face.c 2431}
+1144				printf {}
+1145			faceSetNumberOfLines {face.c 2049}
+1146				SetCtrlAttribute {}
+1147				printf {}
+1148				SetCtrlVal {}
+1149				SetIdle {brain.c 1678}
+1150			faceSetNumberOfClusters {face.c 2080}
+1151				SetCtrlAttribute {}
+1152				printf {}
+1153				changedGlobalOffset {face.c 496}
+1154			faceSetOutputLabels {face.c 2148}
+1155				Fmt {}
+1156				printf {}
+1157				dna_SetOutputLabel {dna.c 141}
+1158				SetCtrlVal {}
+1159			faceSetNumberOfRFGroups {face.c 2231}
+1160				GetGroupArray {face.c 136}
+1161				printf {}
+1162				SetCtrlAttribute {}
+1163				changedRFIndex {face.c 839}
+1164			faceSetNumberOfAGroups {face.c 2177}
+1165				GetGroupArray {face.c 136}
+1166				printf {}
+1167				SetCtrlAttribute {}
+1168				changedAnalogIndex {face.c 719}
+1169			faceSetIdleValues {face.c 2274}
+1170				SetCtrlVal {}
+1171				printf {}
+1172			faceSetInitAnalog {face.c 2295}
+1173				SetCtrlVal {}
+1174				printf {}
+1175			faceLoadAuxillaryInfo {face.c 2395}
+1176				SetCtrlVal {}
+1177				printf {}
+1178				changedGlobalOffset {face.c 496}
+1179				changedAnalogIndex {face.c 719}
+1180				changedRFIndex {face.c 839}
+1181				changedGraphSelection {face.c 1236}
+1182				faceSetARFRanges {face.c 2338}
+1183				setYValueRange {face.c 1058}
+1184			SetPanelAttribute {}
+1185		Beep {}
+1186	MsgSaveIt {face.c 4797}
+1187		SaveIt {face.c 4626}
+1188			StrDup {}
+1189			printf {}
+1190			SaveIni {brain.c 3989}
+1191				faceSaveAuxillaryInfo {face.c 2307}
+1192				printf {}
+1193				DateStr {}
+1194				TimeStr {}
+1195				Save {memory.c 501}
+1196			SetCtrlVal {}
+1197			AppendString {}
+1198			SetPanelAttribute {}
+1199			free {}
+1200		Beep {}
+1201	NOGPIBEndCallback {brain.c 3809}
+1202		hand_RunOver {hand.c 937}
+1203			Config_DAQ_Event_Message {}
+1204			hand_Error {hand.c 50}
+1205				GetNIDAQErrorString {}
+1206				Beep {}
+1207				Fmt {}
+1208				GenericMessagePopup {}
+1209				QuitUserInterface {}
+1210				DeleteCriticalSection {}
+1211				abort {}
+1212			DIG_Block_PG_Config {}
+1213		printf {}
+1214		faceEndRunningMode {face.c 2590}
+1215			SetCtrlAttribute {}
+1216			printf {}
+1217			DiscardProgressDialog {}
+1218			faceRunDim {face.c 2502}
+1219				SetCtrlAttribute {}
+1220				printf {}
+1221				GetPanelMenuBar {}
+1222				SetMenuBarAttribute {}
+1223		Beep {}
+1224	OldSetIdleOutput {brain.c 1624}
+1225		printf {}
+1226		hand_ConfigDIOPorts {hand.c 218}
+1227			DIG_Grp_Config {}
+1228			DIG_Prt_Config {}
+1229			hand_Error {hand.c 50}
+1230				GetNIDAQErrorString {}
+1231				Beep {}
+1232				Fmt {}
+1233				GenericMessagePopup {}
+1234				QuitUserInterface {}
+1235				DeleteCriticalSection {}
+1236				abort {}
+1237		hand_SetLine {hand.c 314}
+1238			DIG_Out_Line {}
+1239			hand_Error {hand.c 50}
+1240				GetNIDAQErrorString {}
+1241				Beep {}
+1242				Fmt {}
+1243				GenericMessagePopup {}
+1244				QuitUserInterface {}
+1245				DeleteCriticalSection {}
+1246				abort {}
+1247	OpenIt {face.c 4748}
+1248		LoadIni {brain.c 4002}
+1249			Load {memory.c 551}
+1250				Ini_New {}
+1251				printf {}
+1252				Ini_ReadFromFile {}
+1253				Ini_Sort {}
+1254				Get_Aux {memory.c 80}
+1255				Get_InitIdle {memory.c 468}
+1256				Get_ClusterArray {memory.c 223}
+1257				Get_GroupArray {memory.c 408}
+1258				SetARFRanges {memory.c 532}
+1259				Ini_Dispose {}
+1260			printf {}
+1261		printf {}
+1262		SetCtrlVal {}
+1263		ResetTextBox {}
+1264		faceInvalidatePointers {face.c 2431}
+1265			printf {}
+1266		faceSetNumberOfLines {face.c 2049}
+1267			SetCtrlAttribute {}
+1268			printf {}
+1269			SetCtrlVal {}
+1270			SetIdle {brain.c 1678}
+1271				MessagePopup {}
+1272				printf {}
+1273		faceSetNumberOfClusters {face.c 2080}
+1274			SetCtrlAttribute {}
+1275			printf {}
+1276			changedGlobalOffset {face.c 496}
+1277				SetCtrlVal {}
+1278				printf {}
+1279				GetCluster {face.c 101}
+1280				loadCluster {face.c 399}
+1281				disableCluster {face.c 339}
+1282		faceSetOutputLabels {face.c 2148}
+1283			Fmt {}
+1284			printf {}
+1285			dna_SetOutputLabel {dna.c 141}
+1286				free {}
+1287				StrDup {}
+1288				printf {}
+1289				strlen {}
+1290			SetCtrlVal {}
+1291		faceSetNumberOfRFGroups {face.c 2231}
+1292			GetGroupArray {face.c 136}
+1293			printf {}
+1294			SetCtrlAttribute {}
+1295			changedRFIndex {face.c 839}
+1296				changedGraphSelection {face.c 1236}
+1297				ValidGroup {face.c 114}
+1298				GetGraph {face.c 172}
+1299				dna_TouchARFGraph {dna.c 1258}
+1300				printf {}
+1301				SetCtrlVal {}
+1302				SetCtrlAttribute {}
+1303				disableGraph {face.c 259}
+1304				GetGroupArray {face.c 136}
+1305				Fmt {}
+1306				dna_SetGroupLabel {dna.c 863}
+1307				enableGraph {face.c 581}
+1308		faceSetNumberOfAGroups {face.c 2177}
+1309			GetGroupArray {face.c 136}
+1310			printf {}
+1311			SetCtrlAttribute {}
+1312			changedAnalogIndex {face.c 719}
+1313				changedGraphSelection {face.c 1236}
+1314				ValidGroup {face.c 114}
+1315				GetGraph {face.c 172}
+1316				dna_TouchARFGraph {dna.c 1258}
+1317				printf {}
+1318				SetCtrlVal {}
+1319				SetCtrlAttribute {}
+1320				disableGraph {face.c 259}
+1321				GetGroupArray {face.c 136}
+1322				Fmt {}
+1323				dna_SetGroupLabel {dna.c 863}
+1324				enableGraph {face.c 581}
+1325		faceSetIdleValues {face.c 2274}
+1326			SetCtrlVal {}
+1327			printf {}
+1328		faceSetInitAnalog {face.c 2295}
+1329			SetCtrlVal {}
+1330			printf {}
+1331		faceLoadAuxillaryInfo {face.c 2395}
+1332			SetCtrlVal {}
+1333			printf {}
+1334			changedGlobalOffset {face.c 496}
+1335				SetCtrlVal {}
+1336				printf {}
+1337				GetCluster {face.c 101}
+1338				loadCluster {face.c 399}
+1339				disableCluster {face.c 339}
+1340			changedAnalogIndex {face.c 719}
+1341				changedGraphSelection {face.c 1236}
+1342				ValidGroup {face.c 114}
+1343				GetGraph {face.c 172}
+1344				dna_TouchARFGraph {dna.c 1258}
+1345				printf {}
+1346				SetCtrlVal {}
+1347				SetCtrlAttribute {}
+1348				disableGraph {face.c 259}
+1349				GetGroupArray {face.c 136}
+1350				Fmt {}
+1351				dna_SetGroupLabel {dna.c 863}
+1352				enableGraph {face.c 581}
+1353			changedRFIndex {face.c 839}
+1354				changedGraphSelection {face.c 1236}
+1355				ValidGroup {face.c 114}
+1356				GetGraph {face.c 172}
+1357				dna_TouchARFGraph {dna.c 1258}
+1358				printf {}
+1359				SetCtrlVal {}
+1360				SetCtrlAttribute {}
+1361				disableGraph {face.c 259}
+1362				GetGroupArray {face.c 136}
+1363				Fmt {}
+1364				dna_SetGroupLabel {dna.c 863}
+1365				enableGraph {face.c 581}
+1366			changedGraphSelection {face.c 1236}
+1367				GetEnabledQ {face.c 186}
+1368				ValidGroup {face.c 114}
+1369				GetGraph {face.c 172}
+1370				dna_TouchARFGraph {dna.c 1258}
+1371				printf {}
+1372				enableGraph {face.c 581}
+1373				DeleteGraphPlot {}
+1374				SetCtrlVal {}
+1375				SetCtrlAttribute {}
+1376				setArfInterp {face.c 982}
+1377				disableXYValues {face.c 1103}
+1378				enableXYValues {face.c 1137}
+1379			faceSetARFRanges {face.c 2338}
+1380				printf {}
+1381				SetCtrlAttribute {}
+1382				GetCtrlVal {}
+1383				Pin {}
+1384				SetCtrlVal {}
+1385			setYValueRange {face.c 1058}
+1386				PinValuesQ {face.c 220}
+1387				ValidGroup {face.c 114}
+1388				GetGraph {face.c 172}
+1389				printf {}
+1390				GetYMin {brain.c 3954}
+1391				GetYMax {brain.c 3970}
+1392				fabs {}
+1393				RoundRealToNearestInteger {}
+1394				SetCtrlAttribute {}
+1395		SetPanelAttribute {}
+1396	Pin {}
+1397	PinValuesQ {face.c 220}
+1398		GetCtrlVal {}
+1399	PlotXY {}
+1400	PolyInterp {}
+1401	PostDeferredCall {}
+1402	PrepFinalValues {brain.c 2118}
+1403		Pin {}
+1404		AO_VScale {}
+1405		printf {}
+1406	PrepInterp {brain.c 1825}
+1407		printf {}
+1408		dna_TouchARFGraph {dna.c 1258}
+1409			free {}
+1410		dna_CalcXYValuesMinMax {dna.c 951}
+1411			printf {}
+1412		SortValues {brain.c 1776}
+1413			printf {}
+1414		dna_ScaleGraphValues {dna.c 1009}
+1415			free {}
+1416			calloc {}
+1417			printf {}
+1418	PrintPanel {}
+1419	ProcessSystemEvents {}
+1420	Put_Aux {memory.c 31}
+1421		Fmt {}
+1422		printf {}
+1423		Ini_PutInt {}
+1424		Ini_PutString {}
+1425		Ini_PutDouble {}
+1426	Put_Cluster {memory.c 153}
+1427		Fmt {}
+1428		printf {}
+1429		Ini_PutString {}
+1430		Ini_PutInt {}
+1431		Ini_PutBoolean {}
+1432		Ini_PutData {}
+1433	Put_ClusterArray {memory.c 202}
+1434		Fmt {}
+1435		printf {}
+1436		Ini_PutInt {}
+1437		Ini_PutString {}
+1438		Put_Cluster {memory.c 153}
+1439			Fmt {}
+1440			printf {}
+1441			Ini_PutString {}
+1442			Ini_PutInt {}
+1443			Ini_PutBoolean {}
+1444			Ini_PutData {}
+1445	Put_Graph {memory.c 247}
+1446		Fmt {}
+1447		printf {}
+1448		Ini_PutInt {}
+1449		Ini_PutDouble {}
+1450		Ini_PutData {}
+1451	Put_Group {memory.c 333}
+1452		Fmt {}
+1453		printf {}
+1454		Ini_PutString {}
+1455		Ini_PutInt {}
+1456		Put_Graph {memory.c 247}
+1457			Fmt {}
+1458			printf {}
+1459			Ini_PutInt {}
+1460			Ini_PutDouble {}
+1461			Ini_PutData {}
+1462	Put_GroupArray {memory.c 382}
+1463		Fmt {}
+1464		printf {}
+1465		Ini_PutInt {}
+1466		Ini_PutData {}
+1467		Ini_PutString {}
+1468		Put_Group {memory.c 333}
+1469			Fmt {}
+1470			printf {}
+1471			Ini_PutString {}
+1472			Ini_PutInt {}
+1473			Put_Graph {memory.c 247}
+1474				Fmt {}
+1475				printf {}
+1476				Ini_PutInt {}
+1477				Ini_PutDouble {}
+1478				Ini_PutData {}
+1479	Put_InitIdle {memory.c 449}
+1480		Fmt {}
+1481		printf {}
+1482		Ini_PutInt {}
+1483		Ini_PutData {}
+1484		Ini_PutDouble {}
+1485	QuitUserInterface {}
+1486	RFTimer {brain.c 3666}
+1487		mouth_OutBufferCommand {mouth.c 247}
+1488			printf {}
+1489			dna_LengthBufferRF {dna.c 1393}
+1490				StringLength {}
+1491			ibwait {}
+1492			ThreadIbsta {}
+1493			ibwrta {}
+1494			dna_AdvanceRunBufferRF {dna.c 1416}
+1495				printf {}
+1496				dna_LengthBufferRF {dna.c 1393}
+1497		printf {}
+1498		SetCtrlAttribute {}
+1499		Beep {}
+1500	RTSI_Clear {}
+1501	RTSI_Conn {}
+1502	RatInterp {}
+1503	RectOffset {}
+1504	RefreshGraph {}
+1505	RegisterDDEServer {}
+1506	RemovePopup {}
+1507	RepeatRunQ {face.c 227}
+1508		GetCtrlVal {}
+1509	ResetTextBox {}
+1510	RoundRealToNearestInteger {}
+1511	RunAgain {brain.c 3184}
+1512		hand_ConfigAnalog {hand.c 568}
+1513			hand_ResetAnalog {hand.c 189}
+1514				Init_DA_Brds {}
+1515				hand_Error {hand.c 50}
+1516				AO_Configure {}
+1517				printf {}
+1518			hand_Error {hand.c 50}
+1519				GetNIDAQErrorString {}
+1520				Beep {}
+1521				Fmt {}
+1522				GenericMessagePopup {}
+1523				QuitUserInterface {}
+1524				DeleteCriticalSection {}
+1525				abort {}
+1526			WFM_Group_Setup {}
+1527			RTSI_Clear {}
+1528			RTSI_Conn {}
+1529			WFM_ClockRate {}
+1530			WFM_Load {}
+1531			WFM_Group_Control {}
+1532		printf {}
+1533		hand_OutBuffer {hand.c 694}
+1534			GetTickCount {}
+1535			DIG_Block_Out {}
+1536			hand_Error {hand.c 50}
+1537				GetNIDAQErrorString {}
+1538				Beep {}
+1539				Fmt {}
+1540				GenericMessagePopup {}
+1541				QuitUserInterface {}
+1542				DeleteCriticalSection {}
+1543				abort {}
+1544	RunCommand {face.c 3258}
+1545		faceSaveAuxillaryInfo {face.c 2307}
+1546			RepeatRunQ {face.c 227}
+1547				GetCtrlVal {}
+1548			CameraTriggerQ {face.c 234}
+1549				GetCtrlVal {}
+1550			GetCtrlVal {}
+1551			printf {}
+1552			PinValuesQ {face.c 220}
+1553				GetCtrlVal {}
+1554		printf {}
+1555		ExecuteRun {brain.c 3397}
+1556			printf {}
+1557			MessagePopup {}
+1558			FirstTime {brain.c 3362}
+1559				CreateProgressDialog {}
+1560				printf {}
+1561				UpdateProgressDialog {}
+1562				BuildBuffer {brain.c 3054}
+1563			mouth_ResetBuffer {mouth.c 232}
+1564			mouth_ZeroDS345 {mouth.c 113}
+1565				mouth_MakeIdleCommand {mouth.c 131}
+1566				strlen {}
+1567				ibwait {}
+1568				mouth_Error {mouth.c 42}
+1569				printf {}
+1570				ibwrta {}
+1571			CameraTriggerQ {face.c 234}
+1572				GetCtrlVal {}
+1573			SetIdleOutput {brain.c 1651}
+1574				printf {}
+1575				hand_ConfigDIO {hand.c 412}
+1576				hand_OutWord {hand.c 773}
+1577			WaitForAux {brain.c 3328}
+1578				hand_ConfigAuxPorts {hand.c 369}
+1579				printf {}
+1580				hand_ReadAuxPort {hand.c 394}
+1581				faceAuxWaitOn {face.c 2461}
+1582				hand_WriteAuxPort {hand.c 383}
+1583				ProcessSystemEvents {}
+1584				faceAuxWaitStatus {face.c 2477}
+1585				faceAuxWaitOff {face.c 2484}
+1586			hand_ConfigDigital {hand.c 533}
+1587				hand_ConfigDIO {hand.c 412}
+1588				hand_Error {hand.c 50}
+1589				hand_ConfigPattern {hand.c 484}
+1590			UpdateProgressDialog {}
+1591			hand_ConfigAnalog {hand.c 568}
+1592				hand_ResetAnalog {hand.c 189}
+1593				hand_Error {hand.c 50}
+1594				WFM_Group_Setup {}
+1595				RTSI_Clear {}
+1596				RTSI_Conn {}
+1597				WFM_ClockRate {}
+1598				WFM_Load {}
+1599				WFM_Group_Control {}
+1600			DiscardProgressDialog {}
+1601			faceBeginRunningMode {face.c 2524}
+1602				faceRunDim {face.c 2502}
+1603				printf {}
+1604				CreateProgressDialog {}
+1605				SetPanelAttribute {}
+1606				SetCtrlAttribute {}
+1607				SetCtrlVal {}
+1608				DiscardProgressDialog {}
+1609			hand_OutBuffer {hand.c 694}
+1610				GetTickCount {}
+1611				DIG_Block_Out {}
+1612				hand_Error {hand.c 50}
+1613			GetTickCount {}
+1614			SetSleepPolicy {}
+1615			GetCurrentProcess {}
+1616			SetPriorityClass {}
+1617			ProcessSystemEvents {}
+1618			faceShowProgress {face.c 2573}
+1619				UpdateProgressDialog {}
+1620			hand_AbortRun {hand.c 899}
+1621				GetCurrentThread {}
+1622				SetThreadPriority {}
+1623				Config_DAQ_Event_Message {}
+1624				hand_Error {hand.c 50}
+1625				DIG_Block_Clear {}
+1626				hand_ResetAll {hand.c 135}
+1627			mouth_OutBufferCommand {mouth.c 247}
+1628				printf {}
+1629				dna_LengthBufferRF {dna.c 1393}
+1630				ibwait {}
+1631				ThreadIbsta {}
+1632				ibwrta {}
+1633				dna_AdvanceRunBufferRF {dna.c 1416}
+1634			dna_AdvanceRunStage {dna.c 1441}
+1635				printf {}
+1636			faceEndRunningMode {face.c 2590}
+1637				SetCtrlAttribute {}
+1638				printf {}
+1639				DiscardProgressDialog {}
+1640				faceRunDim {face.c 2502}
+1641			Beep {}
+1642			mouth_InitRF {mouth.c 28}
+1643				ibdev {}
+1644				mouth_Error {mouth.c 42}
+1645				printf {}
+1646		GetCurrentProcess {}
+1647		SetPriorityClass {}
+1648		Beep {}
+1649	RunPopupMenu {}
+1650	RunTimer {face.c 4287}
+1651		CheckRunStatus {brain.c 3201}
+1652			hand_CheckProgress {hand.c 884}
+1653				DIG_Block_Check {}
+1654				hand_Error {hand.c 50}
+1655			printf {}
+1656			faceShowProgress {face.c 2573}
+1657				UpdateProgressDialog {}
+1658			hand_AbortRun {hand.c 899}
+1659				GetCurrentThread {}
+1660				SetThreadPriority {}
+1661				Config_DAQ_Event_Message {}
+1662				hand_Error {hand.c 50}
+1663				DIG_Block_Clear {}
+1664				hand_ResetAll {hand.c 135}
+1665			faceEndRunningMode {face.c 2590}
+1666				SetCtrlAttribute {}
+1667				printf {}
+1668				DiscardProgressDialog {}
+1669				faceRunDim {face.c 2502}
+1670			SetIdleOutput {brain.c 1651}
+1671				printf {}
+1672				hand_ConfigDIO {hand.c 412}
+1673				hand_OutWord {hand.c 773}
+1674			RepeatRunQ {face.c 227}
+1675				GetCtrlVal {}
+1676			DiscardProgressDialog {}
+1677			CreateProgressDialog {}
+1678			SetPanelAttribute {}
+1679			ExecuteRun {brain.c 3397}
+1680				printf {}
+1681				MessagePopup {}
+1682				FirstTime {brain.c 3362}
+1683				mouth_ResetBuffer {mouth.c 232}
+1684				mouth_ZeroDS345 {mouth.c 113}
+1685				CameraTriggerQ {face.c 234}
+1686				SetIdleOutput {brain.c 1651}
+1687				WaitForAux {brain.c 3328}
+1688				hand_ConfigDigital {hand.c 533}
+1689				UpdateProgressDialog {}
+1690				hand_ConfigAnalog {hand.c 568}
+1691				DiscardProgressDialog {}
+1692				faceBeginRunningMode {face.c 2524}
+1693				hand_OutBuffer {hand.c 694}
+1694				GetTickCount {}
+1695				SetSleepPolicy {}
+1696				GetCurrentProcess {}
+1697				SetPriorityClass {}
+1698				ProcessSystemEvents {}
+1699				faceShowProgress {face.c 2573}
+1700				hand_AbortRun {hand.c 899}
+1701				mouth_OutBufferCommand {mouth.c 247}
+1702				dna_AdvanceRunStage {dna.c 1441}
+1703				faceEndRunningMode {face.c 2590}
+1704				Beep {}
+1705				mouth_InitRF {mouth.c 28}
+1706			hand_RunOver {hand.c 937}
+1707				Config_DAQ_Event_Message {}
+1708				hand_Error {hand.c 50}
+1709				DIG_Block_PG_Config {}
+1710		printf {}
+1711		SetCtrlAttribute {}
+1712		faceEndRunningMode {face.c 2590}
+1713			SetCtrlAttribute {}
+1714			printf {}
+1715			DiscardProgressDialog {}
+1716			faceRunDim {face.c 2502}
+1717				SetCtrlAttribute {}
+1718				printf {}
+1719				GetPanelMenuBar {}
+1720				SetMenuBarAttribute {}
+1721	RunUserInterface {}
+1722	Save {memory.c 501}
+1723		Ini_New {}
+1724		printf {}
+1725		Put_Aux {memory.c 31}
+1726			Fmt {}
+1727			printf {}
+1728			Ini_PutInt {}
+1729			Ini_PutString {}
+1730			Ini_PutDouble {}
+1731		Put_InitIdle {memory.c 449}
+1732			Fmt {}
+1733			printf {}
+1734			Ini_PutInt {}
+1735			Ini_PutData {}
+1736			Ini_PutDouble {}
+1737		Put_ClusterArray {memory.c 202}
+1738			Fmt {}
+1739			printf {}
+1740			Ini_PutInt {}
+1741			Ini_PutString {}
+1742			Put_Cluster {memory.c 153}
+1743				Fmt {}
+1744				printf {}
+1745				Ini_PutString {}
+1746				Ini_PutInt {}
+1747				Ini_PutBoolean {}
+1748				Ini_PutData {}
+1749		Put_GroupArray {memory.c 382}
+1750			Fmt {}
+1751			printf {}
+1752			Ini_PutInt {}
+1753			Ini_PutData {}
+1754			Ini_PutString {}
+1755			Put_Group {memory.c 333}
+1756				Fmt {}
+1757				printf {}
+1758				Ini_PutString {}
+1759				Ini_PutInt {}
+1760				Put_Graph {memory.c 247}
+1761		Ini_WriteToFile {}
+1762		Ini_Dispose {}
+1763	SaveIni {brain.c 3989}
+1764		faceSaveAuxillaryInfo {face.c 2307}
+1765			RepeatRunQ {face.c 227}
+1766				GetCtrlVal {}
+1767			CameraTriggerQ {face.c 234}
+1768				GetCtrlVal {}
+1769			GetCtrlVal {}
+1770			printf {}
+1771			PinValuesQ {face.c 220}
+1772				GetCtrlVal {}
+1773		printf {}
+1774		DateStr {}
+1775		TimeStr {}
+1776		Save {memory.c 501}
+1777			Ini_New {}
+1778			printf {}
+1779			Put_Aux {memory.c 31}
+1780				Fmt {}
+1781				printf {}
+1782				Ini_PutInt {}
+1783				Ini_PutString {}
+1784				Ini_PutDouble {}
+1785			Put_InitIdle {memory.c 449}
+1786				Fmt {}
+1787				printf {}
+1788				Ini_PutInt {}
+1789				Ini_PutData {}
+1790				Ini_PutDouble {}
+1791			Put_ClusterArray {memory.c 202}
+1792				Fmt {}
+1793				printf {}
+1794				Ini_PutInt {}
+1795				Ini_PutString {}
+1796				Put_Cluster {memory.c 153}
+1797			Put_GroupArray {memory.c 382}
+1798				Fmt {}
+1799				printf {}
+1800				Ini_PutInt {}
+1801				Ini_PutData {}
+1802				Ini_PutString {}
+1803				Put_Group {memory.c 333}
+1804			Ini_WriteToFile {}
+1805			Ini_Dispose {}
+1806	SaveIt {face.c 4626}
+1807		StrDup {}
+1808		printf {}
+1809		SaveIni {brain.c 3989}
+1810			faceSaveAuxillaryInfo {face.c 2307}
+1811				RepeatRunQ {face.c 227}
+1812				CameraTriggerQ {face.c 234}
+1813				GetCtrlVal {}
+1814				printf {}
+1815				PinValuesQ {face.c 220}
+1816			printf {}
+1817			DateStr {}
+1818			TimeStr {}
+1819			Save {memory.c 501}
+1820				Ini_New {}
+1821				printf {}
+1822				Put_Aux {memory.c 31}
+1823				Put_InitIdle {memory.c 449}
+1824				Put_ClusterArray {memory.c 202}
+1825				Put_GroupArray {memory.c 382}
+1826				Ini_WriteToFile {}
+1827				Ini_Dispose {}
+1828		SetCtrlVal {}
+1829		AppendString {}
+1830		SetPanelAttribute {}
+1831		free {}
+1832	Scan {}
+1833	SetARFRanges {memory.c 532}
+1834	SetActivePanel {}
+1835	SetAnalogIdle {brain.c 1713}
+1836		MessagePopup {}
+1837		printf {}
+1838		hand_ConfigAnalogIdle {hand.c 343}
+1839			hand_ResetAnalog {hand.c 189}
+1840				Init_DA_Brds {}
+1841				hand_Error {hand.c 50}
+1842				AO_Configure {}
+1843				printf {}
+1844			hand_Error {hand.c 50}
+1845				GetNIDAQErrorString {}
+1846				Beep {}
+1847				Fmt {}
+1848				GenericMessagePopup {}
+1849				QuitUserInterface {}
+1850				DeleteCriticalSection {}
+1851				abort {}
+1852		Pin {}
+1853		hand_SetAnalogOutput {hand.c 357}
+1854			AO_VWrite {}
+1855	SetCtrlAttribute {}
+1856	SetCtrlVal {}
+1857	SetDefaults {brain.c 1553}
+1858	SetIdle {brain.c 1678}
+1859		MessagePopup {}
+1860		printf {}
+1861	SetIdleOutput {brain.c 1651}
+1862		printf {}
+1863		hand_ConfigDIO {hand.c 412}
+1864			DIG_Grp_Config {}
+1865			hand_Error {hand.c 50}
+1866				GetNIDAQErrorString {}
+1867				Beep {}
+1868				Fmt {}
+1869				GenericMessagePopup {}
+1870				QuitUserInterface {}
+1871				DeleteCriticalSection {}
+1872				abort {}
+1873		hand_OutWord {hand.c 773}
+1874			hand_ConfigDIO {hand.c 412}
+1875				DIG_Grp_Config {}
+1876				hand_Error {hand.c 50}
+1877			hand_Error {hand.c 50}
+1878				GetNIDAQErrorString {}
+1879				Beep {}
+1880				Fmt {}
+1881				GenericMessagePopup {}
+1882				QuitUserInterface {}
+1883				DeleteCriticalSection {}
+1884				abort {}
+1885			DIG_Block_PG_Config {}
+1886			DIG_Block_Out {}
+1887			DIG_Block_Check {}
+1888	SetIdleRF {brain.c 1740}
+1889		MessagePopup {}
+1890		printf {}
+1891		mouth_MakeIdleCommand {mouth.c 131}
+1892			FillBytes {}
+1893			Fmt {}
+1894			StrDup {}
+1895		strlen {}
+1896		mouth_WriteDS345 {mouth.c 100}
+1897			ibwait {}
+1898			mouth_Error {mouth.c 42}
+1899				Beep {}
+1900				MessagePopup {}
+1901				Breakpoint {}
+1902				abort {}
+1903				ThreadIbsta {}
+1904				ThreadIberr {}
+1905				ThreadIbcntl {}
+1906				Fmt {}
+1907			printf {}
+1908			ibwrta {}
+1909		mouth_InitRF {mouth.c 28}
+1910			ibdev {}
+1911			mouth_Error {mouth.c 42}
+1912				Beep {}
+1913				MessagePopup {}
+1914				Breakpoint {}
+1915				abort {}
+1916				ThreadIbsta {}
+1917				ThreadIberr {}
+1918				ThreadIbcntl {}
+1919				Fmt {}
+1920			printf {}
+1921	SetIdleWord {brain.c 1693}
+1922		MessagePopup {}
+1923		printf {}
+1924		hand_ConfigDIOPorts {hand.c 218}
+1925			DIG_Grp_Config {}
+1926			DIG_Prt_Config {}
+1927			hand_Error {hand.c 50}
+1928				GetNIDAQErrorString {}
+1929				Beep {}
+1930				Fmt {}
+1931				GenericMessagePopup {}
+1932				QuitUserInterface {}
+1933				DeleteCriticalSection {}
+1934				abort {}
+1935		hand_SetLine {hand.c 314}
+1936			DIG_Out_Line {}
+1937			hand_Error {hand.c 50}
+1938				GetNIDAQErrorString {}
+1939				Beep {}
+1940				Fmt {}
+1941				GenericMessagePopup {}
+1942				QuitUserInterface {}
+1943				DeleteCriticalSection {}
+1944				abort {}
+1945	SetMenuBarAttribute {}
+1946	SetPanelAttribute {}
+1947	SetPrintAttribute {}
+1948	SetPriorityClass {}
+1949	SetRangeMax {brain.c 3920}
+1950		printf {}
+1951		dna_SetRangeMax {dna.c 1747}
+1952			printf {}
+1953			Pin {}
+1954		faceSetARFRanges {face.c 2338}
+1955			printf {}
+1956			SetCtrlAttribute {}
+1957			GetCtrlVal {}
+1958			Pin {}
+1959			SetCtrlVal {}
+1960	SetRangeMin {brain.c 3908}
+1961		printf {}
+1962		dna_SetRangeMin {dna.c 1727}
+1963			printf {}
+1964			Pin {}
+1965		faceSetARFRanges {face.c 2338}
+1966			printf {}
+1967			SetCtrlAttribute {}
+1968			GetCtrlVal {}
+1969			Pin {}
+1970			SetCtrlVal {}
+1971	SetRanges {brain.c 1534}
+1972	SetSleepPolicy {}
+1973	SetSystemAttribute {}
+1974	SetThreadPriority {}
+1975	SetupInterpData {brain.c 1180}
+1976		StrDup {}
+1977		printf {}
+1978	SortValues {brain.c 1776}
+1979		printf {}
+1980	SpInterp {}
+1981	Spline {}
+1982	Start_DDE {dde.c 66}
+1983		RegisterDDEServer {}
+1984		printf {}
+1985	Stop_DDE {dde.c 76}
+1986		free {}
+1987		UnregisterDDEServer {}
+1988		printf {}
+1989	StrDup {}
+1990	StringLength {}
+1991	ThreadIbcntl {}
+1992	ThreadIberr {}
+1993	ThreadIbsta {}
+1994	TickRFTimer {brain.c 3656}
+1995	TimeStr {}
+1996	Timer {}
+1997	TruncateRealNumber {}
+1998	TurnMeOn {brain.c 1566}
+1999		SetupInterpData {brain.c 1180}
+2000			StrDup {}
+2001			printf {}
+2002		printf {}
+2003		dna_ResetInitIdle {dna.c 1593}
+2004		dna_InitAuxInfo {dna.c 1612}
+2005			StrDup {}
+2006			printf {}
+2007		dna_InitClusterArray {dna.c 37}
+2008			calloc {}
+2009			printf {}
+2010			dna_InitCluster {dna.c 252}
+2011				calloc {}
+2012				printf {}
+2013		dna_InitARFGroupArray {dna.c 414}
+2014			calloc {}
+2015			printf {}
+2016			dna_InitGroup {dna.c 662}
+2017				strlen {}
+2018				calloc {}
+2019				printf {}
+2020				dna_InitARFGraph {dna.c 1092}
+2021		SetRanges {brain.c 1534}
+2022		SetDefaults {brain.c 1553}
+2023		faceSetNumberOfLines {face.c 2049}
+2024			SetCtrlAttribute {}
+2025			printf {}
+2026			SetCtrlVal {}
+2027			SetIdle {brain.c 1678}
+2028				MessagePopup {}
+2029				printf {}
+2030		faceSetNumberOfClusters {face.c 2080}
+2031			SetCtrlAttribute {}
+2032			printf {}
+2033			changedGlobalOffset {face.c 496}
+2034				SetCtrlVal {}
+2035				printf {}
+2036				GetCluster {face.c 101}
+2037				loadCluster {face.c 399}
+2038				disableCluster {face.c 339}
+2039		faceSetOutputLabels {face.c 2148}
+2040			Fmt {}
+2041			printf {}
+2042			dna_SetOutputLabel {dna.c 141}
+2043				free {}
+2044				StrDup {}
+2045				printf {}
+2046				strlen {}
+2047			SetCtrlVal {}
+2048		faceSetIdleValues {face.c 2274}
+2049			SetCtrlVal {}
+2050			printf {}
+2051		faceSetInterpTypes {face.c 2032}
+2052			ClearListCtrl {}
+2053			printf {}
+2054			InsertListItem {}
+2055		faceSetNumberOfAGroups {face.c 2177}
+2056			GetGroupArray {face.c 136}
+2057			printf {}
+2058			SetCtrlAttribute {}
+2059			changedAnalogIndex {face.c 719}
+2060				changedGraphSelection {face.c 1236}
+2061				ValidGroup {face.c 114}
+2062				GetGraph {face.c 172}
+2063				dna_TouchARFGraph {dna.c 1258}
+2064				printf {}
+2065				SetCtrlVal {}
+2066				SetCtrlAttribute {}
+2067				disableGraph {face.c 259}
+2068				GetGroupArray {face.c 136}
+2069				Fmt {}
+2070				dna_SetGroupLabel {dna.c 863}
+2071				enableGraph {face.c 581}
+2072		faceSetNumberOfRFGroups {face.c 2231}
+2073			GetGroupArray {face.c 136}
+2074			printf {}
+2075			SetCtrlAttribute {}
+2076			changedRFIndex {face.c 839}
+2077				changedGraphSelection {face.c 1236}
+2078				ValidGroup {face.c 114}
+2079				GetGraph {face.c 172}
+2080				dna_TouchARFGraph {dna.c 1258}
+2081				printf {}
+2082				SetCtrlVal {}
+2083				SetCtrlAttribute {}
+2084				disableGraph {face.c 259}
+2085				GetGroupArray {face.c 136}
+2086				Fmt {}
+2087				dna_SetGroupLabel {dna.c 863}
+2088				enableGraph {face.c 581}
+2089		faceSetInitAnalog {face.c 2295}
+2090			SetCtrlVal {}
+2091			printf {}
+2092		faceSetARFRanges {face.c 2338}
+2093			printf {}
+2094			SetCtrlAttribute {}
+2095			GetCtrlVal {}
+2096			Pin {}
+2097			SetCtrlVal {}
+2098		hand_ResetAll {hand.c 135}
+2099			Init_DA_Brds {}
+2100			hand_Error {hand.c 50}
+2101				GetNIDAQErrorString {}
+2102				Beep {}
+2103				Fmt {}
+2104				GenericMessagePopup {}
+2105				QuitUserInterface {}
+2106				DeleteCriticalSection {}
+2107				abort {}
+2108			AO_Configure {}
+2109			printf {}
+2110		mouth_InitRF {mouth.c 28}
+2111			ibdev {}
+2112			mouth_Error {mouth.c 42}
+2113				Beep {}
+2114				MessagePopup {}
+2115				Breakpoint {}
+2116				abort {}
+2117				ThreadIbsta {}
+2118				ThreadIberr {}
+2119				ThreadIbcntl {}
+2120				Fmt {}
+2121			printf {}
+2122		hand_ConfigAuxPorts {hand.c 369}
+2123			DIG_Prt_Config {}
+2124			hand_Error {hand.c 50}
+2125				GetNIDAQErrorString {}
+2126				Beep {}
+2127				Fmt {}
+2128				GenericMessagePopup {}
+2129				QuitUserInterface {}
+2130				DeleteCriticalSection {}
+2131				abort {}
+2132		dna_InitBufferDigital {dna.c 1455}
+2133		dna_InitBufferAnalog {dna.c 1511}
+2134	UnregisterDDEServer {}
+2135	UpdateProgressDialog {}
+2136	ValidGroup {face.c 114}
+2137	ValidateChannels {brain.c 2152}
+2138		printf {}
+2139		MessagePopup {}
+2140	WFM_ClockRate {}
+2141	WFM_Group_Control {}
+2142	WFM_Group_Setup {}
+2143	WFM_Load {}
+2144	WaitForAux {brain.c 3328}
+2145		hand_ConfigAuxPorts {hand.c 369}
+2146			DIG_Prt_Config {}
+2147			hand_Error {hand.c 50}
+2148				GetNIDAQErrorString {}
+2149				Beep {}
+2150				Fmt {}
+2151				GenericMessagePopup {}
+2152				QuitUserInterface {}
+2153				DeleteCriticalSection {}
+2154				abort {}
+2155		printf {}
+2156		hand_ReadAuxPort {hand.c 394}
+2157			printf {}
+2158			DIG_In_Line {}
+2159			hand_Error {hand.c 50}
+2160				GetNIDAQErrorString {}
+2161				Beep {}
+2162				Fmt {}
+2163				GenericMessagePopup {}
+2164				QuitUserInterface {}
+2165				DeleteCriticalSection {}
+2166				abort {}
+2167		faceAuxWaitOn {face.c 2461}
+2168			Fmt {}
+2169			printf {}
+2170			SetCtrlVal {}
+2171			InstallPopup {}
+2172		hand_WriteAuxPort {hand.c 383}
+2173			printf {}
+2174			DIG_Out_Line {}
+2175			hand_Error {hand.c 50}
+2176				GetNIDAQErrorString {}
+2177				Beep {}
+2178				Fmt {}
+2179				GenericMessagePopup {}
+2180				QuitUserInterface {}
+2181				DeleteCriticalSection {}
+2182				abort {}
+2183		ProcessSystemEvents {}
+2184		faceAuxWaitStatus {face.c 2477}
+2185		faceAuxWaitOff {face.c 2484}
+2186			printf {}
+2187			RemovePopup {}
+2188	XYGraphPopup {}
+2189	abort {}
+2190	arfAIndex {face.c 3868}
+2191		GetCtrlVal {}
+2192		printf {}
+2193		SetCtrlAttribute {}
+2194		SetCtrlVal {}
+2195		changedAnalogIndex {face.c 719}
+2196			changedGraphSelection {face.c 1236}
+2197				GetEnabledQ {face.c 186}
+2198				ValidGroup {face.c 114}
+2199				GetGraph {face.c 172}
+2200				dna_TouchARFGraph {dna.c 1258}
+2201				printf {}
+2202				enableGraph {face.c 581}
+2203				DeleteGraphPlot {}
+2204				SetCtrlVal {}
+2205				SetCtrlAttribute {}
+2206				setArfInterp {face.c 982}
+2207				disableXYValues {face.c 1103}
+2208				enableXYValues {face.c 1137}
+2209			ValidGroup {face.c 114}
+2210			GetGraph {face.c 172}
+2211				GetGroup {face.c 153}
+2212			dna_TouchARFGraph {dna.c 1258}
+2213				free {}
+2214			printf {}
+2215			SetCtrlVal {}
+2216			SetCtrlAttribute {}
+2217			disableGraph {face.c 259}
+2218				SetCtrlAttribute {}
+2219				printf {}
+2220				DeleteGraphPlot {}
+2221				SetCtrlVal {}
+2222			GetGroupArray {face.c 136}
+2223			Fmt {}
+2224			dna_SetGroupLabel {dna.c 863}
+2225				printf {}
+2226				free {}
+2227				StrDup {}
+2228				strlen {}
+2229			enableGraph {face.c 581}
+2230				GetGroupArray {face.c 136}
+2231				printf {}
+2232				dna_SetGraphLabel {dna.c 640}
+2233				GetGroup {face.c 153}
+2234				GetGraph {face.c 172}
+2235				SetCtrlVal {}
+2236				SetCtrlAttribute {}
+2237				DeleteGraphPlot {}
+2238				dna_SetGraphValues {dna.c 1289}
+2239				GetCtrlAttribute {}
+2240				MakeInterp {brain.c 1084}
+2241				enableXYValues {face.c 1137}
+2242				PinValuesQ {face.c 220}
+2243				dna_PinGraphValues {dna.c 1066}
+2244				PlotXY {}
+2245				RefreshGraph {}
+2246		Beep {}
+2247	arfALabel {face.c 4050}
+2248		GetCtrlAttribute {}
+2249		printf {}
+2250		calloc {}
+2251		GetCtrlVal {}
+2252		dna_SetGroupLabel {dna.c 863}
+2253			printf {}
+2254			free {}
+2255			StrDup {}
+2256			strlen {}
+2257		free {}
+2258		Beep {}
+2259	arfATicks {face.c 3824}
+2260		GetCtrlVal {}
+2261		printf {}
+2262		Beep {}
+2263	arfATicksD {face.c 3846}
+2264		GetCtrlVal {}
+2265		printf {}
+2266		Beep {}
+2267	arfATimeUnit {face.c 3802}
+2268		GetCtrlVal {}
+2269		printf {}
+2270		Beep {}
+2271	arfATimeUnitD {face.c 3758}
+2272		GetCtrlVal {}
+2273		printf {}
+2274		Beep {}
+2275	arfEDITCopyGraph {face.c 5040}
+2276		GetGraph {face.c 172}
+2277			GetGroup {face.c 153}
+2278				ValidGroup {face.c 114}
+2279		printf {}
+2280		calloc {}
+2281		dna_InitARFGraph {dna.c 1092}
+2282		dna_CopyARFGraph {dna.c 1226}
+2283			printf {}
+2284			dna_ReInitARFGraph {dna.c 1131}
+2285				dna_TouchARFGraph {dna.c 1258}
+2286				printf {}
+2287				free {}
+2288				calloc {}
+2289				realloc {}
+2290			dna_TouchARFGraph {dna.c 1258}
+2291				free {}
+2292		Beep {}
+2293	arfEDITDeleteValue {face.c 4552}
+2294		GetGraph {face.c 172}
+2295			GetGroup {face.c 153}
+2296				ValidGroup {face.c 114}
+2297		printf {}
+2298		enableXYValues {face.c 1137}
+2299			GetGraph {face.c 172}
+2300				GetGroup {face.c 153}
+2301			disableXYValues {face.c 1103}
+2302				setYValueRange {face.c 1058}
+2303				printf {}
+2304				SetCtrlVal {}
+2305				SetCtrlAttribute {}
+2306			printf {}
+2307			setYValueRange {face.c 1058}
+2308				PinValuesQ {face.c 220}
+2309				ValidGroup {face.c 114}
+2310				GetGraph {face.c 172}
+2311				printf {}
+2312				GetYMin {brain.c 3954}
+2313				GetYMax {brain.c 3970}
+2314				fabs {}
+2315				RoundRealToNearestInteger {}
+2316				SetCtrlAttribute {}
+2317			SetCtrlVal {}
+2318			SetCtrlAttribute {}
+2319		Beep {}
+2320	arfEDITDuplicateAnalog {face.c 4931}
+2321		ConfirmPopup {}
+2322		printf {}
+2323		GetGroupArray {face.c 136}
+2324		dna_ReInitARFGroupArray {dna.c 456}
+2325			free {}
+2326			dna_ReInitGroup {dna.c 703}
+2327				free {}
+2328				strlen {}
+2329				StrDup {}
+2330				dna_ReInitARFGraph {dna.c 1131}
+2331				printf {}
+2332				calloc {}
+2333				dna_InitARFGraph {dna.c 1092}
+2334				realloc {}
+2335			calloc {}
+2336			printf {}
+2337			dna_InitGroup {dna.c 662}
+2338				strlen {}
+2339				calloc {}
+2340				printf {}
+2341				dna_InitARFGraph {dna.c 1092}
+2342			realloc {}
+2343		GetGroup {face.c 153}
+2344			ValidGroup {face.c 114}
+2345		GetGraph {face.c 172}
+2346			GetGroup {face.c 153}
+2347				ValidGroup {face.c 114}
+2348		dna_CopyARFGroup {dna.c 834}
+2349			printf {}
+2350			dna_ReInitGroup {dna.c 703}
+2351				free {}
+2352				strlen {}
+2353				StrDup {}
+2354				dna_ReInitARFGraph {dna.c 1131}
+2355				printf {}
+2356				calloc {}
+2357				dna_InitARFGraph {dna.c 1092}
+2358				realloc {}
+2359			dna_SetGroupLabel {dna.c 863}
+2360				printf {}
+2361				free {}
+2362				StrDup {}
+2363				strlen {}
+2364			dna_CopyARFGraph {dna.c 1226}
+2365				printf {}
+2366				dna_ReInitARFGraph {dna.c 1131}
+2367				dna_TouchARFGraph {dna.c 1258}
+2368		dna_SetGroupLabel {dna.c 863}
+2369			printf {}
+2370			free {}
+2371			StrDup {}
+2372			strlen {}
+2373		faceSetNumberOfAGroups {face.c 2177}
+2374			GetGroupArray {face.c 136}
+2375			printf {}
+2376			SetCtrlAttribute {}
+2377			changedAnalogIndex {face.c 719}
+2378				changedGraphSelection {face.c 1236}
+2379				ValidGroup {face.c 114}
+2380				GetGraph {face.c 172}
+2381				dna_TouchARFGraph {dna.c 1258}
+2382				printf {}
+2383				SetCtrlVal {}
+2384				SetCtrlAttribute {}
+2385				disableGraph {face.c 259}
+2386				GetGroupArray {face.c 136}
+2387				Fmt {}
+2388				dna_SetGroupLabel {dna.c 863}
+2389				enableGraph {face.c 581}
+2390		Beep {}
+2391	arfEDITDuplicateRF {face.c 4970}
+2392		ConfirmPopup {}
+2393		printf {}
+2394		GetGroupArray {face.c 136}
+2395		dna_ReInitARFGroupArray {dna.c 456}
+2396			free {}
+2397			dna_ReInitGroup {dna.c 703}
+2398				free {}
+2399				strlen {}
+2400				StrDup {}
+2401				dna_ReInitARFGraph {dna.c 1131}
+2402				printf {}
+2403				calloc {}
+2404				dna_InitARFGraph {dna.c 1092}
+2405				realloc {}
+2406			calloc {}
+2407			printf {}
+2408			dna_InitGroup {dna.c 662}
+2409				strlen {}
+2410				calloc {}
+2411				printf {}
+2412				dna_InitARFGraph {dna.c 1092}
+2413			realloc {}
+2414		GetGroup {face.c 153}
+2415			ValidGroup {face.c 114}
+2416		GetGraph {face.c 172}
+2417			GetGroup {face.c 153}
+2418				ValidGroup {face.c 114}
+2419		dna_CopyARFGroup {dna.c 834}
+2420			printf {}
+2421			dna_ReInitGroup {dna.c 703}
+2422				free {}
+2423				strlen {}
+2424				StrDup {}
+2425				dna_ReInitARFGraph {dna.c 1131}
+2426				printf {}
+2427				calloc {}
+2428				dna_InitARFGraph {dna.c 1092}
+2429				realloc {}
+2430			dna_SetGroupLabel {dna.c 863}
+2431				printf {}
+2432				free {}
+2433				StrDup {}
+2434				strlen {}
+2435			dna_CopyARFGraph {dna.c 1226}
+2436				printf {}
+2437				dna_ReInitARFGraph {dna.c 1131}
+2438				dna_TouchARFGraph {dna.c 1258}
+2439		dna_SetGroupLabel {dna.c 863}
+2440			printf {}
+2441			free {}
+2442			StrDup {}
+2443			strlen {}
+2444		faceSetNumberOfRFGroups {face.c 2231}
+2445			GetGroupArray {face.c 136}
+2446			printf {}
+2447			SetCtrlAttribute {}
+2448			changedRFIndex {face.c 839}
+2449				changedGraphSelection {face.c 1236}
+2450				ValidGroup {face.c 114}
+2451				GetGraph {face.c 172}
+2452				dna_TouchARFGraph {dna.c 1258}
+2453				printf {}
+2454				SetCtrlVal {}
+2455				SetCtrlAttribute {}
+2456				disableGraph {face.c 259}
+2457				GetGroupArray {face.c 136}
+2458				Fmt {}
+2459				dna_SetGroupLabel {dna.c 863}
+2460				enableGraph {face.c 581}
+2461		Beep {}
+2462	arfEDITEraseAnalog {face.c 5011}
+2463		ConfirmPopup {}
+2464		printf {}
+2465		Beep {}
+2466	arfEDITEraseRF {face.c 5030}
+2467		Beep {}
+2468	arfEDITInsertValue {face.c 4515}
+2469		GetGraph {face.c 172}
+2470			GetGroup {face.c 153}
+2471				ValidGroup {face.c 114}
+2472		printf {}
+2473		enableXYValues {face.c 1137}
+2474			GetGraph {face.c 172}
+2475				GetGroup {face.c 153}
+2476			disableXYValues {face.c 1103}
+2477				setYValueRange {face.c 1058}
+2478				printf {}
+2479				SetCtrlVal {}
+2480				SetCtrlAttribute {}
+2481			printf {}
+2482			setYValueRange {face.c 1058}
+2483				PinValuesQ {face.c 220}
+2484				ValidGroup {face.c 114}
+2485				GetGraph {face.c 172}
+2486				printf {}
+2487				GetYMin {brain.c 3954}
+2488				GetYMax {brain.c 3970}
+2489				fabs {}
+2490				RoundRealToNearestInteger {}
+2491				SetCtrlAttribute {}
+2492			SetCtrlVal {}
+2493			SetCtrlAttribute {}
+2494		Beep {}
+2495	arfEDITPasteGraph {face.c 5063}
+2496		GetGraph {face.c 172}
+2497			GetGroup {face.c 153}
+2498				ValidGroup {face.c 114}
+2499		printf {}
+2500		dna_ReInitARFGraph {dna.c 1131}
+2501			dna_TouchARFGraph {dna.c 1258}
+2502				free {}
+2503			printf {}
+2504			free {}
+2505			calloc {}
+2506			realloc {}
+2507		dna_CopyARFGraph {dna.c 1226}
+2508			printf {}
+2509			dna_ReInitARFGraph {dna.c 1131}
+2510				dna_TouchARFGraph {dna.c 1258}
+2511				printf {}
+2512				free {}
+2513				calloc {}
+2514				realloc {}
+2515			dna_TouchARFGraph {dna.c 1258}
+2516				free {}
+2517		changedGraphSelection {face.c 1236}
+2518			GetEnabledQ {face.c 186}
+2519				GetGroupArray {face.c 136}
+2520			ValidGroup {face.c 114}
+2521			GetGraph {face.c 172}
+2522				GetGroup {face.c 153}
+2523			dna_TouchARFGraph {dna.c 1258}
+2524				free {}
+2525			printf {}
+2526			enableGraph {face.c 581}
+2527				GetGroupArray {face.c 136}
+2528				printf {}
+2529				dna_SetGraphLabel {dna.c 640}
+2530				GetGroup {face.c 153}
+2531				GetGraph {face.c 172}
+2532				SetCtrlVal {}
+2533				SetCtrlAttribute {}
+2534				DeleteGraphPlot {}
+2535				dna_SetGraphValues {dna.c 1289}
+2536				GetCtrlAttribute {}
+2537				MakeInterp {brain.c 1084}
+2538				enableXYValues {face.c 1137}
+2539				PinValuesQ {face.c 220}
+2540				dna_PinGraphValues {dna.c 1066}
+2541				PlotXY {}
+2542				RefreshGraph {}
+2543			DeleteGraphPlot {}
+2544			SetCtrlVal {}
+2545			SetCtrlAttribute {}
+2546			setArfInterp {face.c 982}
+2547				GetGraph {face.c 172}
+2548				SetCtrlAttribute {}
+2549				printf {}
+2550				SetCtrlVal {}
+2551				dna_TouchARFGraph {dna.c 1258}
+2552			disableXYValues {face.c 1103}
+2553				setYValueRange {face.c 1058}
+2554				printf {}
+2555				SetCtrlVal {}
+2556				SetCtrlAttribute {}
+2557			enableXYValues {face.c 1137}
+2558				GetGraph {face.c 172}
+2559				disableXYValues {face.c 1103}
+2560				printf {}
+2561				setYValueRange {face.c 1058}
+2562				SetCtrlVal {}
+2563				SetCtrlAttribute {}
+2564		Beep {}
+2565	arfEnabledQ {face.c 4201}
+2566		GetCtrlVal {}
+2567		printf {}
+2568		GetGroupArray {face.c 136}
+2569		enableGraph {face.c 581}
+2570			GetGroupArray {face.c 136}
+2571			printf {}
+2572			dna_SetGraphLabel {dna.c 640}
+2573				StrDup {}
+2574				printf {}
+2575				strlen {}
+2576			GetGroup {face.c 153}
+2577				ValidGroup {face.c 114}
+2578			GetGraph {face.c 172}
+2579				GetGroup {face.c 153}
+2580			SetCtrlVal {}
+2581			SetCtrlAttribute {}
+2582			DeleteGraphPlot {}
+2583			dna_SetGraphValues {dna.c 1289}
+2584				free {}
+2585				calloc {}
+2586				printf {}
+2587				realloc {}
+2588			GetCtrlAttribute {}
+2589			MakeInterp {brain.c 1084}
+2590				printf {}
+2591				dna_TouchARFGraph {dna.c 1258}
+2592				dna_CalcXYValuesMinMax {dna.c 951}
+2593				SortValues {brain.c 1776}
+2594				dna_ScaleGraphValues {dna.c 1009}
+2595				free {}
+2596				calloc {}
+2597			enableXYValues {face.c 1137}
+2598				GetGraph {face.c 172}
+2599				disableXYValues {face.c 1103}
+2600				printf {}
+2601				setYValueRange {face.c 1058}
+2602				SetCtrlVal {}
+2603				SetCtrlAttribute {}
+2604			PinValuesQ {face.c 220}
+2605				GetCtrlVal {}
+2606			dna_PinGraphValues {dna.c 1066}
+2607				printf {}
+2608				GetYMin {brain.c 3954}
+2609				GetYMax {brain.c 3970}
+2610				Pin {}
+2611			PlotXY {}
+2612			RefreshGraph {}
+2613		changedGraphSelection {face.c 1236}
+2614			GetEnabledQ {face.c 186}
+2615				GetGroupArray {face.c 136}
+2616			ValidGroup {face.c 114}
+2617			GetGraph {face.c 172}
+2618				GetGroup {face.c 153}
+2619			dna_TouchARFGraph {dna.c 1258}
+2620				free {}
+2621			printf {}
+2622			enableGraph {face.c 581}
+2623				GetGroupArray {face.c 136}
+2624				printf {}
+2625				dna_SetGraphLabel {dna.c 640}
+2626				GetGroup {face.c 153}
+2627				GetGraph {face.c 172}
+2628				SetCtrlVal {}
+2629				SetCtrlAttribute {}
+2630				DeleteGraphPlot {}
+2631				dna_SetGraphValues {dna.c 1289}
+2632				GetCtrlAttribute {}
+2633				MakeInterp {brain.c 1084}
+2634				enableXYValues {face.c 1137}
+2635				PinValuesQ {face.c 220}
+2636				dna_PinGraphValues {dna.c 1066}
+2637				PlotXY {}
+2638				RefreshGraph {}
+2639			DeleteGraphPlot {}
+2640			SetCtrlVal {}
+2641			SetCtrlAttribute {}
+2642			setArfInterp {face.c 982}
+2643				GetGraph {face.c 172}
+2644				SetCtrlAttribute {}
+2645				printf {}
+2646				SetCtrlVal {}
+2647				dna_TouchARFGraph {dna.c 1258}
+2648			disableXYValues {face.c 1103}
+2649				setYValueRange {face.c 1058}
+2650				printf {}
+2651				SetCtrlVal {}
+2652				SetCtrlAttribute {}
+2653			enableXYValues {face.c 1137}
+2654				GetGraph {face.c 172}
+2655				disableXYValues {face.c 1103}
+2656				printf {}
+2657				setYValueRange {face.c 1058}
+2658				SetCtrlVal {}
+2659				SetCtrlAttribute {}
+2660		disableGraph {face.c 259}
+2661			SetCtrlAttribute {}
+2662			printf {}
+2663			DeleteGraphPlot {}
+2664			SetCtrlVal {}
+2665		Beep {}
+2666	arfGraph {face.c 2994}
+2667		changedGraphSelection {face.c 1236}
+2668			GetEnabledQ {face.c 186}
+2669				GetGroupArray {face.c 136}
+2670			ValidGroup {face.c 114}
+2671			GetGraph {face.c 172}
+2672				GetGroup {face.c 153}
+2673			dna_TouchARFGraph {dna.c 1258}
+2674				free {}
+2675			printf {}
+2676			enableGraph {face.c 581}
+2677				GetGroupArray {face.c 136}
+2678				printf {}
+2679				dna_SetGraphLabel {dna.c 640}
+2680				GetGroup {face.c 153}
+2681				GetGraph {face.c 172}
+2682				SetCtrlVal {}
+2683				SetCtrlAttribute {}
+2684				DeleteGraphPlot {}
+2685				dna_SetGraphValues {dna.c 1289}
+2686				GetCtrlAttribute {}
+2687				MakeInterp {brain.c 1084}
+2688				enableXYValues {face.c 1137}
+2689				PinValuesQ {face.c 220}
+2690				dna_PinGraphValues {dna.c 1066}
+2691				PlotXY {}
+2692				RefreshGraph {}
+2693			DeleteGraphPlot {}
+2694			SetCtrlVal {}
+2695			SetCtrlAttribute {}
+2696			setArfInterp {face.c 982}
+2697				GetGraph {face.c 172}
+2698				SetCtrlAttribute {}
+2699				printf {}
+2700				SetCtrlVal {}
+2701				dna_TouchARFGraph {dna.c 1258}
+2702			disableXYValues {face.c 1103}
+2703				setYValueRange {face.c 1058}
+2704				printf {}
+2705				SetCtrlVal {}
+2706				SetCtrlAttribute {}
+2707			enableXYValues {face.c 1137}
+2708				GetGraph {face.c 172}
+2709				disableXYValues {face.c 1103}
+2710				printf {}
+2711				setYValueRange {face.c 1058}
+2712				SetCtrlVal {}
+2713				SetCtrlAttribute {}
+2714		printf {}
+2715		EditLabelMsg {face.c 1949}
+2716			GetCtrlAttribute {}
+2717			printf {}
+2718			calloc {}
+2719			GenericMessagePopup {}
+2720			SetCtrlAttribute {}
+2721			free {}
+2722		GetGroupArray {face.c 136}
+2723		GetCtrlAttribute {}
+2724		calloc {}
+2725		dna_SetGraphLabel {dna.c 640}
+2726			StrDup {}
+2727			printf {}
+2728			strlen {}
+2729		SetCtrlAttribute {}
+2730		free {}
+2731		Beep {}
+2732	arfGraphIndex {face.c 4080}
+2733		Beep {}
+2734	arfIdleAnalog {face.c 4342}
+2735		SetAnalogIdle {brain.c 1713}
+2736			MessagePopup {}
+2737			printf {}
+2738			hand_ConfigAnalogIdle {hand.c 343}
+2739				hand_ResetAnalog {hand.c 189}
+2740				hand_Error {hand.c 50}
+2741			Pin {}
+2742			hand_SetAnalogOutput {hand.c 357}
+2743				AO_VWrite {}
+2744		printf {}
+2745		Beep {}
+2746	arfIdleRF {face.c 4363}
+2747		faceSendIdleRF {face.c 2446}
+2748			GetCtrlVal {}
+2749			printf {}
+2750			SetIdleRF {brain.c 1740}
+2751				MessagePopup {}
+2752				printf {}
+2753				mouth_MakeIdleCommand {mouth.c 131}
+2754				strlen {}
+2755				mouth_WriteDS345 {mouth.c 100}
+2756				mouth_InitRF {mouth.c 28}
+2757		Beep {}
+2758	arfInitialAnalog {face.c 4319}
+2759		GetCtrlVal {}
+2760		printf {}
+2761		Beep {}
+2762	arfInterp {face.c 4100}
+2763		GetCtrlVal {}
+2764		printf {}
+2765		setArfInterp {face.c 982}
+2766			GetGraph {face.c 172}
+2767				GetGroup {face.c 153}
+2768			SetCtrlAttribute {}
+2769			printf {}
+2770			SetCtrlVal {}
+2771			dna_TouchARFGraph {dna.c 1258}
+2772				free {}
+2773		enableXYValues {face.c 1137}
+2774			GetGraph {face.c 172}
+2775				GetGroup {face.c 153}
+2776			disableXYValues {face.c 1103}
+2777				setYValueRange {face.c 1058}
+2778				printf {}
+2779				SetCtrlVal {}
+2780				SetCtrlAttribute {}
+2781			printf {}
+2782			setYValueRange {face.c 1058}
+2783				PinValuesQ {face.c 220}
+2784				ValidGroup {face.c 114}
+2785				GetGraph {face.c 172}
+2786				printf {}
+2787				GetYMin {brain.c 3954}
+2788				GetYMax {brain.c 3970}
+2789				fabs {}
+2790				RoundRealToNearestInteger {}
+2791				SetCtrlAttribute {}
+2792			SetCtrlVal {}
+2793			SetCtrlAttribute {}
+2794		Beep {}
+2795	arfMaximumAnalog {face.c 5593}
+2796		GetCtrlVal {}
+2797		printf {}
+2798		SetRangeMax {brain.c 3920}
+2799			printf {}
+2800			dna_SetRangeMax {dna.c 1747}
+2801				printf {}
+2802				Pin {}
+2803			faceSetARFRanges {face.c 2338}
+2804				printf {}
+2805				SetCtrlAttribute {}
+2806				GetCtrlVal {}
+2807				Pin {}
+2808				SetCtrlVal {}
+2809		changedGraphSelection {face.c 1236}
+2810			GetEnabledQ {face.c 186}
+2811				GetGroupArray {face.c 136}
+2812			ValidGroup {face.c 114}
+2813			GetGraph {face.c 172}
+2814				GetGroup {face.c 153}
+2815			dna_TouchARFGraph {dna.c 1258}
+2816				free {}
+2817			printf {}
+2818			enableGraph {face.c 581}
+2819				GetGroupArray {face.c 136}
+2820				printf {}
+2821				dna_SetGraphLabel {dna.c 640}
+2822				GetGroup {face.c 153}
+2823				GetGraph {face.c 172}
+2824				SetCtrlVal {}
+2825				SetCtrlAttribute {}
+2826				DeleteGraphPlot {}
+2827				dna_SetGraphValues {dna.c 1289}
+2828				GetCtrlAttribute {}
+2829				MakeInterp {brain.c 1084}
+2830				enableXYValues {face.c 1137}
+2831				PinValuesQ {face.c 220}
+2832				dna_PinGraphValues {dna.c 1066}
+2833				PlotXY {}
+2834				RefreshGraph {}
+2835			DeleteGraphPlot {}
+2836			SetCtrlVal {}
+2837			SetCtrlAttribute {}
+2838			setArfInterp {face.c 982}
+2839				GetGraph {face.c 172}
+2840				SetCtrlAttribute {}
+2841				printf {}
+2842				SetCtrlVal {}
+2843				dna_TouchARFGraph {dna.c 1258}
+2844			disableXYValues {face.c 1103}
+2845				setYValueRange {face.c 1058}
+2846				printf {}
+2847				SetCtrlVal {}
+2848				SetCtrlAttribute {}
+2849			enableXYValues {face.c 1137}
+2850				GetGraph {face.c 172}
+2851				disableXYValues {face.c 1103}
+2852				printf {}
+2853				setYValueRange {face.c 1058}
+2854				SetCtrlVal {}
+2855				SetCtrlAttribute {}
+2856		Beep {}
+2857	arfMinimumAnalog {face.c 5568}
+2858		GetCtrlVal {}
+2859		printf {}
+2860		SetRangeMin {brain.c 3908}
+2861			printf {}
+2862			dna_SetRangeMin {dna.c 1727}
+2863				printf {}
+2864				Pin {}
+2865			faceSetARFRanges {face.c 2338}
+2866				printf {}
+2867				SetCtrlAttribute {}
+2868				GetCtrlVal {}
+2869				Pin {}
+2870				SetCtrlVal {}
+2871		Beep {}
+2872	arfNumValues {face.c 3980}
+2873		GetCtrlVal {}
+2874		printf {}
+2875		GetGraph {face.c 172}
+2876			GetGroup {face.c 153}
+2877				ValidGroup {face.c 114}
+2878		dna_SetGraphValues {dna.c 1289}
+2879			free {}
+2880			calloc {}
+2881			printf {}
+2882			realloc {}
+2883		dna_CalcXYValuesMinMax {dna.c 951}
+2884			printf {}
+2885		SortValues {brain.c 1776}
+2886			printf {}
+2887		enableXYValues {face.c 1137}
+2888			GetGraph {face.c 172}
+2889				GetGroup {face.c 153}
+2890			disableXYValues {face.c 1103}
+2891				setYValueRange {face.c 1058}
+2892				printf {}
+2893				SetCtrlVal {}
+2894				SetCtrlAttribute {}
+2895			printf {}
+2896			setYValueRange {face.c 1058}
+2897				PinValuesQ {face.c 220}
+2898				ValidGroup {face.c 114}
+2899				GetGraph {face.c 172}
+2900				printf {}
+2901				GetYMin {brain.c 3954}
+2902				GetYMax {brain.c 3970}
+2903				fabs {}
+2904				RoundRealToNearestInteger {}
+2905				SetCtrlAttribute {}
+2906			SetCtrlVal {}
+2907			SetCtrlAttribute {}
+2908		Beep {}
+2909	arfOPERATEFillX {face.c 5111}
+2910		GetGraph {face.c 172}
+2911			GetGroup {face.c 153}
+2912				ValidGroup {face.c 114}
+2913		printf {}
+2914		enableXYValues {face.c 1137}
+2915			GetGraph {face.c 172}
+2916				GetGroup {face.c 153}
+2917			disableXYValues {face.c 1103}
+2918				setYValueRange {face.c 1058}
+2919				printf {}
+2920				SetCtrlVal {}
+2921				SetCtrlAttribute {}
+2922			printf {}
+2923			setYValueRange {face.c 1058}
+2924				PinValuesQ {face.c 220}
+2925				ValidGroup {face.c 114}
+2926				GetGraph {face.c 172}
+2927				printf {}
+2928				GetYMin {brain.c 3954}
+2929				GetYMax {brain.c 3970}
+2930				fabs {}
+2931				RoundRealToNearestInteger {}
+2932				SetCtrlAttribute {}
+2933			SetCtrlVal {}
+2934			SetCtrlAttribute {}
+2935		Beep {}
+2936	arfOPERATEReplaceX {face.c 5133}
+2937		GetGraph {face.c 172}
+2938			GetGroup {face.c 153}
+2939				ValidGroup {face.c 114}
+2940		printf {}
+2941		MessagePopup {}
+2942		enableXYValues {face.c 1137}
+2943			GetGraph {face.c 172}
+2944				GetGroup {face.c 153}
+2945			disableXYValues {face.c 1103}
+2946				setYValueRange {face.c 1058}
+2947				printf {}
+2948				SetCtrlVal {}
+2949				SetCtrlAttribute {}
+2950			printf {}
+2951			setYValueRange {face.c 1058}
+2952				PinValuesQ {face.c 220}
+2953				ValidGroup {face.c 114}
+2954				GetGraph {face.c 172}
+2955				printf {}
+2956				GetYMin {brain.c 3954}
+2957				GetYMax {brain.c 3970}
+2958				fabs {}
+2959				RoundRealToNearestInteger {}
+2960				SetCtrlAttribute {}
+2961			SetCtrlVal {}
+2962			SetCtrlAttribute {}
+2963		Beep {}
+2964	arfOPERATEReplaceY {face.c 5160}
+2965		GetGraph {face.c 172}
+2966			GetGroup {face.c 153}
+2967				ValidGroup {face.c 114}
+2968		printf {}
+2969		MessagePopup {}
+2970		enableXYValues {face.c 1137}
+2971			GetGraph {face.c 172}
+2972				GetGroup {face.c 153}
+2973			disableXYValues {face.c 1103}
+2974				setYValueRange {face.c 1058}
+2975				printf {}
+2976				SetCtrlVal {}
+2977				SetCtrlAttribute {}
+2978			printf {}
+2979			setYValueRange {face.c 1058}
+2980				PinValuesQ {face.c 220}
+2981				ValidGroup {face.c 114}
+2982				GetGraph {face.c 172}
+2983				printf {}
+2984				GetYMin {brain.c 3954}
+2985				GetYMax {brain.c 3970}
+2986				fabs {}
+2987				RoundRealToNearestInteger {}
+2988				SetCtrlAttribute {}
+2989			SetCtrlVal {}
+2990			SetCtrlAttribute {}
+2991		ConfirmPopup {}
+2992		setArfInterp {face.c 982}
+2993			GetGraph {face.c 172}
+2994				GetGroup {face.c 153}
+2995			SetCtrlAttribute {}
+2996			printf {}
+2997			SetCtrlVal {}
+2998			dna_TouchARFGraph {dna.c 1258}
+2999				free {}
+3000		Beep {}
+3001	arfOPERATEZoomGraph {face.c 5085}
+3002		GetGraph {face.c 172}
+3003			GetGroup {face.c 153}
+3004				ValidGroup {face.c 114}
+3005		printf {}
+3006		MessagePopup {}
+3007		XYGraphPopup {}
+3008		Beep {}
+3009	arfPARAM {face.c 4124}
+3010		GetCtrlVal {}
+3011		printf {}
+3012		SetCtrlVal {}
+3013		GetGraph {face.c 172}
+3014			GetGroup {face.c 153}
+3015				ValidGroup {face.c 114}
+3016		setYValueRange {face.c 1058}
+3017			PinValuesQ {face.c 220}
+3018				GetCtrlVal {}
+3019			ValidGroup {face.c 114}
+3020			GetGraph {face.c 172}
+3021				GetGroup {face.c 153}
+3022			printf {}
+3023			GetYMin {brain.c 3954}
+3024				printf {}
+3025			GetYMax {brain.c 3970}
+3026				printf {}
+3027			fabs {}
+3028			RoundRealToNearestInteger {}
+3029			SetCtrlAttribute {}
+3030		Beep {}
+3031	arfPinRangeQ {face.c 4266}
+3032		setYValueRange {face.c 1058}
+3033			PinValuesQ {face.c 220}
+3034				GetCtrlVal {}
+3035			ValidGroup {face.c 114}
+3036			GetGraph {face.c 172}
+3037				GetGroup {face.c 153}
+3038			printf {}
+3039			GetYMin {brain.c 3954}
+3040				printf {}
+3041			GetYMax {brain.c 3970}
+3042				printf {}
+3043			fabs {}
+3044			RoundRealToNearestInteger {}
+3045			SetCtrlAttribute {}
+3046		printf {}
+3047		Beep {}
+3048	arfRFIndex {face.c 3157}
+3049		GetCtrlVal {}
+3050		printf {}
+3051		SetCtrlAttribute {}
+3052		SetCtrlVal {}
+3053		changedRFIndex {face.c 839}
+3054			changedGraphSelection {face.c 1236}
+3055				GetEnabledQ {face.c 186}
+3056				ValidGroup {face.c 114}
+3057				GetGraph {face.c 172}
+3058				dna_TouchARFGraph {dna.c 1258}
+3059				printf {}
+3060				enableGraph {face.c 581}
+3061				DeleteGraphPlot {}
+3062				SetCtrlVal {}
+3063				SetCtrlAttribute {}
+3064				setArfInterp {face.c 982}
+3065				disableXYValues {face.c 1103}
+3066				enableXYValues {face.c 1137}
+3067			ValidGroup {face.c 114}
+3068			GetGraph {face.c 172}
+3069				GetGroup {face.c 153}
+3070			dna_TouchARFGraph {dna.c 1258}
+3071				free {}
+3072			printf {}
+3073			SetCtrlVal {}
+3074			SetCtrlAttribute {}
+3075			disableGraph {face.c 259}
+3076				SetCtrlAttribute {}
+3077				printf {}
+3078				DeleteGraphPlot {}
+3079				SetCtrlVal {}
+3080			GetGroupArray {face.c 136}
+3081			Fmt {}
+3082			dna_SetGroupLabel {dna.c 863}
+3083				printf {}
+3084				free {}
+3085				StrDup {}
+3086				strlen {}
+3087			enableGraph {face.c 581}
+3088				GetGroupArray {face.c 136}
+3089				printf {}
+3090				dna_SetGraphLabel {dna.c 640}
+3091				GetGroup {face.c 153}
+3092				GetGraph {face.c 172}
+3093				SetCtrlVal {}
+3094				SetCtrlAttribute {}
+3095				DeleteGraphPlot {}
+3096				dna_SetGraphValues {dna.c 1289}
+3097				GetCtrlAttribute {}
+3098				MakeInterp {brain.c 1084}
+3099				enableXYValues {face.c 1137}
+3100				PinValuesQ {face.c 220}
+3101				dna_PinGraphValues {dna.c 1066}
+3102				PlotXY {}
+3103				RefreshGraph {}
+3104		Beep {}
+3105	arfRFLabel {face.c 4020}
+3106		GetCtrlAttribute {}
+3107		printf {}
+3108		calloc {}
+3109		GetCtrlVal {}
+3110		dna_SetGroupLabel {dna.c 863}
+3111			printf {}
+3112			free {}
+3113			StrDup {}
+3114			strlen {}
+3115		free {}
+3116		Beep {}
+3117	arfRFTicks {face.c 4179}
+3118		GetCtrlVal {}
+3119		printf {}
+3120		Beep {}
+3121	arfRFTicksD {face.c 3780}
+3122		GetCtrlVal {}
+3123		printf {}
+3124		Beep {}
+3125	arfRFTimeUnit {face.c 3736}
+3126		GetCtrlVal {}
+3127		printf {}
+3128		Beep {}
+3129	arfRFTimeUnitD {face.c 3714}
+3130		GetCtrlVal {}
+3131		printf {}
+3132		Beep {}
+3133	arfUpdateGraph {face.c 4238}
+3134		GetGraph {face.c 172}
+3135			GetGroup {face.c 153}
+3136				ValidGroup {face.c 114}
+3137		printf {}
+3138		dna_TouchARFGraph {dna.c 1258}
+3139			free {}
+3140		enableGraph {face.c 581}
+3141			GetGroupArray {face.c 136}
+3142			printf {}
+3143			dna_SetGraphLabel {dna.c 640}
+3144				StrDup {}
+3145				printf {}
+3146				strlen {}
+3147			GetGroup {face.c 153}
+3148				ValidGroup {face.c 114}
+3149			GetGraph {face.c 172}
+3150				GetGroup {face.c 153}
+3151			SetCtrlVal {}
+3152			SetCtrlAttribute {}
+3153			DeleteGraphPlot {}
+3154			dna_SetGraphValues {dna.c 1289}
+3155				free {}
+3156				calloc {}
+3157				printf {}
+3158				realloc {}
+3159			GetCtrlAttribute {}
+3160			MakeInterp {brain.c 1084}
+3161				printf {}
+3162				dna_TouchARFGraph {dna.c 1258}
+3163				dna_CalcXYValuesMinMax {dna.c 951}
+3164				SortValues {brain.c 1776}
+3165				dna_ScaleGraphValues {dna.c 1009}
+3166				free {}
+3167				calloc {}
+3168			enableXYValues {face.c 1137}
+3169				GetGraph {face.c 172}
+3170				disableXYValues {face.c 1103}
+3171				printf {}
+3172				setYValueRange {face.c 1058}
+3173				SetCtrlVal {}
+3174				SetCtrlAttribute {}
+3175			PinValuesQ {face.c 220}
+3176				GetCtrlVal {}
+3177			dna_PinGraphValues {dna.c 1066}
+3178				printf {}
+3179				GetYMin {brain.c 3954}
+3180				GetYMax {brain.c 3970}
+3181				Pin {}
+3182			PlotXY {}
+3183			RefreshGraph {}
+3184		Beep {}
+3185	arfXValue {face.c 3943}
+3186		GetCtrlVal {}
+3187		printf {}
+3188		GetGraph {face.c 172}
+3189			GetGroup {face.c 153}
+3190				ValidGroup {face.c 114}
+3191		popupXYValue {face.c 2007}
+3192			RunPopupMenu {}
+3193		Beep {}
+3194	arfYValue {face.c 3912}
+3195		GetCtrlVal {}
+3196		printf {}
+3197		GetGraph {face.c 172}
+3198			GetGroup {face.c 153}
+3199				ValidGroup {face.c 114}
+3200		popupXYValue {face.c 2007}
+3201			RunPopupMenu {}
+3202		Beep {}
+3203	calloc {}
+3204	canvas {face.c 3068}
+3205		printf {}
+3206		GetCtrlVal {}
+3207		RectOffset {}
+3208		SetCtrlAttribute {}
+3209		CanvasDrawRect {}
+3210		Beep {}
+3211	cbSetup {face.c 3374}
+3212		Beep {}
+3213	cbTiming {face.c 3574}
+3214		Beep {}
+3215	cbWG {face.c 2734}
+3216		QuitUserInterface {}
+3217		Breakpoint {}
+3218		Beep {}
+3219	changedAnalogIndex {face.c 719}
+3220		changedGraphSelection {face.c 1236}
+3221			GetEnabledQ {face.c 186}
+3222				GetGroupArray {face.c 136}
+3223			ValidGroup {face.c 114}
+3224			GetGraph {face.c 172}
+3225				GetGroup {face.c 153}
+3226			dna_TouchARFGraph {dna.c 1258}
+3227				free {}
+3228			printf {}
+3229			enableGraph {face.c 581}
+3230				GetGroupArray {face.c 136}
+3231				printf {}
+3232				dna_SetGraphLabel {dna.c 640}
+3233				GetGroup {face.c 153}
+3234				GetGraph {face.c 172}
+3235				SetCtrlVal {}
+3236				SetCtrlAttribute {}
+3237				DeleteGraphPlot {}
+3238				dna_SetGraphValues {dna.c 1289}
+3239				GetCtrlAttribute {}
+3240				MakeInterp {brain.c 1084}
+3241				enableXYValues {face.c 1137}
+3242				PinValuesQ {face.c 220}
+3243				dna_PinGraphValues {dna.c 1066}
+3244				PlotXY {}
+3245				RefreshGraph {}
+3246			DeleteGraphPlot {}
+3247			SetCtrlVal {}
+3248			SetCtrlAttribute {}
+3249			setArfInterp {face.c 982}
+3250				GetGraph {face.c 172}
+3251				SetCtrlAttribute {}
+3252				printf {}
+3253				SetCtrlVal {}
+3254				dna_TouchARFGraph {dna.c 1258}
+3255			disableXYValues {face.c 1103}
+3256				setYValueRange {face.c 1058}
+3257				printf {}
+3258				SetCtrlVal {}
+3259				SetCtrlAttribute {}
+3260			enableXYValues {face.c 1137}
+3261				GetGraph {face.c 172}
+3262				disableXYValues {face.c 1103}
+3263				printf {}
+3264				setYValueRange {face.c 1058}
+3265				SetCtrlVal {}
+3266				SetCtrlAttribute {}
+3267		ValidGroup {face.c 114}
+3268		GetGraph {face.c 172}
+3269			GetGroup {face.c 153}
+3270				ValidGroup {face.c 114}
+3271		dna_TouchARFGraph {dna.c 1258}
+3272			free {}
+3273		printf {}
+3274		SetCtrlVal {}
+3275		SetCtrlAttribute {}
+3276		disableGraph {face.c 259}
+3277			SetCtrlAttribute {}
+3278			printf {}
+3279			DeleteGraphPlot {}
+3280			SetCtrlVal {}
+3281		GetGroupArray {face.c 136}
+3282		Fmt {}
+3283		dna_SetGroupLabel {dna.c 863}
+3284			printf {}
+3285			free {}
+3286			StrDup {}
+3287			strlen {}
+3288		enableGraph {face.c 581}
+3289			GetGroupArray {face.c 136}
+3290			printf {}
+3291			dna_SetGraphLabel {dna.c 640}
+3292				StrDup {}
+3293				printf {}
+3294				strlen {}
+3295			GetGroup {face.c 153}
+3296				ValidGroup {face.c 114}
+3297			GetGraph {face.c 172}
+3298				GetGroup {face.c 153}
+3299			SetCtrlVal {}
+3300			SetCtrlAttribute {}
+3301			DeleteGraphPlot {}
+3302			dna_SetGraphValues {dna.c 1289}
+3303				free {}
+3304				calloc {}
+3305				printf {}
+3306				realloc {}
+3307			GetCtrlAttribute {}
+3308			MakeInterp {brain.c 1084}
+3309				printf {}
+3310				dna_TouchARFGraph {dna.c 1258}
+3311				dna_CalcXYValuesMinMax {dna.c 951}
+3312				SortValues {brain.c 1776}
+3313				dna_ScaleGraphValues {dna.c 1009}
+3314				free {}
+3315				calloc {}
+3316			enableXYValues {face.c 1137}
+3317				GetGraph {face.c 172}
+3318				disableXYValues {face.c 1103}
+3319				printf {}
+3320				setYValueRange {face.c 1058}
+3321				SetCtrlVal {}
+3322				SetCtrlAttribute {}
+3323			PinValuesQ {face.c 220}
+3324				GetCtrlVal {}
+3325			dna_PinGraphValues {dna.c 1066}
+3326				printf {}
+3327				GetYMin {brain.c 3954}
+3328				GetYMax {brain.c 3970}
+3329				Pin {}
+3330			PlotXY {}
+3331			RefreshGraph {}
+3332	changedGlobalOffset {face.c 496}
+3333		SetCtrlVal {}
+3334		printf {}
+3335		GetCluster {face.c 101}
+3336		loadCluster {face.c 399}
+3337			printf {}
+3338			GetCluster {face.c 101}
+3339			SetCtrlAttribute {}
+3340			SetCtrlVal {}
+3341			Fmt {}
+3342			dna_SetClusterLabel {dna.c 355}
+3343				free {}
+3344				strlen {}
+3345				calloc {}
+3346				printf {}
+3347				strcpy {}
+3348			setDigitalValue {face.c 307}
+3349				SetCtrlAttribute {}
+3350				printf {}
+3351				CanvasDrawRect {}
+3352		disableCluster {face.c 339}
+3353			printf {}
+3354			GetCtrlVal {}
+3355			SetCtrlAttribute {}
+3356			SetCtrlVal {}
+3357			setDigitalValue {face.c 307}
+3358				SetCtrlAttribute {}
+3359				printf {}
+3360				CanvasDrawRect {}
+3361	changedGraphSelection {face.c 1236}
+3362		GetEnabledQ {face.c 186}
+3363			GetGroupArray {face.c 136}
+3364		ValidGroup {face.c 114}
+3365		GetGraph {face.c 172}
+3366			GetGroup {face.c 153}
+3367				ValidGroup {face.c 114}
+3368		dna_TouchARFGraph {dna.c 1258}
+3369			free {}
+3370		printf {}
+3371		enableGraph {face.c 581}
+3372			GetGroupArray {face.c 136}
+3373			printf {}
+3374			dna_SetGraphLabel {dna.c 640}
+3375				StrDup {}
+3376				printf {}
+3377				strlen {}
+3378			GetGroup {face.c 153}
+3379				ValidGroup {face.c 114}
+3380			GetGraph {face.c 172}
+3381				GetGroup {face.c 153}
+3382			SetCtrlVal {}
+3383			SetCtrlAttribute {}
+3384			DeleteGraphPlot {}
+3385			dna_SetGraphValues {dna.c 1289}
+3386				free {}
+3387				calloc {}
+3388				printf {}
+3389				realloc {}
+3390			GetCtrlAttribute {}
+3391			MakeInterp {brain.c 1084}
+3392				printf {}
+3393				dna_TouchARFGraph {dna.c 1258}
+3394				dna_CalcXYValuesMinMax {dna.c 951}
+3395				SortValues {brain.c 1776}
+3396				dna_ScaleGraphValues {dna.c 1009}
+3397				free {}
+3398				calloc {}
+3399			enableXYValues {face.c 1137}
+3400				GetGraph {face.c 172}
+3401				disableXYValues {face.c 1103}
+3402				printf {}
+3403				setYValueRange {face.c 1058}
+3404				SetCtrlVal {}
+3405				SetCtrlAttribute {}
+3406			PinValuesQ {face.c 220}
+3407				GetCtrlVal {}
+3408			dna_PinGraphValues {dna.c 1066}
+3409				printf {}
+3410				GetYMin {brain.c 3954}
+3411				GetYMax {brain.c 3970}
+3412				Pin {}
+3413			PlotXY {}
+3414			RefreshGraph {}
+3415		DeleteGraphPlot {}
+3416		SetCtrlVal {}
+3417		SetCtrlAttribute {}
+3418		setArfInterp {face.c 982}
+3419			GetGraph {face.c 172}
+3420				GetGroup {face.c 153}
+3421			SetCtrlAttribute {}
+3422			printf {}
+3423			SetCtrlVal {}
+3424			dna_TouchARFGraph {dna.c 1258}
+3425				free {}
+3426		disableXYValues {face.c 1103}
+3427			setYValueRange {face.c 1058}
+3428				PinValuesQ {face.c 220}
+3429				ValidGroup {face.c 114}
+3430				GetGraph {face.c 172}
+3431				printf {}
+3432				GetYMin {brain.c 3954}
+3433				GetYMax {brain.c 3970}
+3434				fabs {}
+3435				RoundRealToNearestInteger {}
+3436				SetCtrlAttribute {}
+3437			printf {}
+3438			SetCtrlVal {}
+3439			SetCtrlAttribute {}
+3440		enableXYValues {face.c 1137}
+3441			GetGraph {face.c 172}
+3442				GetGroup {face.c 153}
+3443			disableXYValues {face.c 1103}
+3444				setYValueRange {face.c 1058}
+3445				printf {}
+3446				SetCtrlVal {}
+3447				SetCtrlAttribute {}
+3448			printf {}
+3449			setYValueRange {face.c 1058}
+3450				PinValuesQ {face.c 220}
+3451				ValidGroup {face.c 114}
+3452				GetGraph {face.c 172}
+3453				printf {}
+3454				GetYMin {brain.c 3954}
+3455				GetYMax {brain.c 3970}
+3456				fabs {}
+3457				RoundRealToNearestInteger {}
+3458				SetCtrlAttribute {}
+3459			SetCtrlVal {}
+3460			SetCtrlAttribute {}
+3461	changedRFIndex {face.c 839}
+3462		changedGraphSelection {face.c 1236}
+3463			GetEnabledQ {face.c 186}
+3464				GetGroupArray {face.c 136}
+3465			ValidGroup {face.c 114}
+3466			GetGraph {face.c 172}
+3467				GetGroup {face.c 153}
+3468			dna_TouchARFGraph {dna.c 1258}
+3469				free {}
+3470			printf {}
+3471			enableGraph {face.c 581}
+3472				GetGroupArray {face.c 136}
+3473				printf {}
+3474				dna_SetGraphLabel {dna.c 640}
+3475				GetGroup {face.c 153}
+3476				GetGraph {face.c 172}
+3477				SetCtrlVal {}
+3478				SetCtrlAttribute {}
+3479				DeleteGraphPlot {}
+3480				dna_SetGraphValues {dna.c 1289}
+3481				GetCtrlAttribute {}
+3482				MakeInterp {brain.c 1084}
+3483				enableXYValues {face.c 1137}
+3484				PinValuesQ {face.c 220}
+3485				dna_PinGraphValues {dna.c 1066}
+3486				PlotXY {}
+3487				RefreshGraph {}
+3488			DeleteGraphPlot {}
+3489			SetCtrlVal {}
+3490			SetCtrlAttribute {}
+3491			setArfInterp {face.c 982}
+3492				GetGraph {face.c 172}
+3493				SetCtrlAttribute {}
+3494				printf {}
+3495				SetCtrlVal {}
+3496				dna_TouchARFGraph {dna.c 1258}
+3497			disableXYValues {face.c 1103}
+3498				setYValueRange {face.c 1058}
+3499				printf {}
+3500				SetCtrlVal {}
+3501				SetCtrlAttribute {}
+3502			enableXYValues {face.c 1137}
+3503				GetGraph {face.c 172}
+3504				disableXYValues {face.c 1103}
+3505				printf {}
+3506				setYValueRange {face.c 1058}
+3507				SetCtrlVal {}
+3508				SetCtrlAttribute {}
+3509		ValidGroup {face.c 114}
+3510		GetGraph {face.c 172}
+3511			GetGroup {face.c 153}
+3512				ValidGroup {face.c 114}
+3513		dna_TouchARFGraph {dna.c 1258}
+3514			free {}
+3515		printf {}
+3516		SetCtrlVal {}
+3517		SetCtrlAttribute {}
+3518		disableGraph {face.c 259}
+3519			SetCtrlAttribute {}
+3520			printf {}
+3521			DeleteGraphPlot {}
+3522			SetCtrlVal {}
+3523		GetGroupArray {face.c 136}
+3524		Fmt {}
+3525		dna_SetGroupLabel {dna.c 863}
+3526			printf {}
+3527			free {}
+3528			StrDup {}
+3529			strlen {}
+3530		enableGraph {face.c 581}
+3531			GetGroupArray {face.c 136}
+3532			printf {}
+3533			dna_SetGraphLabel {dna.c 640}
+3534				StrDup {}
+3535				printf {}
+3536				strlen {}
+3537			GetGroup {face.c 153}
+3538				ValidGroup {face.c 114}
+3539			GetGraph {face.c 172}
+3540				GetGroup {face.c 153}
+3541			SetCtrlVal {}
+3542			SetCtrlAttribute {}
+3543			DeleteGraphPlot {}
+3544			dna_SetGraphValues {dna.c 1289}
+3545				free {}
+3546				calloc {}
+3547				printf {}
+3548				realloc {}
+3549			GetCtrlAttribute {}
+3550			MakeInterp {brain.c 1084}
+3551				printf {}
+3552				dna_TouchARFGraph {dna.c 1258}
+3553				dna_CalcXYValuesMinMax {dna.c 951}
+3554				SortValues {brain.c 1776}
+3555				dna_ScaleGraphValues {dna.c 1009}
+3556				free {}
+3557				calloc {}
+3558			enableXYValues {face.c 1137}
+3559				GetGraph {face.c 172}
+3560				disableXYValues {face.c 1103}
+3561				printf {}
+3562				setYValueRange {face.c 1058}
+3563				SetCtrlVal {}
+3564				SetCtrlAttribute {}
+3565			PinValuesQ {face.c 220}
+3566				GetCtrlVal {}
+3567			dna_PinGraphValues {dna.c 1066}
+3568				printf {}
+3569				GetYMin {brain.c 3954}
+3570				GetYMax {brain.c 3970}
+3571				Pin {}
+3572			PlotXY {}
+3573			RefreshGraph {}
+3574	clusterAnalogGroup {face.c 2970}
+3575		GetCtrlVal {}
+3576		printf {}
+3577		Beep {}
+3578	clusterAnalogRing {face.c 2923}
+3579		GetCtrlVal {}
+3580		printf {}
+3581		SetCtrlAttribute {}
+3582		SetCtrlVal {}
+3583		Beep {}
+3584	clusterEnabledQ {face.c 2828}
+3585		GetCtrlVal {}
+3586		printf {}
+3587		Beep {}
+3588	clusterGlobalOffset {face.c 3135}
+3589		GetCtrlVal {}
+3590		printf {}
+3591		changedGlobalOffset {face.c 496}
+3592			SetCtrlVal {}
+3593			printf {}
+3594			GetCluster {face.c 101}
+3595			loadCluster {face.c 399}
+3596				printf {}
+3597				GetCluster {face.c 101}
+3598				SetCtrlAttribute {}
+3599				SetCtrlVal {}
+3600				Fmt {}
+3601				dna_SetClusterLabel {dna.c 355}
+3602				setDigitalValue {face.c 307}
+3603			disableCluster {face.c 339}
+3604				printf {}
+3605				GetCtrlVal {}
+3606				SetCtrlAttribute {}
+3607				SetCtrlVal {}
+3608				setDigitalValue {face.c 307}
+3609		Beep {}
+3610	clusterIdle {face.c 2757}
+3611		GetCtrlVal {}
+3612		printf {}
+3613		SetIdle {brain.c 1678}
+3614			MessagePopup {}
+3615			printf {}
+3616		Beep {}
+3617	clusterIndex {face.c 4384}
+3618		popupCluster {face.c 1990}
+3619			RunPopupMenu {}
+3620		printf {}
+3621		Beep {}
+3622	clusterLabel {face.c 3034}
+3623		EditTextMsg {face.c 1915}
+3624			GetCtrlAttribute {}
+3625			printf {}
+3626			calloc {}
+3627			GetCtrlVal {}
+3628			GenericMessagePopup {}
+3629			SetCtrlVal {}
+3630			free {}
+3631		GetCtrlAttribute {}
+3632		printf {}
+3633		calloc {}
+3634		GetCtrlVal {}
+3635		dna_SetClusterLabel {dna.c 355}
+3636			free {}
+3637			strlen {}
+3638			calloc {}
+3639			printf {}
+3640			strcpy {}
+3641		free {}
+3642		Beep {}
+3643	clusterOnlyEnabledQ {face.c 3202}
+3644		GetCtrlVal {}
+3645		printf {}
+3646		changedGlobalOffset {face.c 496}
+3647			SetCtrlVal {}
+3648			printf {}
+3649			GetCluster {face.c 101}
+3650			loadCluster {face.c 399}
+3651				printf {}
+3652				GetCluster {face.c 101}
+3653				SetCtrlAttribute {}
+3654				SetCtrlVal {}
+3655				Fmt {}
+3656				dna_SetClusterLabel {dna.c 355}
+3657				setDigitalValue {face.c 307}
+3658			disableCluster {face.c 339}
+3659				printf {}
+3660				GetCtrlVal {}
+3661				SetCtrlAttribute {}
+3662				SetCtrlVal {}
+3663				setDigitalValue {face.c 307}
+3664		Beep {}
+3665	clusterOutputLabel {face.c 3227}
+3666		EditTextMsg {face.c 1915}
+3667			GetCtrlAttribute {}
+3668			printf {}
+3669			calloc {}
+3670			GetCtrlVal {}
+3671			GenericMessagePopup {}
+3672			SetCtrlVal {}
+3673			free {}
+3674		GetCtrlAttribute {}
+3675		printf {}
+3676		calloc {}
+3677		GetCtrlVal {}
+3678		dna_SetOutputLabel {dna.c 141}
+3679			free {}
+3680			StrDup {}
+3681			printf {}
+3682			strlen {}
+3683		free {}
+3684		Beep {}
+3685	clusterRFGroup {face.c 2899}
+3686		GetCtrlVal {}
+3687		printf {}
+3688		Beep {}
+3689	clusterRFRing {face.c 2852}
+3690		GetCtrlVal {}
+3691		printf {}
+3692		SetCtrlAttribute {}
+3693		SetCtrlVal {}
+3694		Beep {}
+3695	clusterTicks {face.c 2779}
+3696		GetCtrlVal {}
+3697		printf {}
+3698		Beep {}
+3699	clusterTimeUnit {face.c 2803}
+3700		GetCtrlVal {}
+3701		printf {}
+3702		Beep {}
+3703	commentAcceptCommand {face.c 4459}
+3704		GetCtrlAttribute {}
+3705		printf {}
+3706		free {}
+3707		calloc {}
+3708		GetCtrlVal {}
+3709		SetCtrlAttribute {}
+3710		Beep {}
+3711	commentCancelCommand {face.c 4430}
+3712		GetCtrlAttribute {}
+3713		printf {}
+3714		ResetTextBox {}
+3715		SetCtrlAttribute {}
+3716		Beep {}
+3717	disableCluster {face.c 339}
+3718		printf {}
+3719		GetCtrlVal {}
+3720		SetCtrlAttribute {}
+3721		SetCtrlVal {}
+3722		setDigitalValue {face.c 307}
+3723			SetCtrlAttribute {}
+3724			printf {}
+3725			CanvasDrawRect {}
+3726	disableGraph {face.c 259}
+3727		SetCtrlAttribute {}
+3728		printf {}
+3729		DeleteGraphPlot {}
+3730		SetCtrlVal {}
+3731	disableXYValues {face.c 1103}
+3732		setYValueRange {face.c 1058}
+3733			PinValuesQ {face.c 220}
+3734				GetCtrlVal {}
+3735			ValidGroup {face.c 114}
+3736			GetGraph {face.c 172}
+3737				GetGroup {face.c 153}
+3738			printf {}
+3739			GetYMin {brain.c 3954}
+3740				printf {}
+3741			GetYMax {brain.c 3970}
+3742				printf {}
+3743			fabs {}
+3744			RoundRealToNearestInteger {}
+3745			SetCtrlAttribute {}
+3746		printf {}
+3747		SetCtrlVal {}
+3748		SetCtrlAttribute {}
+3749	dna_AdvanceBufferRF {dna.c 1402}
+3750		printf {}
+3751		dna_LengthBufferRF {dna.c 1393}
+3752			StringLength {}
+3753	dna_AdvanceRunBufferRF {dna.c 1416}
+3754		printf {}
+3755		dna_LengthBufferRF {dna.c 1393}
+3756			StringLength {}
+3757	dna_AdvanceRunStage {dna.c 1441}
+3758		printf {}
+3759	dna_AdvanceStage {dna.c 1432}
+3760	dna_CalcXYValuesMinMax {dna.c 951}
+3761		printf {}
+3762	dna_CopyARFGraph {dna.c 1226}
+3763		printf {}
+3764		dna_ReInitARFGraph {dna.c 1131}
+3765			dna_TouchARFGraph {dna.c 1258}
+3766				free {}
+3767			printf {}
+3768			free {}
+3769			calloc {}
+3770			realloc {}
+3771		dna_TouchARFGraph {dna.c 1258}
+3772			free {}
+3773	dna_CopyARFGroup {dna.c 834}
+3774		printf {}
+3775		dna_ReInitGroup {dna.c 703}
+3776			free {}
+3777			strlen {}
+3778			StrDup {}
+3779			dna_ReInitARFGraph {dna.c 1131}
+3780				dna_TouchARFGraph {dna.c 1258}
+3781				printf {}
+3782				free {}
+3783				calloc {}
+3784				realloc {}
+3785			printf {}
+3786			calloc {}
+3787			dna_InitARFGraph {dna.c 1092}
+3788			realloc {}
+3789		dna_SetGroupLabel {dna.c 863}
+3790			printf {}
+3791			free {}
+3792			StrDup {}
+3793			strlen {}
+3794		dna_CopyARFGraph {dna.c 1226}
+3795			printf {}
+3796			dna_ReInitARFGraph {dna.c 1131}
+3797				dna_TouchARFGraph {dna.c 1258}
+3798				printf {}
+3799				free {}
+3800				calloc {}
+3801				realloc {}
+3802			dna_TouchARFGraph {dna.c 1258}
+3803				free {}
+3804	dna_CopyClusterData {dna.c 387}
+3805		dna_ReInitCluster {dna.c 282}
+3806			free {}
+3807			calloc {}
+3808			printf {}
+3809			realloc {}
+3810		printf {}
+3811		StrDup {}
+3812	dna_DeleteCluster {dna.c 223}
+3813		printf {}
+3814		dna_ReInitCluster {dna.c 282}
+3815			free {}
+3816			calloc {}
+3817			printf {}
+3818			realloc {}
+3819		dna_InitCluster {dna.c 252}
+3820			calloc {}
+3821			printf {}
+3822		dna_ReInitClusterArray {dna.c 65}
+3823			printf {}
+3824			free {}
+3825			dna_ReInitCluster {dna.c 282}
+3826				free {}
+3827				calloc {}
+3828				printf {}
+3829				realloc {}
+3830			dna_InitClusterArray {dna.c 37}
+3831				calloc {}
+3832				printf {}
+3833				dna_InitCluster {dna.c 252}
+3834			realloc {}
+3835			dna_InitCluster {dna.c 252}
+3836				calloc {}
+3837				printf {}
+3838			calloc {}
+3839	dna_DeleteGraphValue {dna.c 923}
+3840		printf {}
+3841	dna_DeleteGroup {dna.c 621}
+3842		printf {}
+3843		dna_ReInitGroup {dna.c 703}
+3844			free {}
+3845			strlen {}
+3846			StrDup {}
+3847			dna_ReInitARFGraph {dna.c 1131}
+3848				dna_TouchARFGraph {dna.c 1258}
+3849				printf {}
+3850				free {}
+3851				calloc {}
+3852				realloc {}
+3853			printf {}
+3854			calloc {}
+3855			dna_InitARFGraph {dna.c 1092}
+3856			realloc {}
+3857	dna_DuplicateGraphValue {dna.c 896}
+3858		printf {}
+3859	dna_InitARFGraph {dna.c 1092}
+3860	dna_InitARFGroupArray {dna.c 414}
+3861		calloc {}
+3862		printf {}
+3863		dna_InitGroup {dna.c 662}
+3864			strlen {}
+3865			calloc {}
+3866			printf {}
+3867			dna_InitARFGraph {dna.c 1092}
+3868	dna_InitAuxInfo {dna.c 1612}
+3869		StrDup {}
+3870		printf {}
+3871	dna_InitBufferAnalog {dna.c 1511}
+3872	dna_InitBufferDigital {dna.c 1455}
+3873	dna_InitBufferRF {dna.c 1348}
+3874	dna_InitCluster {dna.c 252}
+3875		calloc {}
+3876		printf {}
+3877	dna_InitClusterArray {dna.c 37}
+3878		calloc {}
+3879		printf {}
+3880		dna_InitCluster {dna.c 252}
+3881			calloc {}
+3882			printf {}
+3883	dna_InitGroup {dna.c 662}
+3884		strlen {}
+3885		calloc {}
+3886		printf {}
+3887		dna_InitARFGraph {dna.c 1092}
+3888	dna_InsertCluster {dna.c 160}
+3889		printf {}
+3890		dna_ReInitClusterArray {dna.c 65}
+3891			printf {}
+3892			free {}
+3893			dna_ReInitCluster {dna.c 282}
+3894				free {}
+3895				calloc {}
+3896				printf {}
+3897				realloc {}
+3898			dna_InitClusterArray {dna.c 37}
+3899				calloc {}
+3900				printf {}
+3901				dna_InitCluster {dna.c 252}
+3902			realloc {}
+3903			dna_InitCluster {dna.c 252}
+3904				calloc {}
+3905				printf {}
+3906			calloc {}
+3907	dna_LengthBufferRF {dna.c 1393}
+3908		StringLength {}
+3909	dna_PinGraphValues {dna.c 1066}
+3910		printf {}
+3911		GetYMin {brain.c 3954}
+3912			printf {}
+3913		GetYMax {brain.c 3970}
+3914			printf {}
+3915		Pin {}
+3916	dna_ReInitARFGraph {dna.c 1131}
+3917		dna_TouchARFGraph {dna.c 1258}
+3918			free {}
+3919		printf {}
+3920		free {}
+3921		calloc {}
+3922		realloc {}
+3923	dna_ReInitARFGroupArray {dna.c 456}
+3924		free {}
+3925		dna_ReInitGroup {dna.c 703}
+3926			free {}
+3927			strlen {}
+3928			StrDup {}
+3929			dna_ReInitARFGraph {dna.c 1131}
+3930				dna_TouchARFGraph {dna.c 1258}
+3931				printf {}
+3932				free {}
+3933				calloc {}
+3934				realloc {}
+3935			printf {}
+3936			calloc {}
+3937			dna_InitARFGraph {dna.c 1092}
+3938			realloc {}
+3939		calloc {}
+3940		printf {}
+3941		dna_InitGroup {dna.c 662}
+3942			strlen {}
+3943			calloc {}
+3944			printf {}
+3945			dna_InitARFGraph {dna.c 1092}
+3946		realloc {}
+3947	dna_ReInitCluster {dna.c 282}
+3948		free {}
+3949		calloc {}
+3950		printf {}
+3951		realloc {}
+3952	dna_ReInitClusterArray {dna.c 65}
+3953		printf {}
+3954		free {}
+3955		dna_ReInitCluster {dna.c 282}
+3956			free {}
+3957			calloc {}
+3958			printf {}
+3959			realloc {}
+3960		dna_InitClusterArray {dna.c 37}
+3961			calloc {}
+3962			printf {}
+3963			dna_InitCluster {dna.c 252}
+3964				calloc {}
+3965				printf {}
+3966		realloc {}
+3967		dna_InitCluster {dna.c 252}
+3968			calloc {}
+3969			printf {}
+3970		calloc {}
+3971	dna_ReInitGroup {dna.c 703}
+3972		free {}
+3973		strlen {}
+3974		StrDup {}
+3975		dna_ReInitARFGraph {dna.c 1131}
+3976			dna_TouchARFGraph {dna.c 1258}
+3977				free {}
+3978			printf {}
+3979			free {}
+3980			calloc {}
+3981			realloc {}
+3982		printf {}
+3983		calloc {}
+3984		dna_InitARFGraph {dna.c 1092}
+3985		realloc {}
+3986	dna_ResetAuxInfo {dna.c 1665}
+3987		free {}
+3988		StrDup {}
+3989		printf {}
+3990	dna_ResetInitIdle {dna.c 1593}
+3991	dna_ScaleGraphValues {dna.c 1009}
+3992		free {}
+3993		calloc {}
+3994		printf {}
+3995	dna_SetClusterLabel {dna.c 355}
+3996		free {}
+3997		strlen {}
+3998		calloc {}
+3999		printf {}
+4000		strcpy {}
+4001	dna_SetClusterLength {dna.c 382}
+4002	dna_SetGraphLabel {dna.c 640}
+4003		StrDup {}
+4004		printf {}
+4005		strlen {}
+4006	dna_SetGraphValues {dna.c 1289}
+4007		free {}
+4008		calloc {}
+4009		printf {}
+4010		realloc {}
+4011	dna_SetGroupGraphs {dna.c 888}
+4012		printf {}
+4013	dna_SetGroupLabel {dna.c 863}
+4014		printf {}
+4015		free {}
+4016		StrDup {}
+4017		strlen {}
+4018	dna_SetOutputLabel {dna.c 141}
+4019		free {}
+4020		StrDup {}
+4021		printf {}
+4022		strlen {}
+4023	dna_SetRangeMax {dna.c 1747}
+4024		printf {}
+4025		Pin {}
+4026	dna_SetRangeMin {dna.c 1727}
+4027		printf {}
+4028		Pin {}
+4029	dna_SetupBufferAnalog {dna.c 1529}
+4030		printf {}
+4031		free {}
+4032		calloc {}
+4033	dna_SetupBufferDigital {dna.c 1471}
+4034		free {}
+4035		calloc {}
+4036		printf {}
+4037	dna_SetupBufferRF {dna.c 1373}
+4038		free {}
+4039		dna_InitBufferRF {dna.c 1348}
+4040		calloc {}
+4041		printf {}
+4042	dna_TouchARFGraph {dna.c 1258}
+4043		free {}
+4044	enableGraph {face.c 581}
+4045		GetGroupArray {face.c 136}
+4046		printf {}
+4047		dna_SetGraphLabel {dna.c 640}
+4048			StrDup {}
+4049			printf {}
+4050			strlen {}
+4051		GetGroup {face.c 153}
+4052			ValidGroup {face.c 114}
+4053		GetGraph {face.c 172}
+4054			GetGroup {face.c 153}
+4055				ValidGroup {face.c 114}
+4056		SetCtrlVal {}
+4057		SetCtrlAttribute {}
+4058		DeleteGraphPlot {}
+4059		dna_SetGraphValues {dna.c 1289}
+4060			free {}
+4061			calloc {}
+4062			printf {}
+4063			realloc {}
+4064		GetCtrlAttribute {}
+4065		MakeInterp {brain.c 1084}
+4066			printf {}
+4067			dna_TouchARFGraph {dna.c 1258}
+4068				free {}
+4069			dna_CalcXYValuesMinMax {dna.c 951}
+4070				printf {}
+4071			SortValues {brain.c 1776}
+4072				printf {}
+4073			dna_ScaleGraphValues {dna.c 1009}
+4074				free {}
+4075				calloc {}
+4076				printf {}
+4077			free {}
+4078			calloc {}
+4079		enableXYValues {face.c 1137}
+4080			GetGraph {face.c 172}
+4081				GetGroup {face.c 153}
+4082			disableXYValues {face.c 1103}
+4083				setYValueRange {face.c 1058}
+4084				printf {}
+4085				SetCtrlVal {}
+4086				SetCtrlAttribute {}
+4087			printf {}
+4088			setYValueRange {face.c 1058}
+4089				PinValuesQ {face.c 220}
+4090				ValidGroup {face.c 114}
+4091				GetGraph {face.c 172}
+4092				printf {}
+4093				GetYMin {brain.c 3954}
+4094				GetYMax {brain.c 3970}
+4095				fabs {}
+4096				RoundRealToNearestInteger {}
+4097				SetCtrlAttribute {}
+4098			SetCtrlVal {}
+4099			SetCtrlAttribute {}
+4100		PinValuesQ {face.c 220}
+4101			GetCtrlVal {}
+4102		dna_PinGraphValues {dna.c 1066}
+4103			printf {}
+4104			GetYMin {brain.c 3954}
+4105				printf {}
+4106			GetYMax {brain.c 3970}
+4107				printf {}
+4108			Pin {}
+4109		PlotXY {}
+4110		RefreshGraph {}
+4111	enableXYValues {face.c 1137}
+4112		GetGraph {face.c 172}
+4113			GetGroup {face.c 153}
+4114				ValidGroup {face.c 114}
+4115		disableXYValues {face.c 1103}
+4116			setYValueRange {face.c 1058}
+4117				PinValuesQ {face.c 220}
+4118				ValidGroup {face.c 114}
+4119				GetGraph {face.c 172}
+4120				printf {}
+4121				GetYMin {brain.c 3954}
+4122				GetYMax {brain.c 3970}
+4123				fabs {}
+4124				RoundRealToNearestInteger {}
+4125				SetCtrlAttribute {}
+4126			printf {}
+4127			SetCtrlVal {}
+4128			SetCtrlAttribute {}
+4129		printf {}
+4130		setYValueRange {face.c 1058}
+4131			PinValuesQ {face.c 220}
+4132				GetCtrlVal {}
+4133			ValidGroup {face.c 114}
+4134			GetGraph {face.c 172}
+4135				GetGroup {face.c 153}
+4136			printf {}
+4137			GetYMin {brain.c 3954}
+4138				printf {}
+4139			GetYMax {brain.c 3970}
+4140				printf {}
+4141			fabs {}
+4142			RoundRealToNearestInteger {}
+4143			SetCtrlAttribute {}
+4144		SetCtrlVal {}
+4145		SetCtrlAttribute {}
+4146	fabs {}
+4147	faceAuxWaitOff {face.c 2484}
+4148		printf {}
+4149		RemovePopup {}
+4150	faceAuxWaitOn {face.c 2461}
+4151		Fmt {}
+4152		printf {}
+4153		SetCtrlVal {}
+4154		InstallPopup {}
+4155	faceAuxWaitStatus {face.c 2477}
+4156	faceBeginRunningMode {face.c 2524}
+4157		faceRunDim {face.c 2502}
+4158			SetCtrlAttribute {}
+4159			printf {}
+4160			GetPanelMenuBar {}
+4161			SetMenuBarAttribute {}
+4162		printf {}
+4163		CreateProgressDialog {}
+4164		SetPanelAttribute {}
+4165		SetCtrlAttribute {}
+4166		SetCtrlVal {}
+4167		DiscardProgressDialog {}
+4168	faceEndRunningMode {face.c 2590}
+4169		SetCtrlAttribute {}
+4170		printf {}
+4171		DiscardProgressDialog {}
+4172		faceRunDim {face.c 2502}
+4173			SetCtrlAttribute {}
+4174			printf {}
+4175			GetPanelMenuBar {}
+4176			SetMenuBarAttribute {}
+4177	faceInvalidatePointers {face.c 2431}
+4178		printf {}
+4179	faceLoadAuxillaryInfo {face.c 2395}
+4180		SetCtrlVal {}
+4181		printf {}
+4182		changedGlobalOffset {face.c 496}
+4183			SetCtrlVal {}
+4184			printf {}
+4185			GetCluster {face.c 101}
+4186			loadCluster {face.c 399}
+4187				printf {}
+4188				GetCluster {face.c 101}
+4189				SetCtrlAttribute {}
+4190				SetCtrlVal {}
+4191				Fmt {}
+4192				dna_SetClusterLabel {dna.c 355}
+4193				setDigitalValue {face.c 307}
+4194			disableCluster {face.c 339}
+4195				printf {}
+4196				GetCtrlVal {}
+4197				SetCtrlAttribute {}
+4198				SetCtrlVal {}
+4199				setDigitalValue {face.c 307}
+4200		changedAnalogIndex {face.c 719}
+4201			changedGraphSelection {face.c 1236}
+4202				GetEnabledQ {face.c 186}
+4203				ValidGroup {face.c 114}
+4204				GetGraph {face.c 172}
+4205				dna_TouchARFGraph {dna.c 1258}
+4206				printf {}
+4207				enableGraph {face.c 581}
+4208				DeleteGraphPlot {}
+4209				SetCtrlVal {}
+4210				SetCtrlAttribute {}
+4211				setArfInterp {face.c 982}
+4212				disableXYValues {face.c 1103}
+4213				enableXYValues {face.c 1137}
+4214			ValidGroup {face.c 114}
+4215			GetGraph {face.c 172}
+4216				GetGroup {face.c 153}
+4217			dna_TouchARFGraph {dna.c 1258}
+4218				free {}
+4219			printf {}
+4220			SetCtrlVal {}
+4221			SetCtrlAttribute {}
+4222			disableGraph {face.c 259}
+4223				SetCtrlAttribute {}
+4224				printf {}
+4225				DeleteGraphPlot {}
+4226				SetCtrlVal {}
+4227			GetGroupArray {face.c 136}
+4228			Fmt {}
+4229			dna_SetGroupLabel {dna.c 863}
+4230				printf {}
+4231				free {}
+4232				StrDup {}
+4233				strlen {}
+4234			enableGraph {face.c 581}
+4235				GetGroupArray {face.c 136}
+4236				printf {}
+4237				dna_SetGraphLabel {dna.c 640}
+4238				GetGroup {face.c 153}
+4239				GetGraph {face.c 172}
+4240				SetCtrlVal {}
+4241				SetCtrlAttribute {}
+4242				DeleteGraphPlot {}
+4243				dna_SetGraphValues {dna.c 1289}
+4244				GetCtrlAttribute {}
+4245				MakeInterp {brain.c 1084}
+4246				enableXYValues {face.c 1137}
+4247				PinValuesQ {face.c 220}
+4248				dna_PinGraphValues {dna.c 1066}
+4249				PlotXY {}
+4250				RefreshGraph {}
+4251		changedRFIndex {face.c 839}
+4252			changedGraphSelection {face.c 1236}
+4253				GetEnabledQ {face.c 186}
+4254				ValidGroup {face.c 114}
+4255				GetGraph {face.c 172}
+4256				dna_TouchARFGraph {dna.c 1258}
+4257				printf {}
+4258				enableGraph {face.c 581}
+4259				DeleteGraphPlot {}
+4260				SetCtrlVal {}
+4261				SetCtrlAttribute {}
+4262				setArfInterp {face.c 982}
+4263				disableXYValues {face.c 1103}
+4264				enableXYValues {face.c 1137}
+4265			ValidGroup {face.c 114}
+4266			GetGraph {face.c 172}
+4267				GetGroup {face.c 153}
+4268			dna_TouchARFGraph {dna.c 1258}
+4269				free {}
+4270			printf {}
+4271			SetCtrlVal {}
+4272			SetCtrlAttribute {}
+4273			disableGraph {face.c 259}
+4274				SetCtrlAttribute {}
+4275				printf {}
+4276				DeleteGraphPlot {}
+4277				SetCtrlVal {}
+4278			GetGroupArray {face.c 136}
+4279			Fmt {}
+4280			dna_SetGroupLabel {dna.c 863}
+4281				printf {}
+4282				free {}
+4283				StrDup {}
+4284				strlen {}
+4285			enableGraph {face.c 581}
+4286				GetGroupArray {face.c 136}
+4287				printf {}
+4288				dna_SetGraphLabel {dna.c 640}
+4289				GetGroup {face.c 153}
+4290				GetGraph {face.c 172}
+4291				SetCtrlVal {}
+4292				SetCtrlAttribute {}
+4293				DeleteGraphPlot {}
+4294				dna_SetGraphValues {dna.c 1289}
+4295				GetCtrlAttribute {}
+4296				MakeInterp {brain.c 1084}
+4297				enableXYValues {face.c 1137}
+4298				PinValuesQ {face.c 220}
+4299				dna_PinGraphValues {dna.c 1066}
+4300				PlotXY {}
+4301				RefreshGraph {}
+4302		changedGraphSelection {face.c 1236}
+4303			GetEnabledQ {face.c 186}
+4304				GetGroupArray {face.c 136}
+4305			ValidGroup {face.c 114}
+4306			GetGraph {face.c 172}
+4307				GetGroup {face.c 153}
+4308			dna_TouchARFGraph {dna.c 1258}
+4309				free {}
+4310			printf {}
+4311			enableGraph {face.c 581}
+4312				GetGroupArray {face.c 136}
+4313				printf {}
+4314				dna_SetGraphLabel {dna.c 640}
+4315				GetGroup {face.c 153}
+4316				GetGraph {face.c 172}
+4317				SetCtrlVal {}
+4318				SetCtrlAttribute {}
+4319				DeleteGraphPlot {}
+4320				dna_SetGraphValues {dna.c 1289}
+4321				GetCtrlAttribute {}
+4322				MakeInterp {brain.c 1084}
+4323				enableXYValues {face.c 1137}
+4324				PinValuesQ {face.c 220}
+4325				dna_PinGraphValues {dna.c 1066}
+4326				PlotXY {}
+4327				RefreshGraph {}
+4328			DeleteGraphPlot {}
+4329			SetCtrlVal {}
+4330			SetCtrlAttribute {}
+4331			setArfInterp {face.c 982}
+4332				GetGraph {face.c 172}
+4333				SetCtrlAttribute {}
+4334				printf {}
+4335				SetCtrlVal {}
+4336				dna_TouchARFGraph {dna.c 1258}
+4337			disableXYValues {face.c 1103}
+4338				setYValueRange {face.c 1058}
+4339				printf {}
+4340				SetCtrlVal {}
+4341				SetCtrlAttribute {}
+4342			enableXYValues {face.c 1137}
+4343				GetGraph {face.c 172}
+4344				disableXYValues {face.c 1103}
+4345				printf {}
+4346				setYValueRange {face.c 1058}
+4347				SetCtrlVal {}
+4348				SetCtrlAttribute {}
+4349		faceSetARFRanges {face.c 2338}
+4350			printf {}
+4351			SetCtrlAttribute {}
+4352			GetCtrlVal {}
+4353			Pin {}
+4354			SetCtrlVal {}
+4355		setYValueRange {face.c 1058}
+4356			PinValuesQ {face.c 220}
+4357				GetCtrlVal {}
+4358			ValidGroup {face.c 114}
+4359			GetGraph {face.c 172}
+4360				GetGroup {face.c 153}
+4361			printf {}
+4362			GetYMin {brain.c 3954}
+4363				printf {}
+4364			GetYMax {brain.c 3970}
+4365				printf {}
+4366			fabs {}
+4367			RoundRealToNearestInteger {}
+4368			SetCtrlAttribute {}
+4369	faceRunDim {face.c 2502}
+4370		SetCtrlAttribute {}
+4371		printf {}
+4372		GetPanelMenuBar {}
+4373		SetMenuBarAttribute {}
+4374	faceSaveAuxillaryInfo {face.c 2307}
+4375		RepeatRunQ {face.c 227}
+4376			GetCtrlVal {}
+4377		CameraTriggerQ {face.c 234}
+4378			GetCtrlVal {}
+4379		GetCtrlVal {}
+4380		printf {}
+4381		PinValuesQ {face.c 220}
+4382			GetCtrlVal {}
+4383	faceSendIdleRF {face.c 2446}
+4384		GetCtrlVal {}
+4385		printf {}
+4386		SetIdleRF {brain.c 1740}
+4387			MessagePopup {}
+4388			printf {}
+4389			mouth_MakeIdleCommand {mouth.c 131}
+4390				FillBytes {}
+4391				Fmt {}
+4392				StrDup {}
+4393			strlen {}
+4394			mouth_WriteDS345 {mouth.c 100}
+4395				ibwait {}
+4396				mouth_Error {mouth.c 42}
+4397				printf {}
+4398				ibwrta {}
+4399			mouth_InitRF {mouth.c 28}
+4400				ibdev {}
+4401				mouth_Error {mouth.c 42}
+4402				printf {}
+4403	faceSetARFRanges {face.c 2338}
+4404		printf {}
+4405		SetCtrlAttribute {}
+4406		GetCtrlVal {}
+4407		Pin {}
+4408		SetCtrlVal {}
+4409	faceSetIdleValues {face.c 2274}
+4410		SetCtrlVal {}
+4411		printf {}
+4412	faceSetInitAnalog {face.c 2295}
+4413		SetCtrlVal {}
+4414		printf {}
+4415	faceSetInterpTypes {face.c 2032}
+4416		ClearListCtrl {}
+4417		printf {}
+4418		InsertListItem {}
+4419	faceSetNumberOfAGroups {face.c 2177}
+4420		GetGroupArray {face.c 136}
+4421		printf {}
+4422		SetCtrlAttribute {}
+4423		changedAnalogIndex {face.c 719}
+4424			changedGraphSelection {face.c 1236}
+4425				GetEnabledQ {face.c 186}
+4426				ValidGroup {face.c 114}
+4427				GetGraph {face.c 172}
+4428				dna_TouchARFGraph {dna.c 1258}
+4429				printf {}
+4430				enableGraph {face.c 581}
+4431				DeleteGraphPlot {}
+4432				SetCtrlVal {}
+4433				SetCtrlAttribute {}
+4434				setArfInterp {face.c 982}
+4435				disableXYValues {face.c 1103}
+4436				enableXYValues {face.c 1137}
+4437			ValidGroup {face.c 114}
+4438			GetGraph {face.c 172}
+4439				GetGroup {face.c 153}
+4440			dna_TouchARFGraph {dna.c 1258}
+4441				free {}
+4442			printf {}
+4443			SetCtrlVal {}
+4444			SetCtrlAttribute {}
+4445			disableGraph {face.c 259}
+4446				SetCtrlAttribute {}
+4447				printf {}
+4448				DeleteGraphPlot {}
+4449				SetCtrlVal {}
+4450			GetGroupArray {face.c 136}
+4451			Fmt {}
+4452			dna_SetGroupLabel {dna.c 863}
+4453				printf {}
+4454				free {}
+4455				StrDup {}
+4456				strlen {}
+4457			enableGraph {face.c 581}
+4458				GetGroupArray {face.c 136}
+4459				printf {}
+4460				dna_SetGraphLabel {dna.c 640}
+4461				GetGroup {face.c 153}
+4462				GetGraph {face.c 172}
+4463				SetCtrlVal {}
+4464				SetCtrlAttribute {}
+4465				DeleteGraphPlot {}
+4466				dna_SetGraphValues {dna.c 1289}
+4467				GetCtrlAttribute {}
+4468				MakeInterp {brain.c 1084}
+4469				enableXYValues {face.c 1137}
+4470				PinValuesQ {face.c 220}
+4471				dna_PinGraphValues {dna.c 1066}
+4472				PlotXY {}
+4473				RefreshGraph {}
+4474	faceSetNumberOfClusters {face.c 2080}
+4475		SetCtrlAttribute {}
+4476		printf {}
+4477		changedGlobalOffset {face.c 496}
+4478			SetCtrlVal {}
+4479			printf {}
+4480			GetCluster {face.c 101}
+4481			loadCluster {face.c 399}
+4482				printf {}
+4483				GetCluster {face.c 101}
+4484				SetCtrlAttribute {}
+4485				SetCtrlVal {}
+4486				Fmt {}
+4487				dna_SetClusterLabel {dna.c 355}
+4488				setDigitalValue {face.c 307}
+4489			disableCluster {face.c 339}
+4490				printf {}
+4491				GetCtrlVal {}
+4492				SetCtrlAttribute {}
+4493				SetCtrlVal {}
+4494				setDigitalValue {face.c 307}
+4495	faceSetNumberOfLines {face.c 2049}
+4496		SetCtrlAttribute {}
+4497		printf {}
+4498		SetCtrlVal {}
+4499		SetIdle {brain.c 1678}
+4500			MessagePopup {}
+4501			printf {}
+4502	faceSetNumberOfRFGroups {face.c 2231}
+4503		GetGroupArray {face.c 136}
+4504		printf {}
+4505		SetCtrlAttribute {}
+4506		changedRFIndex {face.c 839}
+4507			changedGraphSelection {face.c 1236}
+4508				GetEnabledQ {face.c 186}
+4509				ValidGroup {face.c 114}
+4510				GetGraph {face.c 172}
+4511				dna_TouchARFGraph {dna.c 1258}
+4512				printf {}
+4513				enableGraph {face.c 581}
+4514				DeleteGraphPlot {}
+4515				SetCtrlVal {}
+4516				SetCtrlAttribute {}
+4517				setArfInterp {face.c 982}
+4518				disableXYValues {face.c 1103}
+4519				enableXYValues {face.c 1137}
+4520			ValidGroup {face.c 114}
+4521			GetGraph {face.c 172}
+4522				GetGroup {face.c 153}
+4523			dna_TouchARFGraph {dna.c 1258}
+4524				free {}
+4525			printf {}
+4526			SetCtrlVal {}
+4527			SetCtrlAttribute {}
+4528			disableGraph {face.c 259}
+4529				SetCtrlAttribute {}
+4530				printf {}
+4531				DeleteGraphPlot {}
+4532				SetCtrlVal {}
+4533			GetGroupArray {face.c 136}
+4534			Fmt {}
+4535			dna_SetGroupLabel {dna.c 863}
+4536				printf {}
+4537				free {}
+4538				StrDup {}
+4539				strlen {}
+4540			enableGraph {face.c 581}
+4541				GetGroupArray {face.c 136}
+4542				printf {}
+4543				dna_SetGraphLabel {dna.c 640}
+4544				GetGroup {face.c 153}
+4545				GetGraph {face.c 172}
+4546				SetCtrlVal {}
+4547				SetCtrlAttribute {}
+4548				DeleteGraphPlot {}
+4549				dna_SetGraphValues {dna.c 1289}
+4550				GetCtrlAttribute {}
+4551				MakeInterp {brain.c 1084}
+4552				enableXYValues {face.c 1137}
+4553				PinValuesQ {face.c 220}
+4554				dna_PinGraphValues {dna.c 1066}
+4555				PlotXY {}
+4556				RefreshGraph {}
+4557	faceSetOutputLabels {face.c 2148}
+4558		Fmt {}
+4559		printf {}
+4560		dna_SetOutputLabel {dna.c 141}
+4561			free {}
+4562			StrDup {}
+4563			printf {}
+4564			strlen {}
+4565		SetCtrlVal {}
+4566	faceShowProgress {face.c 2573}
+4567		UpdateProgressDialog {}
+4568	fmod {}
+4569	free {}
+4570	funcILinear {brain.c 192}
+4571	funcILinearFill {brain.c 224}
+4572		GetYMin {brain.c 3954}
+4573			printf {}
+4574		printf {}
+4575		GetYMax {brain.c 3970}
+4576			printf {}
+4577		Pin {}
+4578		AO_VScale {}
+4579	funcILinearSetup {brain.c 307}
+4580		printf {}
+4581	funcINoInterpFill {brain.c 178}
+4582	funcIPoly {brain.c 445}
+4583		PolyInterp {}
+4584	funcIPolyFill {brain.c 457}
+4585		GetYMin {brain.c 3954}
+4586			printf {}
+4587		printf {}
+4588		GetYMax {brain.c 3970}
+4589			printf {}
+4590		Pin {}
+4591		AO_VScale {}
+4592		PolyInterp {}
+4593	funcIPolySetup {brain.c 502}
+4594		MessagePopup {}
+4595	funcIRat {brain.c 534}
+4596		RatInterp {}
+4597	funcIRatSetup {brain.c 545}
+4598		MessagePopup {}
+4599	funcISpline {brain.c 576}
+4600		SpInterp {}
+4601	funcISplineSetup {brain.c 587}
+4602		MessagePopup {}
+4603		calloc {}
+4604		printf {}
+4605		Spline {}
+4606	funcIStep {brain.c 343}
+4607	funcIStepFill {brain.c 372}
+4608		GetYMin {brain.c 3954}
+4609			printf {}
+4610		printf {}
+4611		GetYMax {brain.c 3970}
+4612			printf {}
+4613		Pin {}
+4614		AO_VScale {}
+4615	funcIStepSetup {brain.c 411}
+4616		printf {}
+4617	funcNoInterp {brain.c 171}
+4618	funcNoInterpSetup {brain.c 183}
+4619	funcPExp {brain.c 1030}
+4620	funcPExpSetup {brain.c 1047}
+4621	funcPPulse {brain.c 776}
+4622	funcPPulseFill {brain.c 793}
+4623		GetIntFillNumber {brain.c 147}
+4624			TruncateRealNumber {}
+4625		GetYMin {brain.c 3954}
+4626			printf {}
+4627		printf {}
+4628		GetYMax {brain.c 3970}
+4629			printf {}
+4630		GetDoubleFillNumber {brain.c 159}
+4631			TruncateRealNumber {}
+4632		Pin {}
+4633		AO_VScale {}
+4634	funcPPulseSetup {brain.c 846}
+4635	funcPRamp {brain.c 670}
+4636	funcPRampFill {brain.c 688}
+4637		GetIntFillNumber {brain.c 147}
+4638			TruncateRealNumber {}
+4639		GetYMin {brain.c 3954}
+4640			printf {}
+4641		printf {}
+4642		GetYMax {brain.c 3970}
+4643			printf {}
+4644		GetDoubleFillNumber {brain.c 159}
+4645			TruncateRealNumber {}
+4646		Pin {}
+4647		AO_VScale {}
+4648	funcPRampSetup {brain.c 741}
+4649	funcPSine {brain.c 998}
+4650	funcPSineSetup {brain.c 1009}
+4651	funcPSquare {brain.c 884}
+4652		fmod {}
+4653	funcPSquareFill {brain.c 907}
+4654		GetIntFillNumber {brain.c 147}
+4655			TruncateRealNumber {}
+4656		GetDoubleFillNumber {brain.c 159}
+4657			TruncateRealNumber {}
+4658		GetYMin {brain.c 3954}
+4659			printf {}
+4660		printf {}
+4661		GetYMax {brain.c 3970}
+4662			printf {}
+4663		Pin {}
+4664		AO_VScale {}
+4665		fmod {}
+4666	funcPSquareSetup {brain.c 967}
+4667	hand_AbortRun {hand.c 899}
+4668		GetCurrentThread {}
+4669		SetThreadPriority {}
+4670		Config_DAQ_Event_Message {}
+4671		hand_Error {hand.c 50}
+4672			GetNIDAQErrorString {}
+4673			Beep {}
+4674			Fmt {}
+4675			GenericMessagePopup {}
+4676			QuitUserInterface {}
+4677			DeleteCriticalSection {}
+4678			abort {}
+4679		DIG_Block_Clear {}
+4680		hand_ResetAll {hand.c 135}
+4681			Init_DA_Brds {}
+4682			hand_Error {hand.c 50}
+4683				GetNIDAQErrorString {}
+4684				Beep {}
+4685				Fmt {}
+4686				GenericMessagePopup {}
+4687				QuitUserInterface {}
+4688				DeleteCriticalSection {}
+4689				abort {}
+4690			AO_Configure {}
+4691			printf {}
+4692	hand_CheckProgress {hand.c 884}
+4693		DIG_Block_Check {}
+4694		hand_Error {hand.c 50}
+4695			GetNIDAQErrorString {}
+4696			Beep {}
+4697			Fmt {}
+4698			GenericMessagePopup {}
+4699			QuitUserInterface {}
+4700			DeleteCriticalSection {}
+4701			abort {}
+4702	hand_ConfigAnalog {hand.c 568}
+4703		hand_ResetAnalog {hand.c 189}
+4704			Init_DA_Brds {}
+4705			hand_Error {hand.c 50}
+4706				GetNIDAQErrorString {}
+4707				Beep {}
+4708				Fmt {}
+4709				GenericMessagePopup {}
+4710				QuitUserInterface {}
+4711				DeleteCriticalSection {}
+4712				abort {}
+4713			AO_Configure {}
+4714			printf {}
+4715		hand_Error {hand.c 50}
+4716			GetNIDAQErrorString {}
+4717			Beep {}
+4718			Fmt {}
+4719			GenericMessagePopup {}
+4720			QuitUserInterface {}
+4721			DeleteCriticalSection {}
+4722			abort {}
+4723		WFM_Group_Setup {}
+4724		RTSI_Clear {}
+4725		RTSI_Conn {}
+4726		WFM_ClockRate {}
+4727		WFM_Load {}
+4728		WFM_Group_Control {}
+4729	hand_ConfigAnalogIdle {hand.c 343}
+4730		hand_ResetAnalog {hand.c 189}
+4731			Init_DA_Brds {}
+4732			hand_Error {hand.c 50}
+4733				GetNIDAQErrorString {}
+4734				Beep {}
+4735				Fmt {}
+4736				GenericMessagePopup {}
+4737				QuitUserInterface {}
+4738				DeleteCriticalSection {}
+4739				abort {}
+4740			AO_Configure {}
+4741			printf {}
+4742		hand_Error {hand.c 50}
+4743			GetNIDAQErrorString {}
+4744			Beep {}
+4745			Fmt {}
+4746			GenericMessagePopup {}
+4747			QuitUserInterface {}
+4748			DeleteCriticalSection {}
+4749			abort {}
+4750	hand_ConfigAuxPorts {hand.c 369}
+4751		DIG_Prt_Config {}
+4752		hand_Error {hand.c 50}
+4753			GetNIDAQErrorString {}
+4754			Beep {}
+4755			Fmt {}
+4756			GenericMessagePopup {}
+4757			QuitUserInterface {}
+4758			DeleteCriticalSection {}
+4759			abort {}
+4760	hand_ConfigDIO {hand.c 412}
+4761		DIG_Grp_Config {}
+4762		hand_Error {hand.c 50}
+4763			GetNIDAQErrorString {}
+4764			Beep {}
+4765			Fmt {}
+4766			GenericMessagePopup {}
+4767			QuitUserInterface {}
+4768			DeleteCriticalSection {}
+4769			abort {}
+4770	hand_ConfigDIOPorts {hand.c 218}
+4771		DIG_Grp_Config {}
+4772		DIG_Prt_Config {}
+4773		hand_Error {hand.c 50}
+4774			GetNIDAQErrorString {}
+4775			Beep {}
+4776			Fmt {}
+4777			GenericMessagePopup {}
+4778			QuitUserInterface {}
+4779			DeleteCriticalSection {}
+4780			abort {}
+4781	hand_ConfigDigital {hand.c 533}
+4782		hand_ConfigDIO {hand.c 412}
+4783			DIG_Grp_Config {}
+4784			hand_Error {hand.c 50}
+4785				GetNIDAQErrorString {}
+4786				Beep {}
+4787				Fmt {}
+4788				GenericMessagePopup {}
+4789				QuitUserInterface {}
+4790				DeleteCriticalSection {}
+4791				abort {}
+4792		hand_Error {hand.c 50}
+4793			GetNIDAQErrorString {}
+4794			Beep {}
+4795			Fmt {}
+4796			GenericMessagePopup {}
+4797			QuitUserInterface {}
+4798			DeleteCriticalSection {}
+4799			abort {}
+4800		hand_ConfigPattern {hand.c 484}
+4801			hand_Error {hand.c 50}
+4802				GetNIDAQErrorString {}
+4803				Beep {}
+4804				Fmt {}
+4805				GenericMessagePopup {}
+4806				QuitUserInterface {}
+4807				DeleteCriticalSection {}
+4808				abort {}
+4809			DIG_Block_PG_Config {}
+4810	hand_ConfigPattern {hand.c 484}
+4811		hand_Error {hand.c 50}
+4812			GetNIDAQErrorString {}
+4813			Beep {}
+4814			Fmt {}
+4815			GenericMessagePopup {}
+4816			QuitUserInterface {}
+4817			DeleteCriticalSection {}
+4818			abort {}
+4819		DIG_Block_PG_Config {}
+4820	hand_ConfigRFCallback {hand.c 823}
+4821	hand_Error {hand.c 50}
+4822		GetNIDAQErrorString {}
+4823		Beep {}
+4824		Fmt {}
+4825		GenericMessagePopup {}
+4826		QuitUserInterface {}
+4827		DeleteCriticalSection {}
+4828		abort {}
+4829	hand_InstallEndCallback {hand.c 868}
+4830	hand_OutBuffer {hand.c 694}
+4831		GetTickCount {}
+4832		DIG_Block_Out {}
+4833		hand_Error {hand.c 50}
+4834			GetNIDAQErrorString {}
+4835			Beep {}
+4836			Fmt {}
+4837			GenericMessagePopup {}
+4838			QuitUserInterface {}
+4839			DeleteCriticalSection {}
+4840			abort {}
+4841	hand_OutWord {hand.c 773}
+4842		hand_ConfigDIO {hand.c 412}
+4843			DIG_Grp_Config {}
+4844			hand_Error {hand.c 50}
+4845				GetNIDAQErrorString {}
+4846				Beep {}
+4847				Fmt {}
+4848				GenericMessagePopup {}
+4849				QuitUserInterface {}
+4850				DeleteCriticalSection {}
+4851				abort {}
+4852		hand_Error {hand.c 50}
+4853			GetNIDAQErrorString {}
+4854			Beep {}
+4855			Fmt {}
+4856			GenericMessagePopup {}
+4857			QuitUserInterface {}
+4858			DeleteCriticalSection {}
+4859			abort {}
+4860		DIG_Block_PG_Config {}
+4861		DIG_Block_Out {}
+4862		DIG_Block_Check {}
+4863	hand_ReadAuxPort {hand.c 394}
+4864		printf {}
+4865		DIG_In_Line {}
+4866		hand_Error {hand.c 50}
+4867			GetNIDAQErrorString {}
+4868			Beep {}
+4869			Fmt {}
+4870			GenericMessagePopup {}
+4871			QuitUserInterface {}
+4872			DeleteCriticalSection {}
+4873			abort {}
+4874	hand_ResetAll {hand.c 135}
+4875		Init_DA_Brds {}
+4876		hand_Error {hand.c 50}
+4877			GetNIDAQErrorString {}
+4878			Beep {}
+4879			Fmt {}
+4880			GenericMessagePopup {}
+4881			QuitUserInterface {}
+4882			DeleteCriticalSection {}
+4883			abort {}
+4884		AO_Configure {}
+4885		printf {}
+4886	hand_ResetAnalog {hand.c 189}
+4887		Init_DA_Brds {}
+4888		hand_Error {hand.c 50}
+4889			GetNIDAQErrorString {}
+4890			Beep {}
+4891			Fmt {}
+4892			GenericMessagePopup {}
+4893			QuitUserInterface {}
+4894			DeleteCriticalSection {}
+4895			abort {}
+4896		AO_Configure {}
+4897		printf {}
+4898	hand_RunOver {hand.c 937}
+4899		Config_DAQ_Event_Message {}
+4900		hand_Error {hand.c 50}
+4901			GetNIDAQErrorString {}
+4902			Beep {}
+4903			Fmt {}
+4904			GenericMessagePopup {}
+4905			QuitUserInterface {}
+4906			DeleteCriticalSection {}
+4907			abort {}
+4908		DIG_Block_PG_Config {}
+4909	hand_SetAnalogOutput {hand.c 357}
+4910		AO_VWrite {}
+4911	hand_SetLine {hand.c 314}
+4912		DIG_Out_Line {}
+4913		hand_Error {hand.c 50}
+4914			GetNIDAQErrorString {}
+4915			Beep {}
+4916			Fmt {}
+4917			GenericMessagePopup {}
+4918			QuitUserInterface {}
+4919			DeleteCriticalSection {}
+4920			abort {}
+4921	hand_WriteAuxPort {hand.c 383}
+4922		printf {}
+4923		DIG_Out_Line {}
+4924		hand_Error {hand.c 50}
+4925			GetNIDAQErrorString {}
+4926			Beep {}
+4927			Fmt {}
+4928			GenericMessagePopup {}
+4929			QuitUserInterface {}
+4930			DeleteCriticalSection {}
+4931			abort {}
+4932	ibdev {}
+4933	ibwait {}
+4934	ibwrta {}
+4935	loadCluster {face.c 399}
+4936		printf {}
+4937		GetCluster {face.c 101}
+4938		SetCtrlAttribute {}
+4939		SetCtrlVal {}
+4940		Fmt {}
+4941		dna_SetClusterLabel {dna.c 355}
+4942			free {}
+4943			strlen {}
+4944			calloc {}
+4945			printf {}
+4946			strcpy {}
+4947		setDigitalValue {face.c 307}
+4948			SetCtrlAttribute {}
+4949			printf {}
+4950			CanvasDrawRect {}
+4951	main {face.c 2621}
+4952		SetSystemAttribute {}
+4953		printf {}
+4954		SetSleepPolicy {}
+4955		InitCVIRTE {}
+4956		CheckForDuplicateAppInstance {}
+4957		Beep {}
+4958		MessagePopup {}
+4959		LoadPanel {}
+4960		LoadMenuBar {}
+4961		BuildControls {face.c 1690}
+4962			GetCtrlAttribute {}
+4963			printf {}
+4964			BuildARF {face.c 1613}
+4965				BuildInitialAnalog {face.c 1572}
+4966				printf {}
+4967				BuilMinMaxAnalog {face.c 1516}
+4968				BuildParams {face.c 1478}
+4969				BuildXYValues {face.c 1433}
+4970				BuildGraphs {face.c 1365}
+4971				setArfInterp {face.c 982}
+4972				disableXYValues {face.c 1103}
+4973				SetCtrlAttribute {}
+4974				SetCtrlVal {}
+4975			SetCtrlAttribute {}
+4976			SetCtrlVal {}
+4977			DuplicateCtrl {}
+4978			calloc {}
+4979			disableCluster {face.c 339}
+4980				printf {}
+4981				GetCtrlVal {}
+4982				SetCtrlAttribute {}
+4983				SetCtrlVal {}
+4984				setDigitalValue {face.c 307}
+4985			RectOffset {}
+4986			CanvasDrawRect {}
+4987			abort {}
+4988		TurnMeOn {brain.c 1566}
+4989			SetupInterpData {brain.c 1180}
+4990				StrDup {}
+4991				printf {}
+4992			printf {}
+4993			dna_ResetInitIdle {dna.c 1593}
+4994			dna_InitAuxInfo {dna.c 1612}
+4995				StrDup {}
+4996				printf {}
+4997			dna_InitClusterArray {dna.c 37}
+4998				calloc {}
+4999				printf {}
+5000				dna_InitCluster {dna.c 252}
+5001			dna_InitARFGroupArray {dna.c 414}
+5002				calloc {}
+5003				printf {}
+5004				dna_InitGroup {dna.c 662}
+5005			SetRanges {brain.c 1534}
+5006			SetDefaults {brain.c 1553}
+5007			faceSetNumberOfLines {face.c 2049}
+5008				SetCtrlAttribute {}
+5009				printf {}
+5010				SetCtrlVal {}
+5011				SetIdle {brain.c 1678}
+5012			faceSetNumberOfClusters {face.c 2080}
+5013				SetCtrlAttribute {}
+5014				printf {}
+5015				changedGlobalOffset {face.c 496}
+5016			faceSetOutputLabels {face.c 2148}
+5017				Fmt {}
+5018				printf {}
+5019				dna_SetOutputLabel {dna.c 141}
+5020				SetCtrlVal {}
+5021			faceSetIdleValues {face.c 2274}
+5022				SetCtrlVal {}
+5023				printf {}
+5024			faceSetInterpTypes {face.c 2032}
+5025				ClearListCtrl {}
+5026				printf {}
+5027				InsertListItem {}
+5028			faceSetNumberOfAGroups {face.c 2177}
+5029				GetGroupArray {face.c 136}
+5030				printf {}
+5031				SetCtrlAttribute {}
+5032				changedAnalogIndex {face.c 719}
+5033			faceSetNumberOfRFGroups {face.c 2231}
+5034				GetGroupArray {face.c 136}
+5035				printf {}
+5036				SetCtrlAttribute {}
+5037				changedRFIndex {face.c 839}
+5038			faceSetInitAnalog {face.c 2295}
+5039				SetCtrlVal {}
+5040				printf {}
+5041			faceSetARFRanges {face.c 2338}
+5042				printf {}
+5043				SetCtrlAttribute {}
+5044				GetCtrlVal {}
+5045				Pin {}
+5046				SetCtrlVal {}
+5047			hand_ResetAll {hand.c 135}
+5048				Init_DA_Brds {}
+5049				hand_Error {hand.c 50}
+5050				AO_Configure {}
+5051				printf {}
+5052			mouth_InitRF {mouth.c 28}
+5053				ibdev {}
+5054				mouth_Error {mouth.c 42}
+5055				printf {}
+5056			hand_ConfigAuxPorts {hand.c 369}
+5057				DIG_Prt_Config {}
+5058				hand_Error {hand.c 50}
+5059			dna_InitBufferDigital {dna.c 1455}
+5060			dna_InitBufferAnalog {dna.c 1511}
+5061		SetPanelAttribute {}
+5062		faceRunDim {face.c 2502}
+5063			SetCtrlAttribute {}
+5064			printf {}
+5065			GetPanelMenuBar {}
+5066			SetMenuBarAttribute {}
+5067		DisplayPanel {}
+5068		Start_DDE {dde.c 66}
+5069			RegisterDDEServer {}
+5070			printf {}
+5071		RunUserInterface {}
+5072		Stop_DDE {dde.c 76}
+5073			free {}
+5074			UnregisterDDEServer {}
+5075			printf {}
+5076	menuFILEOpenIni {face.c 4806}
+5077		Fmt {}
+5078		ConfirmPopup {}
+5079		printf {}
+5080		FileSelectPopup {}
+5081		commentAcceptCommand {face.c 4459}
+5082			GetCtrlAttribute {}
+5083			printf {}
+5084			free {}
+5085			calloc {}
+5086			GetCtrlVal {}
+5087			SetCtrlAttribute {}
+5088			Beep {}
+5089		OpenIt {face.c 4748}
+5090			LoadIni {brain.c 4002}
+5091				Load {memory.c 551}
+5092				printf {}
+5093			printf {}
+5094			SetCtrlVal {}
+5095			ResetTextBox {}
+5096			faceInvalidatePointers {face.c 2431}
+5097				printf {}
+5098			faceSetNumberOfLines {face.c 2049}
+5099				SetCtrlAttribute {}
+5100				printf {}
+5101				SetCtrlVal {}
+5102				SetIdle {brain.c 1678}
+5103			faceSetNumberOfClusters {face.c 2080}
+5104				SetCtrlAttribute {}
+5105				printf {}
+5106				changedGlobalOffset {face.c 496}
+5107			faceSetOutputLabels {face.c 2148}
+5108				Fmt {}
+5109				printf {}
+5110				dna_SetOutputLabel {dna.c 141}
+5111				SetCtrlVal {}
+5112			faceSetNumberOfRFGroups {face.c 2231}
+5113				GetGroupArray {face.c 136}
+5114				printf {}
+5115				SetCtrlAttribute {}
+5116				changedRFIndex {face.c 839}
+5117			faceSetNumberOfAGroups {face.c 2177}
+5118				GetGroupArray {face.c 136}
+5119				printf {}
+5120				SetCtrlAttribute {}
+5121				changedAnalogIndex {face.c 719}
+5122			faceSetIdleValues {face.c 2274}
+5123				SetCtrlVal {}
+5124				printf {}
+5125			faceSetInitAnalog {face.c 2295}
+5126				SetCtrlVal {}
+5127				printf {}
+5128			faceLoadAuxillaryInfo {face.c 2395}
+5129				SetCtrlVal {}
+5130				printf {}
+5131				changedGlobalOffset {face.c 496}
+5132				changedAnalogIndex {face.c 719}
+5133				changedRFIndex {face.c 839}
+5134				changedGraphSelection {face.c 1236}
+5135				faceSetARFRanges {face.c 2338}
+5136				setYValueRange {face.c 1058}
+5137			SetPanelAttribute {}
+5138		MessagePopup {}
+5139		Beep {}
+5140	menuFILEPrint {face.c 5203}
+5141		SetPrintAttribute {}
+5142		printf {}
+5143		PrintPanel {}
+5144		Beep {}
+5145	menuFILEQuit {face.c 4924}
+5146		QuitUserInterface {}
+5147	menuFILESaveIni {face.c 4649}
+5148		FileSelectPopup {}
+5149		printf {}
+5150		commentAcceptCommand {face.c 4459}
+5151			GetCtrlAttribute {}
+5152			printf {}
+5153			free {}
+5154			calloc {}
+5155			GetCtrlVal {}
+5156			SetCtrlAttribute {}
+5157			Beep {}
+5158		Fmt {}
+5159		ConfirmPopup {}
+5160		free {}
+5161		SaveIt {face.c 4626}
+5162			StrDup {}
+5163			printf {}
+5164			SaveIni {brain.c 3989}
+5165				faceSaveAuxillaryInfo {face.c 2307}
+5166				printf {}
+5167				DateStr {}
+5168				TimeStr {}
+5169				Save {memory.c 501}
+5170			SetCtrlVal {}
+5171			AppendString {}
+5172			SetPanelAttribute {}
+5173			free {}
+5174		Beep {}
+5175	menuOPERATERun {face.c 5197}
+5176		RunCommand {face.c 3258}
+5177			faceSaveAuxillaryInfo {face.c 2307}
+5178				RepeatRunQ {face.c 227}
+5179				CameraTriggerQ {face.c 234}
+5180				GetCtrlVal {}
+5181				printf {}
+5182				PinValuesQ {face.c 220}
+5183			printf {}
+5184			ExecuteRun {brain.c 3397}
+5185				printf {}
+5186				MessagePopup {}
+5187				FirstTime {brain.c 3362}
+5188				mouth_ResetBuffer {mouth.c 232}
+5189				mouth_ZeroDS345 {mouth.c 113}
+5190				CameraTriggerQ {face.c 234}
+5191				SetIdleOutput {brain.c 1651}
+5192				WaitForAux {brain.c 3328}
+5193				hand_ConfigDigital {hand.c 533}
+5194				UpdateProgressDialog {}
+5195				hand_ConfigAnalog {hand.c 568}
+5196				DiscardProgressDialog {}
+5197				faceBeginRunningMode {face.c 2524}
+5198				hand_OutBuffer {hand.c 694}
+5199				GetTickCount {}
+5200				SetSleepPolicy {}
+5201				GetCurrentProcess {}
+5202				SetPriorityClass {}
+5203				ProcessSystemEvents {}
+5204				faceShowProgress {face.c 2573}
+5205				hand_AbortRun {hand.c 899}
+5206				mouth_OutBufferCommand {mouth.c 247}
+5207				dna_AdvanceRunStage {dna.c 1441}
+5208				faceEndRunningMode {face.c 2590}
+5209				Beep {}
+5210				mouth_InitRF {mouth.c 28}
+5211			GetCurrentProcess {}
+5212			SetPriorityClass {}
+5213			Beep {}
+5214	menuWINDOWARF {face.c 4906}
+5215		SetActivePanel {}
+5216		printf {}
+5217		Beep {}
+5218	menuWINDOWDigital {face.c 4915}
+5219		SetActivePanel {}
+5220		printf {}
+5221		Beep {}
+5222	mouth_AddBufferAmp {mouth.c 216}
+5223		Fmt {}
+5224		dna_AdvanceBufferRF {dna.c 1402}
+5225			printf {}
+5226			dna_LengthBufferRF {dna.c 1393}
+5227				StringLength {}
+5228		printf {}
+5229	mouth_AddBufferCommand {mouth.c 152}
+5230		Fmt {}
+5231		dna_AdvanceBufferRF {dna.c 1402}
+5232			printf {}
+5233			dna_LengthBufferRF {dna.c 1393}
+5234				StringLength {}
+5235		printf {}
+5236		mouth_AddBufferFreq {mouth.c 200}
+5237			Fmt {}
+5238			dna_AdvanceBufferRF {dna.c 1402}
+5239				printf {}
+5240				dna_LengthBufferRF {dna.c 1393}
+5241			printf {}
+5242		mouth_AddBufferAmp {mouth.c 216}
+5243			Fmt {}
+5244			dna_AdvanceBufferRF {dna.c 1402}
+5245				printf {}
+5246				dna_LengthBufferRF {dna.c 1393}
+5247			printf {}
+5248	mouth_AddBufferFreq {mouth.c 200}
+5249		Fmt {}
+5250		dna_AdvanceBufferRF {dna.c 1402}
+5251			printf {}
+5252			dna_LengthBufferRF {dna.c 1393}
+5253				StringLength {}
+5254		printf {}
+5255	mouth_AddBufferZero {mouth.c 183}
+5256		Fmt {}
+5257		dna_AdvanceBufferRF {dna.c 1402}
+5258			printf {}
+5259			dna_LengthBufferRF {dna.c 1393}
+5260				StringLength {}
+5261		printf {}
+5262	mouth_Error {mouth.c 42}
+5263		Beep {}
+5264		MessagePopup {}
+5265		Breakpoint {}
+5266		abort {}
+5267		ThreadIbsta {}
+5268		ThreadIberr {}
+5269		ThreadIbcntl {}
+5270		Fmt {}
+5271	mouth_InitRF {mouth.c 28}
+5272		ibdev {}
+5273		mouth_Error {mouth.c 42}
+5274			Beep {}
+5275			MessagePopup {}
+5276			Breakpoint {}
+5277			abort {}
+5278			ThreadIbsta {}
+5279			ThreadIberr {}
+5280			ThreadIbcntl {}
+5281			Fmt {}
+5282		printf {}
+5283	mouth_MakeIdleCommand {mouth.c 131}
+5284		FillBytes {}
+5285		Fmt {}
+5286		StrDup {}
+5287	mouth_OutBufferCommand {mouth.c 247}
+5288		printf {}
+5289		dna_LengthBufferRF {dna.c 1393}
+5290			StringLength {}
+5291		ibwait {}
+5292		ThreadIbsta {}
+5293		ibwrta {}
+5294		dna_AdvanceRunBufferRF {dna.c 1416}
+5295			printf {}
+5296			dna_LengthBufferRF {dna.c 1393}
+5297				StringLength {}
+5298	mouth_ResetBuffer {mouth.c 232}
+5299	mouth_WriteDS345 {mouth.c 100}
+5300		ibwait {}
+5301		mouth_Error {mouth.c 42}
+5302			Beep {}
+5303			MessagePopup {}
+5304			Breakpoint {}
+5305			abort {}
+5306			ThreadIbsta {}
+5307			ThreadIberr {}
+5308			ThreadIbcntl {}
+5309			Fmt {}
+5310		printf {}
+5311		ibwrta {}
+5312	mouth_ZeroDS345 {mouth.c 113}
+5313		mouth_MakeIdleCommand {mouth.c 131}
+5314			FillBytes {}
+5315			Fmt {}
+5316			StrDup {}
+5317		strlen {}
+5318		ibwait {}
+5319		mouth_Error {mouth.c 42}
+5320			Beep {}
+5321			MessagePopup {}
+5322			Breakpoint {}
+5323			abort {}
+5324			ThreadIbsta {}
+5325			ThreadIberr {}
+5326			ThreadIbcntl {}
+5327			Fmt {}
+5328		printf {}
+5329		ibwrta {}
+5330	myAsynch {hand.c 660}
+5331		CurrThreadId {}
+5332		printf {}
+5333		Timer {}
+5334		GetCurrentThread {}
+5335		GetThreadPriority {}
+5336	myDCB {hand.c 649}
+5337		CurrThreadId {}
+5338		printf {}
+5339	myInCallback1 {brain.c 3691}
+5340		Timer {}
+5341		printf {}
+5342	popupCLUSTERCopy {face.c 5283}
+5343		GetClusterIndex {face.c 202}
+5344			printf {}
+5345			GetCtrlVal {}
+5346		MessagePopup {}
+5347		printf {}
+5348		dna_ReInitCluster {dna.c 282}
+5349			free {}
+5350			calloc {}
+5351			printf {}
+5352			realloc {}
+5353		calloc {}
+5354		dna_InitCluster {dna.c 252}
+5355			calloc {}
+5356			printf {}
+5357		GetCluster {face.c 101}
+5358		dna_CopyClusterData {dna.c 387}
+5359			dna_ReInitCluster {dna.c 282}
+5360				free {}
+5361				calloc {}
+5362				printf {}
+5363				realloc {}
+5364			printf {}
+5365			StrDup {}
+5366		Beep {}
+5367	popupCLUSTERCut {face.c 5309}
+5368		GetClusterIndex {face.c 202}
+5369			printf {}
+5370			GetCtrlVal {}
+5371		MessagePopup {}
+5372		printf {}
+5373		dna_ReInitCluster {dna.c 282}
+5374			free {}
+5375			calloc {}
+5376			printf {}
+5377			realloc {}
+5378		calloc {}
+5379		dna_InitCluster {dna.c 252}
+5380			calloc {}
+5381			printf {}
+5382		GetCluster {face.c 101}
+5383		dna_CopyClusterData {dna.c 387}
+5384			dna_ReInitCluster {dna.c 282}
+5385				free {}
+5386				calloc {}
+5387				printf {}
+5388				realloc {}
+5389			printf {}
+5390			StrDup {}
+5391		dna_DeleteCluster {dna.c 223}
+5392			printf {}
+5393			dna_ReInitCluster {dna.c 282}
+5394				free {}
+5395				calloc {}
+5396				printf {}
+5397				realloc {}
+5398			dna_InitCluster {dna.c 252}
+5399				calloc {}
+5400				printf {}
+5401			dna_ReInitClusterArray {dna.c 65}
+5402				printf {}
+5403				free {}
+5404				dna_ReInitCluster {dna.c 282}
+5405				dna_InitClusterArray {dna.c 37}
+5406				realloc {}
+5407				dna_InitCluster {dna.c 252}
+5408				calloc {}
+5409		faceSetNumberOfClusters {face.c 2080}
+5410			SetCtrlAttribute {}
+5411			printf {}
+5412			changedGlobalOffset {face.c 496}
+5413				SetCtrlVal {}
+5414				printf {}
+5415				GetCluster {face.c 101}
+5416				loadCluster {face.c 399}
+5417				disableCluster {face.c 339}
+5418		Beep {}
+5419	popupCLUSTERDelete {face.c 5375}
+5420		GetClusterIndex {face.c 202}
+5421			printf {}
+5422			GetCtrlVal {}
+5423		MessagePopup {}
+5424		printf {}
+5425		dna_DeleteCluster {dna.c 223}
+5426			printf {}
+5427			dna_ReInitCluster {dna.c 282}
+5428				free {}
+5429				calloc {}
+5430				printf {}
+5431				realloc {}
+5432			dna_InitCluster {dna.c 252}
+5433				calloc {}
+5434				printf {}
+5435			dna_ReInitClusterArray {dna.c 65}
+5436				printf {}
+5437				free {}
+5438				dna_ReInitCluster {dna.c 282}
+5439				dna_InitClusterArray {dna.c 37}
+5440				realloc {}
+5441				dna_InitCluster {dna.c 252}
+5442				calloc {}
+5443		faceSetNumberOfClusters {face.c 2080}
+5444			SetCtrlAttribute {}
+5445			printf {}
+5446			changedGlobalOffset {face.c 496}
+5447				SetCtrlVal {}
+5448				printf {}
+5449				GetCluster {face.c 101}
+5450				loadCluster {face.c 399}
+5451				disableCluster {face.c 339}
+5452		Beep {}
+5453	popupCLUSTERDuplicate {face.c 5263}
+5454		GetClusterIndex {face.c 202}
+5455			printf {}
+5456			GetCtrlVal {}
+5457		MessagePopup {}
+5458		printf {}
+5459		dna_InsertCluster {dna.c 160}
+5460			printf {}
+5461			dna_ReInitClusterArray {dna.c 65}
+5462				printf {}
+5463				free {}
+5464				dna_ReInitCluster {dna.c 282}
+5465				dna_InitClusterArray {dna.c 37}
+5466				realloc {}
+5467				dna_InitCluster {dna.c 252}
+5468				calloc {}
+5469		GetCluster {face.c 101}
+5470		dna_CopyClusterData {dna.c 387}
+5471			dna_ReInitCluster {dna.c 282}
+5472				free {}
+5473				calloc {}
+5474				printf {}
+5475				realloc {}
+5476			printf {}
+5477			StrDup {}
+5478		faceSetNumberOfClusters {face.c 2080}
+5479			SetCtrlAttribute {}
+5480			printf {}
+5481			changedGlobalOffset {face.c 496}
+5482				SetCtrlVal {}
+5483				printf {}
+5484				GetCluster {face.c 101}
+5485				loadCluster {face.c 399}
+5486				disableCluster {face.c 339}
+5487		Beep {}
+5488	popupCLUSTERInsert {face.c 5245}
+5489		GetClusterIndex {face.c 202}
+5490			printf {}
+5491			GetCtrlVal {}
+5492		dna_InsertCluster {dna.c 160}
+5493			printf {}
+5494			dna_ReInitClusterArray {dna.c 65}
+5495				printf {}
+5496				free {}
+5497				dna_ReInitCluster {dna.c 282}
+5498				dna_InitClusterArray {dna.c 37}
+5499				realloc {}
+5500				dna_InitCluster {dna.c 252}
+5501				calloc {}
+5502		printf {}
+5503		faceSetNumberOfClusters {face.c 2080}
+5504			SetCtrlAttribute {}
+5505			printf {}
+5506			changedGlobalOffset {face.c 496}
+5507				SetCtrlVal {}
+5508				printf {}
+5509				GetCluster {face.c 101}
+5510				loadCluster {face.c 399}
+5511				disableCluster {face.c 339}
+5512		Beep {}
+5513	popupCLUSTEROutput {face.c 5228}
+5514		GetClusterIndex {face.c 202}
+5515			printf {}
+5516			GetCtrlVal {}
+5517		MessagePopup {}
+5518		printf {}
+5519		SetIdleWord {brain.c 1693}
+5520			MessagePopup {}
+5521			printf {}
+5522			hand_ConfigDIOPorts {hand.c 218}
+5523				DIG_Grp_Config {}
+5524				DIG_Prt_Config {}
+5525				hand_Error {hand.c 50}
+5526			hand_SetLine {hand.c 314}
+5527				DIG_Out_Line {}
+5528				hand_Error {hand.c 50}
+5529		Beep {}
+5530	popupCLUSTERPaste {face.c 5337}
+5531		printf {}
+5532		GetClusterIndex {face.c 202}
+5533			printf {}
+5534			GetCtrlVal {}
+5535		dna_InsertCluster {dna.c 160}
+5536			printf {}
+5537			dna_ReInitClusterArray {dna.c 65}
+5538				printf {}
+5539				free {}
+5540				dna_ReInitCluster {dna.c 282}
+5541				dna_InitClusterArray {dna.c 37}
+5542				realloc {}
+5543				dna_InitCluster {dna.c 252}
+5544				calloc {}
+5545		GetCluster {face.c 101}
+5546		dna_CopyClusterData {dna.c 387}
+5547			dna_ReInitCluster {dna.c 282}
+5548				free {}
+5549				calloc {}
+5550				printf {}
+5551				realloc {}
+5552			printf {}
+5553			StrDup {}
+5554		faceSetNumberOfClusters {face.c 2080}
+5555			SetCtrlAttribute {}
+5556			printf {}
+5557			changedGlobalOffset {face.c 496}
+5558				SetCtrlVal {}
+5559				printf {}
+5560				GetCluster {face.c 101}
+5561				loadCluster {face.c 399}
+5562				disableCluster {face.c 339}
+5563		Beep {}
+5564	popupCLUSTERReplace {face.c 5355}
+5565		printf {}
+5566		GetClusterIndex {face.c 202}
+5567			printf {}
+5568			GetCtrlVal {}
+5569		MessagePopup {}
+5570		GetCluster {face.c 101}
+5571		dna_ReInitCluster {dna.c 282}
+5572			free {}
+5573			calloc {}
+5574			printf {}
+5575			realloc {}
+5576		dna_CopyClusterData {dna.c 387}
+5577			dna_ReInitCluster {dna.c 282}
+5578				free {}
+5579				calloc {}
+5580				printf {}
+5581				realloc {}
+5582			printf {}
+5583			StrDup {}
+5584		faceSetNumberOfClusters {face.c 2080}
+5585			SetCtrlAttribute {}
+5586			printf {}
+5587			changedGlobalOffset {face.c 496}
+5588				SetCtrlVal {}
+5589				printf {}
+5590				GetCluster {face.c 101}
+5591				loadCluster {face.c 399}
+5592				disableCluster {face.c 339}
+5593		Beep {}
+5594	popupCluster {face.c 1990}
+5595		RunPopupMenu {}
+5596	popupXYVALUECopy {face.c 5438}
+5597		GetGraph {face.c 172}
+5598			GetGroup {face.c 153}
+5599				ValidGroup {face.c 114}
+5600		printf {}
+5601		Beep {}
+5602	popupXYVALUECut {face.c 5459}
+5603		GetGraph {face.c 172}
+5604			GetGroup {face.c 153}
+5605				ValidGroup {face.c 114}
+5606		printf {}
+5607		dna_DeleteGraphValue {dna.c 923}
+5608			printf {}
+5609		enableXYValues {face.c 1137}
+5610			GetGraph {face.c 172}
+5611				GetGroup {face.c 153}
+5612			disableXYValues {face.c 1103}
+5613				setYValueRange {face.c 1058}
+5614				printf {}
+5615				SetCtrlVal {}
+5616				SetCtrlAttribute {}
+5617			printf {}
+5618			setYValueRange {face.c 1058}
+5619				PinValuesQ {face.c 220}
+5620				ValidGroup {face.c 114}
+5621				GetGraph {face.c 172}
+5622				printf {}
+5623				GetYMin {brain.c 3954}
+5624				GetYMax {brain.c 3970}
+5625				fabs {}
+5626				RoundRealToNearestInteger {}
+5627				SetCtrlAttribute {}
+5628			SetCtrlVal {}
+5629			SetCtrlAttribute {}
+5630		Beep {}
+5631	popupXYVALUEDelete {face.c 5505}
+5632		GetGraph {face.c 172}
+5633			GetGroup {face.c 153}
+5634				ValidGroup {face.c 114}
+5635		printf {}
+5636		dna_DeleteGraphValue {dna.c 923}
+5637			printf {}
+5638		enableXYValues {face.c 1137}
+5639			GetGraph {face.c 172}
+5640				GetGroup {face.c 153}
+5641			disableXYValues {face.c 1103}
+5642				setYValueRange {face.c 1058}
+5643				printf {}
+5644				SetCtrlVal {}
+5645				SetCtrlAttribute {}
+5646			printf {}
+5647			setYValueRange {face.c 1058}
+5648				PinValuesQ {face.c 220}
+5649				ValidGroup {face.c 114}
+5650				GetGraph {face.c 172}
+5651				printf {}
+5652				GetYMin {brain.c 3954}
+5653				GetYMax {brain.c 3970}
+5654				fabs {}
+5655				RoundRealToNearestInteger {}
+5656				SetCtrlAttribute {}
+5657			SetCtrlVal {}
+5658			SetCtrlAttribute {}
+5659		Beep {}
+5660	popupXYVALUEDuplicate {face.c 5419}
+5661		GetGraph {face.c 172}
+5662			GetGroup {face.c 153}
+5663				ValidGroup {face.c 114}
+5664		printf {}
+5665		dna_DuplicateGraphValue {dna.c 896}
+5666			printf {}
+5667		enableXYValues {face.c 1137}
+5668			GetGraph {face.c 172}
+5669				GetGroup {face.c 153}
+5670			disableXYValues {face.c 1103}
+5671				setYValueRange {face.c 1058}
+5672				printf {}
+5673				SetCtrlVal {}
+5674				SetCtrlAttribute {}
+5675			printf {}
+5676			setYValueRange {face.c 1058}
+5677				PinValuesQ {face.c 220}
+5678				ValidGroup {face.c 114}
+5679				GetGraph {face.c 172}
+5680				printf {}
+5681				GetYMin {brain.c 3954}
+5682				GetYMax {brain.c 3970}
+5683				fabs {}
+5684				RoundRealToNearestInteger {}
+5685				SetCtrlAttribute {}
+5686			SetCtrlVal {}
+5687			SetCtrlAttribute {}
+5688		Beep {}
+5689	popupXYVALUEPaste {face.c 5482}
+5690		GetGraph {face.c 172}
+5691			GetGroup {face.c 153}
+5692				ValidGroup {face.c 114}
+5693		printf {}
+5694		dna_DuplicateGraphValue {dna.c 896}
+5695			printf {}
+5696		enableXYValues {face.c 1137}
+5697			GetGraph {face.c 172}
+5698				GetGroup {face.c 153}
+5699			disableXYValues {face.c 1103}
+5700				setYValueRange {face.c 1058}
+5701				printf {}
+5702				SetCtrlVal {}
+5703				SetCtrlAttribute {}
+5704			printf {}
+5705			setYValueRange {face.c 1058}
+5706				PinValuesQ {face.c 220}
+5707				ValidGroup {face.c 114}
+5708				GetGraph {face.c 172}
+5709				printf {}
+5710				GetYMin {brain.c 3954}
+5711				GetYMax {brain.c 3970}
+5712				fabs {}
+5713				RoundRealToNearestInteger {}
+5714				SetCtrlAttribute {}
+5715			SetCtrlVal {}
+5716			SetCtrlAttribute {}
+5717		Beep {}
+5718	popupXYVALUESort {face.c 5398}
+5719		GetGraph {face.c 172}
+5720			GetGroup {face.c 153}
+5721				ValidGroup {face.c 114}
+5722		printf {}
+5723		SortValues {brain.c 1776}
+5724			printf {}
+5725		enableXYValues {face.c 1137}
+5726			GetGraph {face.c 172}
+5727				GetGroup {face.c 153}
+5728			disableXYValues {face.c 1103}
+5729				setYValueRange {face.c 1058}
+5730				printf {}
+5731				SetCtrlVal {}
+5732				SetCtrlAttribute {}
+5733			printf {}
+5734			setYValueRange {face.c 1058}
+5735				PinValuesQ {face.c 220}
+5736				ValidGroup {face.c 114}
+5737				GetGraph {face.c 172}
+5738				printf {}
+5739				GetYMin {brain.c 3954}
+5740				GetYMax {brain.c 3970}
+5741				fabs {}
+5742				RoundRealToNearestInteger {}
+5743				SetCtrlAttribute {}
+5744			SetCtrlVal {}
+5745			SetCtrlAttribute {}
+5746		Beep {}
+5747	popupXYValue {face.c 2007}
+5748		RunPopupMenu {}
+5749	printf {}
+5750	realloc {}
+5751	resATicks {face.c 3594}
+5752		Beep {}
+5753	resATimeUnit {face.c 3614}
+5754		Beep {}
+5755	resAskTicks {face.c 3334}
+5756		Beep {}
+5757	resAskTimeUnit {face.c 3354}
+5758		Beep {}
+5759	resRFTicks {face.c 3534}
+5760		Beep {}
+5761	resRFTimeUnit {face.c 3554}
+5762		Beep {}
+5763	resTicks {face.c 3294}
+5764		Beep {}
+5765	resTimeUnit {face.c 3314}
+5766		Beep {}
+5767	setArfInterp {face.c 982}
+5768		GetGraph {face.c 172}
+5769			GetGroup {face.c 153}
+5770				ValidGroup {face.c 114}
+5771		SetCtrlAttribute {}
+5772		printf {}
+5773		SetCtrlVal {}
+5774		dna_TouchARFGraph {dna.c 1258}
+5775			free {}
+5776	setDigitalValue {face.c 307}
+5777		SetCtrlAttribute {}
+5778		printf {}
+5779		CanvasDrawRect {}
+5780	setYValueRange {face.c 1058}
+5781		PinValuesQ {face.c 220}
+5782			GetCtrlVal {}
+5783		ValidGroup {face.c 114}
+5784		GetGraph {face.c 172}
+5785			GetGroup {face.c 153}
+5786				ValidGroup {face.c 114}
+5787		printf {}
+5788		GetYMin {brain.c 3954}
+5789			printf {}
+5790		GetYMax {brain.c 3970}
+5791			printf {}
+5792		fabs {}
+5793		RoundRealToNearestInteger {}
+5794		SetCtrlAttribute {}
+5795	setupAcceptCommand {face.c 3514}
+5796		Beep {}
+5797	setupCancelCommand {face.c 3694}
+5798		Beep {}
+5799	setupNumberOfAGroups {face.c 3454}
+5800		Beep {}
+5801	setupNumberOfClusters {face.c 3474}
+5802		Beep {}
+5803	setupNumberOfGraphs {face.c 3414}
+5804		Beep {}
+5805	setupNumberOfLines {face.c 3394}
+5806		Beep {}
+5807	setupNumberOfRFGroups {face.c 3434}
+5808		Beep {}
+5809	setupResetCommand {face.c 3494}
+5810		Beep {}
+5811	strcpy {}
+5812	strlen {}
+5813	strncmp {}
+5814	timingAcceptCommand {face.c 3634}
+5815		Beep {}
+5816	timingCancelCommand {face.c 3674}
+5817		Beep {}
+5818	timingResetCommand {face.c 3654}
+5819		Beep {}
+5820	wgOPERTATEDisableAll {face.c 4889}
+5821		GetCluster {face.c 101}
+5822		changedGlobalOffset {face.c 496}
+5823			SetCtrlVal {}
+5824			printf {}
+5825			GetCluster {face.c 101}
+5826			loadCluster {face.c 399}
+5827				printf {}
+5828				GetCluster {face.c 101}
+5829				SetCtrlAttribute {}
+5830				SetCtrlVal {}
+5831				Fmt {}
+5832				dna_SetClusterLabel {dna.c 355}
+5833				setDigitalValue {face.c 307}
+5834			disableCluster {face.c 339}
+5835				printf {}
+5836				GetCtrlVal {}
+5837				SetCtrlAttribute {}
+5838				SetCtrlVal {}
+5839				setDigitalValue {face.c 307}
+5840		printf {}
+5841		Beep {}
+5842	wgOPERTATEEnableAll {face.c 4872}
+5843		GetCluster {face.c 101}
+5844		changedGlobalOffset {face.c 496}
+5845			SetCtrlVal {}
+5846			printf {}
+5847			GetCluster {face.c 101}
+5848			loadCluster {face.c 399}
+5849				printf {}
+5850				GetCluster {face.c 101}
+5851				SetCtrlAttribute {}
+5852				SetCtrlVal {}
+5853				Fmt {}
+5854				dna_SetClusterLabel {dna.c 355}
+5855				setDigitalValue {face.c 307}
+5856			disableCluster {face.c 339}
+5857				printf {}
+5858				GetCtrlVal {}
+5859				SetCtrlAttribute {}
+5860				SetCtrlVal {}
+5861				setDigitalValue {face.c 307}
+5862		printf {}
+5863		Beep {}

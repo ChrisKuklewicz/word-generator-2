@@ -1,0 +1,431 @@
+* Outline of initial  WG2 program execution
+
+** FACE.c : main
+
+	This loads the panel from FACE.uir, sets up the controls and
+calls BRAIN.h to create data structures.  Then the user interface is
+actived, and we wait for callback execution.
+
+*** FACE.c : BuildControls
+
+	This creates the controls on the panel, storing the handles in
+FACES.c data structures.
+	Currently constants from DNA.h and top of FACES.c are used to
+decide how many graphs, output lines, and clusters to display. These
+are disabled to begin with, and not connected to any BRAIN data
+structures.
+
+**** FACE.c : BuildARF
+
+	This is in charge of just the arf panel.
+
+***** FACE.c : BuildGraphs
+
+	This just does the graph controls on the arf display
+
+****** FACE.c : disableGraph
+
+	Used on ancho 0 graph with ShutOffQ set to true
+
+****** FACE.c : DuplicateGraph
+
+	Creates the other graphs and calls...
+
+******* FACE.c : disableGraph
+
+	Used on the new graphs with ShutOffQ set to true
+
+***** FACE.c : BuildXYValues
+
+	Copies the anchor control x y values down and calls...
+
+****** FACE.c : disableXYValues
+
+	sets the controls to deault values and calls...
+
+******* FACE.c : setArfInterp
+
+	Swiches in case of interp type, called here with default dnaILinear
+	TODO fill this with info on other cases.
+	Should be called from Interp type ring control, eventually
+
+**** FACE.c : disableCluster
+
+	Used on index 0 anchor cluster and new clusters.
+
+*** BRAIN.c : TurnMeOn
+	
+	This initialized the BRAIN.c data structures, using parameters from
+the top of the BRAIN.c file.  As structures are initialized by DNA.c calls,
+calls are made to FACESTWO.h functions. Then a HAND.c function is called to
+initialize the DAQ boards.
+
+TODO: Setup GPIB boards
+
+**** BRAIN.c : SetupInterpData
+
+	This fills the otherwise constant BRAIN.c globals with
+characteristics of the different interpolation methods that exist in
+the program. This references, by pointer, each of the following:
+
+***** BRAIN.c : funcILinear
+
+**** DNA.c : dna_Init ClusterArray
+	
+	Allocates the array data needed and clears it to a default state.
+
+**** FACE.c : facesSetNumberOfLines
+
+	Enables and disables OUTPUTLABEL and IDLE controls.
+
+**** FACE.c : facesSetNumberofClusters
+
+	Enables/Valildates the global offset control and call
+subroutine...
+
+***** FACE.c : changedGlobalOffset
+
+	Loops though calling one of two subroutines on each cluster...
+
+****** FACE.c : loadCluster
+
+	Copies data from external reference to BRAIN.c globals to the
+FACES.c data structures and updates the controls to display it.
+
+******* FACE.c : setDigitalValue
+
+	Used to update canvas to a new data bit
+
+****** FACE.c : disableCluster
+
+	If enabled, puts the cluster in a disabled state
+instead. Called here to also update the canvas display.
+
+******* FACE.c : setDigitalValue
+
+	Used here to clear the canvas column, bit by bit	
+
+**** DNA.c : dna_InitARFGroupArray
+
+	Called on AGroups.  Allocates memory for groups then calls...
+
+***** DNA.c : dna_InitGroup
+
+	Allocates memory for graphs and then call...
+
+****** DNA.c : dna_InitARFGraph
+
+	Clears all the fields in the new graph
+
+**** FACE.c : faceSetNumberOfAGroups
+
+	This pulls info from BRAIN.c AGroups to the ARFGraphs and panel
+control.  Once the Analog Index is setup it calls....
+	TODO : reset the XY values to a point to no graph.
+
+***** FACE.c : changedAnalogIndex
+
+	Sets the pointer to the correct analog group and loads group
+parameters into the controls.
+	TODO : needs to call the enableGraph routine and / or disable graph.
+
+**** DNA.c : dna_InitARFGroupArray
+
+	Called of RGroups. Current passed zero groups.
+
+**** FACE.c : faceSet NumberOfRFGroups
+
+	Very like AGroups version so it calls....
+
+***** FACE.c : changedRFIndex
+
+	Very like AIndex version, with stuff to do
+
+**** dna_InitBuffer Digital
+
+	Called twice on dBuf1 and dBuf2
+
+**** HAND.c : hand_ResetAll
+
+	Resets all the DAQ boards using constants in HAND.h. Keeps track of
+expecte board state in module variable in HAND.c. Current all hand function
+abort execution upon any error or warning.
+
+* Outline of FACE.c : QuitCommand callback
+
+	QuitUserInterface on a COMMIT event
+
+* Outline of FACE.c : cbWG callback
+
+	Panel callback. QuitUserInterface on CLOSE event
+
+* Outline of FACE.c : clusterTicks callback
+
+	Sets the BRAIN.c global value
+
+* Outline of FACE.c : clusterTimeUnit callback
+
+	Sets the BRAIN.c global value
+
+* Outline of FACE.c : clusterEnabledQ callback
+
+	Sets the BRAIN.c global value
+
+* Outline of FACE.c : clusterRFGroup callback
+
+	Sets the BRAIN.c global value
+
+* Outline of FACE.c : clusterRFRing callback
+
+	Dims the RFGroup as appropriate, sets its BRAIN.c global value.
+	
+
+* Outline of FACE.c : clusterAnalogRing callback
+
+	Dims the AnalogGroup as appropriate, sets its BRAIN.c global value.
+
+* Outline of FACE.c : clusterAnalogGroup callback
+
+	Sets the BRAIN.c global value
+
+* Outline of FACES.c : arfGraph callback
+
+	connected to an edit label pop up on RIGHT click
+
+* Outline of FACE.c : clusterLabel callback
+
+	Sets the BRAIN.c global value (string allocation)
+
+* Outline of FACE.c : canvas callback
+
+	Toggles BRAIN.c value and updates panel
+
+* Outline of FACE.c : clusterGlobalOffset callback
+
+	Sets the BRAIN.c global value then calls...
+
+** FACE.c : changedGlobalOffset
+
+	Loops though calling one of two subroutines on each cluster...
+
+*** FACE.c : loadCluster
+
+	Copies data from external reference to BRAIN.c globals to the
+FACES.c data structures and updates the controls to display it.
+
+**** setDigitalValue
+
+	Used to update canvas to a new data bit
+
+*** FACE.c : disableCluster
+
+	If enabled, puts the cluster in a disabled state
+instead. Called here to also update the canvas display.
+
+**** FACE.c : setDigitalValue
+
+	Used here to clear the canvas column, bit by bit	
+
+* Outline of FACE.c : arfRFIndex callback
+
+* Outline of FACE.c : arfAnalogIndex callback
+
+* Outline of FACE.c : clusterOnlyEnabledQ callback
+
+* Outline of FACE.c : clusterOutputLabel callback
+
+	Right click to edit the text on the control.
+	TODO : Not saved to any BRAIN.c variable.
+
+* Outline of FACE.c : cbARF callback
+
+	Panel callback. TODO : does not close yet.
+
+* Outline of FACE.c : IdleControl callback
+
+	Calls...
+
+** BRAIN.c : SetIdleOutput
+
+	This is supposed to change from idle output zeroes and idle
+word output. If setting to same state (stored in BRAIN.c module
+variable) then ignore. Otherwise...
+
+*** HAND.c : hand_ConfigureDIOPorts
+
+	If the board have not been initialized already, this function
+will do nothing. Otherwise reset the DO and DIO boards to line/port
+access mode and cache the state in the module varaibles. Terminate on
+error condition.
+
+* Outline of FACE.c : RunCommand
+
+	It works (for digital). Call..
+
+** BRAIN.c : ExecuteRun
+
+	Calls two things ....
+
+*** BRAIN.c : BuildBuffer
+
+	Needs Resolution, two calls for that. Then init buffer.
+
+**** BRAIN.c : CalcResolution
+
+	Calls for each cluster ...
+
+***** BRAIN.c : GCF
+
+**** BRAIN.c : GCF
+
+	Called here to mix in auxillary timebase.
+
+**** DNA.c : dna_SetupBufferDigital
+
+	Allocates the needed memory
+
+*** HAND.c : hand_OutBuffer
+
+	Two calls then start output!
+
+**** HAND.c : hand_ConfigDIO
+
+	sets up group mode
+
+**** HAND.c : hand_ConfigPattern
+
+	Sets the pattern generation timing
+
+* Outline of FACE.c : resTicks callback
+
+* Outline of FACE.c : resTimeUnit callback
+
+* Outline of FACE.c : resAskTicks callback
+
+* Outline of FACE.c : resAskTimeUnit callback
+
+* Outline of FACE.c : cbSetup callback
+
+	Panel Callback.
+
+* Outline of FACE.c : setupNumberOfLines callback
+
+* Outline of FACE.c : setupNumberOfGraphs callback
+
+* Outline of FACE.c : setupNumberOfRFGroups callback
+
+* Outline of FACE.c : setupNumberOfAGroups callback
+
+* Outline of FACE.c : setupNumberOfClusters callback
+
+* Outline of FACE.c : setupResetCommand callback
+
+* Outline of FACE.c : setupAcceptCommand callback
+
+* Outline of FACE.c : setupAcceptCommand callback
+
+* Outline of FACE.c : resRFTicks callback
+
+* Outline of FACE.c : resRFTimeUnit callback
+
+* Outline of FACE.c : cdTiming callback
+
+* Outline of FACE.c : resATicks callback
+
+* Outline of FACE.c : resATimeUnit callback
+
+* Outline of FACE.c : timingAcceptCommand callback
+
+* Outline of FACE.c : timingResetCommand callback
+
+* Outline of FACE.c : timingCancelCommand callback
+
+* Outline of FACE.c : setupCancelCommand callback
+
+* Outline of FACE.c : arfRFTimeUnitD callback
+
+* Outline of FACE.c : arfRFtimeUnit callback
+
+* Outline of FACE.c : arfATimeUnit callback
+
+* Outline of FACE.c : arfRFTicksD callback
+
+* Outline of FACE.c : arfATimeUnit callback
+
+* Outline of FACE.c : arfATicks callback
+
+* Outline of FACE.c : arfATicksD callback
+
+* Outline of FACE.c : arfAIndex callback
+
+* Outline of FACE.c : arfYValue callback
+
+* Outline of FACE.c : arfXValue callback
+
+* Outline of FACE.c : arfNumValues callback
+
+* Outline of FACE.c : arfRFLabel callback
+
+* Outline of FACE.c : arfALabel callback
+
+* Outline of FACE.c : arfGraphIndex callback
+
+* Outline of FACE.c : arfInterp callback
+
+* Outline of FACE.c : arfPARAM callback
+
+* Outline of FACE.c : BreakpointCommand callback
+
+	Calls Breakpoint on COMMIT event
+
+* Extra function outlines to be integrated soon
+
+** FACES.c : enableGraph
+
+	Supposed to load an interpolation for this graph and then display
+it on the panel.
+
+*** BRAIN.c : MakeInterp
+
+	If data exists, get rid by touch call...
+
+**** DNA.c : dna_TouchBuffer
+
+	Erases old interpolation data
+
+**** DNA.c : dna_CalcXYValuesMinMax
+
+	Called to do both
+
+**** DNA.c : dna_ScaleGraphValues
+
+	Allocates and fills the x y scaled lists
+
+**** BRAIN.c : <Appropriate Interpolation Function>
+
+	TODO
+
+* TODO stuff
+
+** More powerful command functions
+
+	Rework the set and disable functions with assumption to take a
+parameter to decide whether to adjust the control in question or the
+back end data.
+
+** Shorter Build functions
+
+	Chop up the BuildControls function.
+
+
+
+
+
+
+
+
+
+
+
+
+
